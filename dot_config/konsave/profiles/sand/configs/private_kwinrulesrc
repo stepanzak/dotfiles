@@ -1,0 +1,65 @@
+[$Version]
+update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
+
+[1]
+Description=Application settings for vivaldi-stable
+activity=00000000-0000-0000-0000-000000000000
+activityrule=3
+clientmachine=localhost
+desktops=0ef4e133-bdf3-4659-9b3c-2b3451595e62
+desktopsrule=3
+wmclass=vivaldi-stable
+wmclassmatch=1
+
+[2]
+Description=Application settings for vscodium
+activity=00000000-0000-0000-0000-000000000000
+blockcompositing=true
+clientmachine=localhost
+desktops=2e92bc32-ce54-4f7d-8820-e19de1094a31
+desktopsrule=3
+wmclass=vscodium
+wmclassmatch=1
+
+[3]
+Description=Application settings for vscodium
+desktops=2e92bc32-ce54-4f7d-8820-e19de1094a31
+desktopsrule=3
+wmclass=vscodium
+wmclassmatch=1
+
+[5c067c80-386d-42c3-99c7-539b614451fe]
+Description=Application settings for vivaldi-stable
+clientmachine=localhost
+desktops=0ef4e133-bdf3-4659-9b3c-2b3451595e62
+desktopsrule=3
+wmclass=vivaldi-stable
+wmclassmatch=1
+
+[6c599613-3d04-4250-86cb-5d9f1dbd279c]
+Description=Application settings for vscodium
+desktops=2e92bc32-ce54-4f7d-8820-e19de1094a31
+desktopsrule=3
+wmclass=vscodium
+wmclassmatch=1
+
+[General]
+count=2
+rules=1,2
+
+[bf0dcbfb-d6fb-4837-9709-e1cb8e0828e9]
+Description=Window settings for neovide
+clientmachine=localhost
+fpplevel=4
+fpplevelrule=2
+title=Neovide
+titlematch=1
+types=1
+wmclass=neovide
+
+[dab5ac91-6b80-40d8-ae4a-8eb37105c843]
+Description=Settings for KRunner
+blockcompositing=true
+blockcompositingrule=2
+wmclass=KRunner
+wmclassmatch=1

@@ -1,0 +1,336 @@
+###############################################################
+# This configuration file lets you
+# - define new commands
+# - change the shortcut or triggering keys of built-in verbs
+# - change the colors
+# - set default values for flags
+# - set special behaviors on specific paths
+# - and more...
+#
+# Configuration documentation is available at
+#     https://dystroy.org/broot
+#
+# This file's format is Hjson ( https://hjson.github.io/ ). Some
+# properties are commented out. To enable them, remove the `#`.
+#
+###############################################################
+
+###############################################################
+# Default flags
+# You can set up flags you want broot to start with by
+# default, for example `default_flags="ihp"` if you usually want
+# to see hidden and gitignored files and the permissions (then
+# if you don't want the hidden files you can launch `br -H`)
+# A popular flag is the `g` one which displays git related info.
+#
+# default_flags:
+
+###############################################################
+# Date/Time format
+# If you want to change the format for date/time, uncomment the
+# following line and change it according to
+# https://docs.rs/chrono/0.4.11/chrono/format/strftime/index.html
+#
+# date_time_format: %Y/%m/%d %R
+
+###############################################################
+# uncomment to activate modal mode
+#
+# (you really should read https://dystroy.org/broot/modal/
+# before as it may not suit everybody even among vim users)
+#
+# modal: true
+
+###############################################################
+# Whether to mark the selected line with a triangle
+#
+{
+###############################################################
+# This configuration file lets you
+# - define new commands
+# - change the shortcut or triggering keys of built-in verbs
+# - change the colors
+# - set default values for flags
+# - set special behaviors on specific paths
+# - and more...
+#
+# Configuration documentation is available at
+#     https://dystroy.org/broot
+#
+# This file's format is Hjson ( https://hjson.github.io/ ). Some
+# properties are commented out. To enable them, remove the `#`.
+#
+###############################################################
+
+###############################################################
+# Default flags
+# You can set up flags you want broot to start with by
+# default, for example `default_flags="ihp"` if you usually want
+# to see hidden and gitignored files and the permissions (then
+# if you don't want the hidden files you can launch `br -H`)
+# A popular flag is the `g` one which displays git related info.
+#
+# default_flags:
+
+###############################################################
+# Date/Time format
+# If you want to change the format for date/time, uncomment the
+# following line and change it according to
+# https://docs.rs/chrono/0.4.11/chrono/format/strftime/index.html
+#
+# date_time_format: %Y/%m/%d %R
+
+###############################################################
+# uncomment to activate modal mode
+#
+# (you really should read https://dystroy.org/broot/modal/
+# before as it may not suit everybody even among vim users)
+#
+# modal: true
+
+###############################################################
+# Whether to mark the selected line with a triangle
+#
+  "show_selection_mark": true,
+
+###############################################################
+# Column order
+# cols_order, if specified, must be a permutation of the following
+# array. You should keep the name column at the end as it has a
+# variable length.
+#
+# cols_order: [
+#     mark
+#     git
+#     size
+#     permission
+#     date
+#     count
+#     branch
+#     name
+# ]
+
+###############################################################
+# True Colors
+# If this parameter isn't set, broot tries to automatically
+# determine whether true colors (24 bits) are available.
+# As this process is unreliable, you may uncomment this setting
+# and set it to false or true if you notice the colors in
+# previewed images are too off.
+#
+# true_colors: false
+
+###############################################################
+# Icons
+# If you want to display icons in broot, uncomment this line
+# (see https://dystroy.org/broot/icons for installation and
+# troubleshooting)
+#
+  "icon_theme": "vscode",
+
+###############################################################
+# Special paths
+# If some paths must be handled specially, uncomment (and change
+# this section as per the examples)
+#
+  "special_paths": {
+    "/home/stepka/.config": "no-hide",
+    "/media": "no-enter" // comment it if desired    # "/media/slow-backup-disk"    : no-enter    # "/home/dys/useless"    : hide    # "/home/dys/my-link-I-want-to-explore"    : enter
+  },
+
+###############################################################
+# Quit on last cancel
+# You can usually cancel the last state change on escape.
+# If you want the escape key to quit broot when there's nothing
+# to cancel (for example when you just opened broot), uncomment
+# this parameter
+# 
+# quit_on_last_cancel: true
+
+###############################################################
+# Search modes
+#
+# broot allows many search modes.
+# A search mode is defined by
+# - the way to search: 'fuzzy', 'exact', 'regex', or 'tokens'.
+# - where to search: file 'name', 'path', or file 'content'
+# A search pattern may for example be "fuzzy path" (default),
+# "regex content" or "exact path".
+#
+# The search mode is selected from its prefix. For example, if
+# you type "abc", the default mode is "fuzzy path". If you type
+# "/abc", the mode is "regex path". If you type "rn/abc", the mode
+# is "regex name".
+#
+# This mapping may be modified. You may want to dedicate the
+# empty prefix (the one which doesn't need a '/') to the
+# search mode you use most often. The example below makes it
+# easy to search on name rather than on the subpath.
+#
+# More information on
+#  https://dystroy.org/broot/input/#the-filtering-pattern
+#
+# search_modes: {
+#     <empty>: fuzzy name
+#     /: regex name
+# }
+
+###############################################################
+# File Extension Colors
+#
+# uncomment and modify the next section if you want to color
+# file name depending on their extension
+#
+  "ext_colors": {
+    #images
+    "arw": "rgb(175, 95, 175)",
+    "bmp": "rgb(175, 95, 175)",
+    "cbr": "rgb(175, 95, 175)",
+    "cbz": "rgb(175, 95, 175)",
+    "cr2": "rgb(175, 95, 175)",
+    "dvi": "rgb(175, 95, 175)",
+    "eps": "rgb(175, 95, 175)",
+    "gif": "rgb(175, 95, 175)",
+    "heif": "rgb(175, 95, 175)",
+    "ico": "rgb(175, 95, 175)",
+    "jpeg": "rgb(175, 95, 175)",
+    "jpg": "rgb(175, 95, 175)",
+    "nef": "rgb(175, 95, 175)",
+    "orf": "rgb(175, 95, 175)",
+    "pbm": "rgb(175, 95, 175)",
+    "pgm": "rgb(175, 95, 175)",
+    "png": "rgb(175, 95, 175)",
+    "pnm": "rgb(175, 95, 175)",
+    "ppm": "rgb(175, 95, 175)",
+    "ps": "rgb(175, 95, 175)",
+    "raw": "rgb(175, 95, 175)",
+    "stl": "rgb(175, 95, 175)",
+    "svg": "rgb(175, 95, 175)",
+    "tif": "rgb(175, 95, 175)",
+    "tiff": "rgb(175, 95, 175)",
+    "webp": "rgb(175, 95, 175)",
+    "xpm": "rgb(175, 95, 175)",
+    #videos
+    "avi": "rgb(175, 95, 255)",
+    "flv": "rgb(175, 95, 255)",
+    "heic": "rgb(175, 95, 255)",
+    "m2ts": "rgb(175, 95, 255)",
+    "m2v": "rgb(175, 95, 255)",
+    "mkv": "rgb(175, 95, 255)",
+    "mov": "rgb(175, 95, 255)",
+    "mp4": "rgb(175, 95, 255)",
+    "mpeg": "rgb(175, 95, 255)",
+    "mpg": "rgb(175, 95, 255)",
+    "ogm": "rgb(175, 95, 255)",
+    "ogv": "rgb(175, 95, 255)",
+    "ts": "rgb(175, 95, 255)",
+    "vob": "rgb(175, 95, 255)",
+    "webm": "rgb(175, 95, 255)",
+    "wmv": "rgb(175, 95, 255)",
+    #documents
+    "djvu": "rgb(135, 135, 255)",
+    "doc": "rgb(135, 135, 255)",
+    "docx": "rgb(135, 135, 255)",
+    "dvi": "rgb(135, 135, 255)",
+    "eml": "rgb(135, 135, 255)",
+    "eps": "rgb(135, 135, 255)",
+    "fotd": "rgb(135, 135, 255)",
+    "key": "rgb(135, 135, 255)",
+    "odp": "rgb(135, 135, 255)",
+    "odt": "rgb(135, 135, 255)",
+    "pdf": "rgb(135, 135, 255)",
+    "ppt": "rgb(135, 135, 255)",
+    "pptx": "rgb(135, 135, 255)",
+    "rtf": "rgb(135, 135, 255)",
+    "xls": "rgb(135, 135, 255)",
+    "xlsx": "rgb(135, 135, 255)",
+    #music
+    "aac": "rgb(135, 0, 215)",
+    "alac": "rgb(135, 0, 215)",
+    "ape": "rgb(135, 0, 215)",
+    "flac": "rgb(135, 0, 215)",
+    "m4a": "rgb(135, 0, 215)",
+    "mka": "rgb(135, 0, 215)",
+    "mp3": "rgb(135, 0, 215)",
+    "ogg": "rgb(135, 0, 215)",
+    "opus": "rgb(135, 0, 215)",
+    "wav": "rgb(135, 0, 215)",
+    "wma": "rgb(135, 0, 215)",
+    #archives
+    "7z": "rgb(237, 21, 21)",
+    "a": "rgb(237, 21, 21)",
+    "ar": "rgb(237, 21, 21)",
+    "bz2": "rgb(237, 21, 21)",
+    "deb": "rgb(237, 21, 21)",
+    "dmg": "rgb(237, 21, 21)",
+    "gz": "rgb(237, 21, 21)",
+    "iso": "rgb(237, 21, 21)",
+    "lzma": "rgb(237, 21, 21)",
+    "par": "rgb(237, 21, 21)",
+    "rar": "rgb(237, 21, 21)",
+    "rpm": "rgb(237, 21, 21)",
+    "tar": "rgb(237, 21, 21)",
+    "tc": "rgb(237, 21, 21)",
+    "tgz": "rgb(237, 21, 21)",
+    "txz": "rgb(237, 21, 21)",
+    "xz": "rgb(237, 21, 21)",
+    "z": "rgb(237, 21, 21)",
+    "Z": "rgb(237, 21, 21)",
+    "zip": "rgb(237, 21, 21)",
+    "zst": "rgb(237, 21, 21)",
+    #temp
+    "bak": "rgb(128, 128, 128)",
+    "bk": "rgb(128, 128, 128)",
+    "swn": "rgb(128, 128, 128)",
+    "swo": "rgb(128, 128, 128)",
+    "swp": "rgb(128, 128, 128)",
+    "tmp": "rgb(128, 128, 128)",
+  },
+
+###############################################################
+# Max file size for content search
+#
+# Bigger files are ignored when searching their content. You
+# can specify this size either in ISO units (eg 5GB) or in
+# the old binary units (eg 44Kib)
+  "content_search_max_file_size": "10MB",
+
+###############################################################
+# Max Panels Count
+#
+# Change this if you sometimes want to have more than 2 panels
+# open
+  "max_panels_count": 3,
+
+###############################################################
+# Imports
+#
+# While it's possible to have all configuration in one file,
+# it's more convenient to split it in several ones.
+# Importing also allows to set a condition on the terminal's
+# color, which makes it possible to have a different skin 
+# chosen when your terminal has a light background and when
+# it has a light one.
+  "imports": [
+
+    # Verbs are better configured in verbs.hjson. But you
+    # can also add another files for your personal verbs
+    "verbs.hjson",
+
+    # This file contains the skin to use when the terminal
+    # is dark (or when this couldn't be determined)
+    {
+      "luma": [
+        "dark",
+        "unknown"
+      ],
+      "file": "dark-orange-skin.hjson"
+    },
+
+    # This skin is imported when your terminal is light
+    {
+      "luma": "light",
+      "file": "white-skin.hjson"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Greeter][Wallpaper][com.kylepaulsen.kderedditwallpaper][General]
+Subreddit=wallpaper
+SubredditSectionTime=week
+WallpaperDelay=1
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/stepka/.local/share/wallpapers/Stone/
+PreviewImage=/home/stepka/.local/share/wallpapers/Stone/
+SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
