@@ -320,17 +320,17 @@
     # This file contains the skin to use when the terminal
     # is dark (or when this couldn't be determined)
     {
-      "luma": [
-        "dark",
-        "unknown"
-      ],
-      "file": "dark-orange-skin.hjson"
+     # "luma": [
+     #   "dark",
+     #   "unknown"
+     # ],
+      "file": "dark-gruvbox.hjson"
     },
 
     # This skin is imported when your terminal is light
-    {
-      "luma": "light",
-      "file": "white-skin.hjson"
-    }
+    #{
+    #  "luma": "light",
+    #  "file": "solarized-light.hjson"
+    #}
   ]
 }
