@@ -46,4 +46,5 @@ source /usr/share/nvm/init-nvm.sh
 #init zoxide (better cd or something)
 eval "$(zoxide init zsh)"
 
+#source broot (br command)
 source /home/stepka/.config/broot/launcher/bash/br
