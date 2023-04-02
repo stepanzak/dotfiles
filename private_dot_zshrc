@@ -48,4 +48,3 @@ eval "$(zoxide init zsh)"
 
 #source broot (br command)
 source ~/.config/broot/launcher/bash/br
-eval $(TF_SHELL=zsh thefuck --alias)
