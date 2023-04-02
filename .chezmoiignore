@@ -1,3 +1,6 @@
 .config/BetterDiscord/data/stable/misc.json
 settings.json
 README.md
+{{- if ne .chezmoi.osRelease.idLike "work-arch" }}
+chromium-flags.conf # only manage chromium-flags.conf on Arch linux or Arch-based systems (it's arch-specific)
+{{- end }}
