@@ -20,8 +20,8 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-#init thefuck
-eval $(TF_SHELL=zsh thefuck --alias)
+#init thefuck if it exists
+[ -x "$(command -v thefuck)" ] && eval $(TF_SHELL=zsh thefuck --alias)
 
 # source antidote (plugin manager)
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
@@ -41,10 +41,10 @@ alias "rt=trash put"
 
 # To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-source /usr/share/nvm/init-nvm.sh
+[ -e "/usr/share/nvm/init-nvm.sh" ] && source /usr/share/nvm/init-nvm.sh
 
-#init zoxide (better cd or something)
-eval "$(zoxide init zsh)"
+#init zoxide (better cd or something) if it exists
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
-#source broot (br command)
-source ~/.config/broot/launcher/bash/br
+#source broot (br command) if it exists
+[ -e "~/.config/broot/launcher/bash/br" ] && source ~/.config/broot/launcher/bash/br
