@@ -1,0 +1,14 @@
+aaron-bond.better-comments
+asvetliakov.vscode-neovim
+christian-kohler.npm-intellisense
+christian-kohler.path-intellisense
+dbaeumer.vscode-eslint
+ecmel.vscode-html-css
+icrawl.discord-vscode
+jdinhlife.gruvbox
+pranaygp.vscode-css-peek
+rangav.vscode-thunder-client
+ritwickdey.LiveServer
+tal7aouy.icons
+Tobermory.es6-string-html
+Vue.volar

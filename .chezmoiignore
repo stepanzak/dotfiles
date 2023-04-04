@@ -2,6 +2,8 @@ chezmoi:template:missing-key=invalid # on termux, .chezmoi.osRelease is an empty
 .config/BetterDiscord/data/stable/misc.json
 settings.json
 README.md
+vscodium-extensions.txt
+
 {{- if ne .chezmoi.osRelease.idLike "arch" }}
 .config/chromium-flags.conf # only manage chromium-flags.conf on Arch linux or Arch-based systems (it's arch-specific)
 {{- end }}
