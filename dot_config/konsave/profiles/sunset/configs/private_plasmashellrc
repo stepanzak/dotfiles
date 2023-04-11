@@ -32,7 +32,8 @@ thickness=60
 thickness=60
 
 [PlasmaViews][Panel 174]
-panelOpacity=1
+floating=0
+panelOpacity=2
 
 [PlasmaViews][Panel 174][Defaults]
 minLength=1920

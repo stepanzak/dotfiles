@@ -8,7 +8,7 @@ NumLock=0
 TapToClick=true
 
 [Mouse]
-X11LibInputXAccelProfileFlat=false
+X11LibInputXAccelProfileFlat=true
 XLbInptAccelProfileFlat=false
 cursorSize=36
 cursorTheme=Future-cursors

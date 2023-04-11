@@ -1,0 +1,50 @@
+[$Version]
+update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
+
+[LegacySession: saved at previous logout]
+count=0
+
+[Session: saved at previous logout]
+clientId1=1017d1ba1ab156000168122418600000006580005
+clientId2=1017d1ba1ab156000168122418700000006580006
+clientId3=1017d1ba1ab156000168122418700000006580007
+clientId4=1017d1ba1ab156000168122401100000006660043
+clientId5=1017d1ba1ab156000168122412800000006660045
+count=5
+discardCommand4[$e]=rm,$HOME/.config/session/systemsettings_1017d1ba1ab156000168122401100000006660043_1681226043_36152
+discardCommand5[$e]=rm,$HOME/.config/session/konsole_1017d1ba1ab156000168122412800000006660045_1681226043_36319
+program1=/usr/lib/DiscoverNotifier
+program2=/usr/bin/kalendarac
+program3=/usr/bin/firewall-applet
+program4=/usr/bin/systemsettings
+program5=/usr/bin/konsole
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000168122418600000006580005_1681226043_35670
+restartCommand2=/usr/bin/kalendarac,-session,1017d1ba1ab156000168122418700000006580006_1681226043_36343
+restartCommand3=/usr/bin/firewall-applet,-session,1017d1ba1ab156000168122418700000006580007_1681226043_36178,-name,firewall-applet
+restartCommand4=/usr/bin/systemsettings,-session,1017d1ba1ab156000168122401100000006660043_1681226043_36152
+restartCommand5=/usr/bin/konsole,-session,1017d1ba1ab156000168122412800000006660045_1681226043_36319
+restartStyleHint1=0
+restartStyleHint2=0
+restartStyleHint3=0
+restartStyleHint4=0
+restartStyleHint5=0
+userId1=stepka
+userId2=stepka
+userId3=stepka
+userId4=stepka
+userId5=stepka
+
+[SubSession: 25c19c6d-82d9-4b52-8845-91560d9ff92f]
+count=0
+
+[SubSession: 93369407-c57b-4e71-a49d-094bc2f68c69]
+count=0
+
+[SubSession: 9f16c1ed-d6d1-4920-8f15-097081e353af]
+count=0
+
+[SubSession: b33d507d-1488-420a-b2bb-66a6499f5c10]
+count=0
+
+[SubSession: bac142d1-6403-4f8f-9f84-09993738adcd]
+count=0

@@ -45,26 +45,6 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=180
 
-[Containments][174][Applets][198]
-immutability=1
-plugin=alexankitty.fancytasks
-
-[Containments][174][Applets][198][Configuration][ConfigDialog]
-DialogHeight=1003
-DialogWidth=1920
-
-[Containments][174][Applets][198][Configuration][General]
-buttonColorize=true
-buttonColorizeCustom=#ffffff
-forceStripes=true
-groupedTaskVisualization=2
-groupingStrategy=0
-iconSpacing=0
-indicatorCustomColor=#ffffff
-launchers=
-maxStripes=1
-wheelSkipMinimized=false
-
 [Containments][174][Applets][209]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -97,10 +77,9 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][174][Applets][216][Configuration][General]
-cursorPosition=83
+cursorPosition=12
 fontSize=10
 noteId=5c6ab97a-189c-4e73-9663-02cf8529b2
-scrollY=466
 
 [Containments][174][Applets][238]
 immutability=1
@@ -115,7 +94,7 @@ DialogWidth=960
 
 [Containments][174][Applets][238][Configuration][General]
 defaultFormat=rgb
-history=#1e1d2d,#1e1e2e,#161c24,#1d1d27,#286899,#f17978,#808080,#ed1515,#b81719
+history=#262c3a,#e7bf7e,#1d1d27,#242935,#1d1d27,#242935,#1d1d27,#1d2021,#1d1d27
 
 [Containments][174][Applets][244]
 immutability=1
@@ -152,49 +131,56 @@ PreloadWeight=100
 popupHeight=480
 popupWidth=480
 
-[Containments][174][Applets][252]
+[Containments][174][Applets][255]
+immutability=1
+plugin=alexankitty.fancytasks
+
+[Containments][174][Applets][255][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][174][Applets][255][Configuration][General]
+buttonColorizeCustom=#ffffff
+buttonColorizeDominant=false
+forceStripes=true
+groupedTaskVisualization=1
+groupingStrategy=0
+launchers=
+maxStripes=1
+wheelSkipMinimized=false
+
+[Containments][174][Applets][256]
 immutability=1
 plugin=P-Connor.PlasmaDrawer
 
-[Containments][174][Applets][252][Configuration]
-PreloadWeight=100
-
-[Containments][174][Applets][252][Configuration][ConfigDialog]
+[Containments][174][Applets][256][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
-[Containments][174][Applets][252][Configuration][General]
-backgroundOpacity=30
-favoritesPortedToKAstats=true
-tileModel=W3sieCI6MCwieSI6MCwidyI6NiwiaCI6MSwidXJsIjoiIiwidGlsZVR5cGUiOiJncm91cCIsImxhYmVsIjoiUHJvZHVjdGl2aXR5In0seyJ4IjowLCJ5IjoxLCJ3IjoyLCJoIjoyLCJ1cmwiOiJsaWJyZW9mZmljZS13cml0ZXIuZGVza3RvcCIsImJhY2tncm91bmRDb2xvciI6IiM4MDI1ODRiNyJ9LHsieCI6MiwieSI6MSwidyI6MiwiaCI6MiwidXJsIjoibGlicmVvZmZpY2UtY2FsYy5kZXNrdG9wIiwiYmFja2dyb3VuZENvbG9yIjoiIzgwMjg5NzY5In0seyJ4Ijo0LCJ5IjoxLCJ3IjoyLCJoIjoyLCJ1cmwiOiJodHRwczovL21haWwuZ29vZ2xlLmNvbS9tYWlsL3UvMC8jaW5ib3giLCJsYWJlbCI6IkdtYWlsIiwiaWNvbiI6Im1haWwtbWVzc2FnZSIsImJhY2tncm91bmRDb2xvciI6IiM4MGE3MzMyNSJ9LHsieCI6MCwieSI6MywidyI6NiwiaCI6MSwidXJsIjoiIiwidGlsZVR5cGUiOiJncm91cCIsImxhYmVsIjoiRXhwbG9yZSJ9LHsieCI6MiwieSI6NCwidyI6MiwiaCI6MiwidXJsIjoicHJlZmVycmVkOi8vYnJvd3NlciJ9XQ==
-
-[Containments][174][Applets][252][Shortcuts]
+[Containments][174][Applets][256][Shortcuts]
 global=Meta+S
 
-[Containments][174][Applets][253]
+[Containments][174][Applets][259]
 immutability=1
 plugin=org.kde.plasma.translator
 
-[Containments][174][Applets][253][Configuration]
-PreloadWeight=100
+[Containments][174][Applets][259][Configuration]
+PreloadWeight=95
 
-[Containments][174][Applets][253][Configuration][ConfigDialog]
+[Containments][174][Applets][259][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
-[Containments][174][Applets][253][Configuration][General]
+[Containments][174][Applets][259][Configuration][General]
 destinationIndex=18
 sourceIndex=22
-
-[Containments][174][Applets][253][Shortcuts]
-global=
 
 [Containments][174][ConfigDialog]
 DialogHeight=90
 DialogWidth=1920
 
 [Containments][174][General]
-AppletOrder=252;253;216;238;245;209;212;198;210;179;244
+AppletOrder=256;238;216;259;245;209;212;255;210;179;244
 
 [Containments][180]
 activityId=
@@ -339,11 +325,15 @@ knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma
 scaleIconsToFit=true
 shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard
 
-[Containments][247]
-ItemGeometries-1600x900=
+[Containments][254][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=444
+ToolBoxButtonY=45
+
+[Containments][258]
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
-activityId=b33d507d-1488-420a-b2bb-66a6499f5c10
+activityId=37a632d5-032d-4ec9-8098-ceb66764a648
 formfactor=0
 immutability=1
 lastScreen=0
@@ -351,28 +341,32 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
-[Containments][247][ConfigDialog]
-DialogHeight=835
-DialogWidth=1600
+[Containments][258][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
 
-[Containments][247][General]
+[Containments][258][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=453
+ToolBoxButtonX=309
 ToolBoxButtonY=45
 
-[Containments][247][Wallpaper][de.unkn0wn.htmlwallpaper][General]
-DisplayPage=https://watabou.github.io/perilous-shores/?tags=difficult,island,evil&w=2400&h=1350&hexes=1
-EnableInputFocus=true
-ZoomFactor=0.5
-
-[Containments][247][Wallpaper][org.kde.image][General]
-Image=/home/stepka/Pictures/Bridge.jpg
+[Containments][258][Wallpaper][org.kde.image][General]
+Image=/home/stepka/Pictures/gruvbox_pixel.png
 SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][260]
+activityId=37a632d5-032d-4ec9-8098-ceb66764a648
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [Containments174Appletsts][177][Configuration][General]
 iconSpacing=0
 maxStripes=1
 
 [ScreenMapping]
-itemsOnDisabledScreens=0,b33d507d-1488-420a-b2bb-66a6499f5c10,1,desktop:/vivaldi-jgeocpdicgmkeemopbanhokmhcgcflmi-Default.desktop
+itemsOnDisabledScreens=1,37a632d5-032d-4ec9-8098-ceb66764a648,1,desktop:/steam.desktop,0,b33d507d-1488-420a-b2bb-66a6499f5c10,1,desktop:/vivaldi-jgeocpdicgmkeemopbanhokmhcgcflmi-Default.desktop
 screenMapping=desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop,0,9f16c1ed-d6d1-4920-8f15-097081e353af

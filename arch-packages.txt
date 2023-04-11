@@ -322,8 +322,6 @@ sof-firmware
 solid
 spectacle
 spicetify-cli
-spicetify-custom-apps-and-extensions-git
-spicetify-themes-git
 splix
 spotify
 steam
@@ -344,7 +342,6 @@ ttf-dejavu
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-liberation
-ttf-ms-win10-cdn
 ttf-opensans
 unrar
 unzip

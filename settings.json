@@ -61,5 +61,6 @@
         "keyboard.dispatch": "keyCode",
         "vva.trustedDomain": true,
         "editor.lineNumbers": "relative",
-        "vscode-neovim.neovimClean": true
+        "vscode-neovim.neovimClean": true,
+        "window.zoomLevel": 1
 }

@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-37a632d5-032d-4ec9-8098-ceb66764a648=none,none,Switch to activity "Default"
 switch-to-activity-b33d507d-1488-420a-b2bb-66a6499f5c10=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -280,8 +281,8 @@ activate widget 208=none,none,Activate Minimize All Windows Widget
 activate widget 234=none,none,Activate Media Flow Widget
 activate widget 242=none,none,Activate Tiled Screen Widget
 activate widget 244=none,none,Activate Digital Clock Widget
-activate widget 252=Meta+S,none,Activate Plasma Drawer Widget
 activate widget 253=none,none,Activate Translator Widget
+activate widget 256=Meta+S,none,Activate Plasma Drawer Widget
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
 activate widget 75=none,none,Activate Application Launcher Widget
 activate widget 95=none,none,Activate Application Launcher Widget

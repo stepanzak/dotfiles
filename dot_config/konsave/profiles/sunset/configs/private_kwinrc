@@ -17,6 +17,9 @@ Name_4=bottom-right
 Number=4
 Rows=2
 
+[Effect-blur]
+NoiseStrength=14
+
 [Effect-kwin4_effect_translucency]
 MoveResize=96
 
@@ -47,6 +50,8 @@ LongitudeAuto=15.1489
 NightTemperature=3800
 
 [Plugins]
+blurEnabled=true
+contrastEnabled=false
 desktopchangeosdEnabled=true
 diminactiveEnabled=true
 forceblurEnabled=false
@@ -58,7 +63,6 @@ kwin4_effect_fadingpopupsEnabled=false
 kwin4_effect_morphingpopupsEnabled=false
 kwin4_effect_morphingpopups_xfadefixEnabled=false
 kwin4_effect_scaleEnabled=false
-kwin4_effect_translucencyEnabled=true
 kwin4_effect_windowapertureEnabled=false
 sheetEnabled=true
 synchronizeskipswitcherEnabled=true
@@ -76,7 +80,7 @@ active=-1
 count=0
 
 [TabBox]
-LayoutName=MediumRoundedDark
+LayoutName=big_icons
 ShowDesktopMode=1
 
 [Tiling]
@@ -96,8 +100,10 @@ CenterSnapZone=20
 Placement=Smart
 
 [Xwayland]
-Scale=1.2
+Scale=1.25
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MNSFB
-ButtonsOnRight=IAX
+ButtonsOnRight=LIAX
+library=org.kde.breeze
+theme=Breeze
