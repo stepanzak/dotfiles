@@ -12,3 +12,4 @@ ritwickdey.LiveServer
 tal7aouy.icons
 Tobermory.es6-string-html
 Vue.volar
+mads-hartmann.bash-ide-vscode

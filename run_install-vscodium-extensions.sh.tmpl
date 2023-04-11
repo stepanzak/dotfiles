@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
-
-cat {{ .chezmoi.sourceDir }}/vscodium-extensions.txt | while read extension || [[ -n $extension ]];
-do
-  codium --install-extension $extension --force
-done
+comm -13 <(sort -u <(codium --list-extensions)) <(sort -u {{ .chezmoi.sourceDir }}/vscodium-extensions.txt) | while read extension || [[ -n $extension ]];
+  do
+    codium --install-extension $extension --force
+  done
