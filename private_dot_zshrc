@@ -46,5 +46,8 @@ alias "rt=trash put"
 #init zoxide (better cd or something) if it exists
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
+#init atuin (better shell history or something) if it exist
+[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh)"
+
 #source broot (br command) if it exists
 [ -e ~/.config/broot/launcher/bash/br ] && source ~/.config/broot/launcher/bash/br
