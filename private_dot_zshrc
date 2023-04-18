@@ -27,6 +27,7 @@ compinit
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
+ZVM_INIT_MODE=sourcing # do NOT lazy load zsh-vi-mode - it must be loaded before atuin for atuin to work
 antidote load
 
 #aliases
@@ -39,15 +40,18 @@ alias "rt=trash put"
 ##flex on people who ain't nolifers (disabled bcs powerlevel10k's instant prompt)
 #fastfetch
 
-# To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+#init nvm (node version manager)
 [ -e "/usr/share/nvm/init-nvm.sh" ] && source /usr/share/nvm/init-nvm.sh
 
 #init zoxide (better cd or something) if it exists
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
-#init atuin (better shell history or something) if it exist
-[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh)"
 
 #source broot (br command) if it exists
 [ -e ~/.config/broot/launcher/bash/br ] && source ~/.config/broot/launcher/bash/br
+
+#init atuin (better shell history or something) if it exist
+[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh)"
+
+# To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
