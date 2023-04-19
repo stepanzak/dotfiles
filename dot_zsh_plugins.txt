@@ -1,5 +1,6 @@
+jeffreytse/zsh-vi-mode
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
+hlissner/zsh-autopair
 romkatv/powerlevel10k
-jeffreytse/zsh-vi-mode
