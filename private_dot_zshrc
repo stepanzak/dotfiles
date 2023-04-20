@@ -31,11 +31,19 @@ ZVM_INIT_MODE=sourcing # do NOT lazy load zsh-vi-mode - it must be loaded before
 antidote load
 
 #aliases
-alias "fcking=sudo"
 alias "bls=exa -a --group-directories-first -s modified --icons"
 alias "ls=exa -a --group-directories-first -s name --icons"
 alias "sl=sl -eawd3"
 alias "rt=trash put"
+
+#pls = sudo, but with no arguments it's sudo !!
+function pls(){
+	if [ "$#" -eq 0 ]; then
+        	sudo $(fc -ln -1)
+	else
+		sudo $@
+	fi
+}
 
 ##flex on people who ain't nolifers (disabled bcs powerlevel10k's instant prompt)
 #fastfetch
