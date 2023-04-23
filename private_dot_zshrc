@@ -54,12 +54,11 @@ function pls(){
 #init zoxide (better cd or something) if it exists
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
-
 #source broot (br command) if it exists
 [ -e ~/.config/broot/launcher/bash/br ] && source ~/.config/broot/launcher/bash/br
 
 #init atuin (better shell history or something) if it exist
-[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh)"
+[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh --disable-up-arrow)"
 
 # To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
