@@ -26,9 +26,40 @@ compinit
 # source antidote (plugin manager)
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
-# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 ZVM_INIT_MODE=sourcing # do NOT lazy load zsh-vi-mode - it must be loaded before atuin for atuin to work
+
+
+
+# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
+
+#marlonrichert/zsh-autocomplete config:
+
+#first insert part of string common fir all comoletions (if any)
+#example: in foler with index.js and index.html, on Tab, it inserts "index." first. If you add style.css to that foler, it doesn't.
+zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
+#same thing for searching in completion menu
+zstyle ':autocomplete:menu-search:*' insert-unambiguous yes
+
+#Make Tab go straight to the menu and cycle there
+bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
+bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
+
+
+#end of zsh-autocomplete config
+
+#bind arrow keys to back to normal. bcs of marlonrichert/zsh-autocomplete
+() {
+	local -a prefix=( '\e'{\[,O} )
+	local -a up=( ${^prefix}A ) down=( ${^prefix}B )
+	local key=
+	for key in $up[@]; do
+		bindkey "$key" up-line-or-history
+	done
+	for key in $down[@]; do
+		bindkey "$key" down-line-or-history
+	done
+}
 
 #aliases
 alias "bls=exa -a --group-directories-first -s modified --icons"
@@ -44,9 +75,6 @@ function pls(){
 		sudo $@
 	fi
 }
-
-##flex on people who ain't nolifers (disabled bcs powerlevel10k's instant prompt)
-#fastfetch
 
 #init nvm (node version manager)
 [ -e "/usr/share/nvm/init-nvm.sh" ] && source /usr/share/nvm/init-nvm.sh

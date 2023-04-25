@@ -1,5 +1,5 @@
-jeffreytse/zsh-vi-mode
 zsh-users/zsh-autosuggestions
+marlonrichert/zsh-autocomplete
 zsh-users/zsh-completions
 zsh-users/zsh-syntax-highlighting
 hlissner/zsh-autopair
