@@ -19,16 +19,24 @@ zstyle :compinstall filename '/home/blbezcc/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+_comp_options+=(globdots) #completion With hidden files I think
+
+#enable native vi mode
+bindkey -v
+export KEYTIMEOUT=1
+#vim cursor
+#source ~/zsh/cursor_mode.zsh
+
+#hit v in normal mode to edit command line
+autoload -Uz edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
 
 #init thefuck if it exists
 [ -x "$(command -v thefuck)" ] && eval $(TF_SHELL=zsh thefuck --alias)
 
 # source antidote (plugin manager)
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
-
-ZVM_INIT_MODE=sourcing # do NOT lazy load zsh-vi-mode - it must be loaded before atuin for atuin to work
-
-
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
@@ -61,7 +69,17 @@ bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 	done
 }
 
-#aliases
+
+
+#directory stack settings and aliases
+setopt AUTO_PUSHD # Push the current directory visited on the stack.
+setopt PUSHD_IGNORE_DUPS # Do not store duplicates in the stack.
+setopt PUSHD_SILENT # Do not print the directory stack after pushd or popd.
+#directory stack aliases - commands 1, 2, 3 etc
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+#general aliases
 alias "bls=exa -a --group-directories-first -s modified --icons"
 alias "ls=exa -a --group-directories-first -s name --icons"
 alias "sl=sl -eawd3"
