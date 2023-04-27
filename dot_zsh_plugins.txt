@@ -1,6 +1,6 @@
-zsh-users/zsh-autosuggestions
-marlonrichert/zsh-autocomplete
-zsh-users/zsh-completions
-zsh-users/zsh-syntax-highlighting
-hlissner/zsh-autopair
 romkatv/powerlevel10k
+marlonrichert/zsh-autocomplete
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-completions
+zdharma-continuum/fast-syntax-highlighting
+hlissner/zsh-autopair
