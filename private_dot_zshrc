@@ -56,7 +56,7 @@ bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
 
 #end of zsh-autocomplete config
 
-#bind arrow keys to back to normal. bcs of marlonrichert/zsh-autocomplete
+#bind arrow keys back to normaly. bcs of marlonrichert/zsh-autocomplete
 () {
 	local -a prefix=( '\e'{\[,O} )
 	local -a up=( ${^prefix}A ) down=( ${^prefix}B )
