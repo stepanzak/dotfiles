@@ -13,5 +13,14 @@ for _, lsp in ipairs(servers) do
   }
 end
 
+lspconfig.volar.setup{
+  filetypes = {'typescript', 'javascript', 'javascriptreact', 'typescriptreact', 'vue', 'json'},
+  init_options = {
+    typescript = {
+      tsdk = '/usr/lib/node_modules/typescript/lib'
+    }
+  }
+}
+
 -- 
 -- lspconfig.pyright.setup { blabla}

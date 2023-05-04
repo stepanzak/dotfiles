@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Gruvbox Dark Hard",
     "workbench.iconTheme": "icons",
-    "editor.fontFamily": "'JetBrainsMono Nerd Font', 'monospace', monospace",
+    "editor.fontFamily": "'FuraMono Nerd Font'",
     "npm.keybindingsChangedWarningShown": true,
     "editor.fontLigatures": true,
     "better-comments.tags": [

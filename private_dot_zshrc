@@ -5,6 +5,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
+export PATH="$PATH:$HOME/.cargo/bin"
 # Lines configured by zsh-newuser-install
 HISTFILE=~/.histfile
 HISTSIZE=1000
@@ -106,5 +107,17 @@ function pls(){
 #init atuin (better shell history or something) if it exist
 [ -x "$(command -v atuin)" ] && eval "$(atuin init zsh --disable-up-arrow)"
 
+#init trashy (trash CLI but rust) if it exist
+#commented out because of zsh completions bug, see issue #57
+#[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
+
 # To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# pnpm
+export PNPM_HOME="/home/stepka/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
