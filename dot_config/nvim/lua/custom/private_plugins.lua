@@ -4,7 +4,17 @@ local overrides = require("custom.configs.overrides")
 local plugins = {
 
   -- Override plugin definition options
-
+{
+  "aurum77/live-server.nvim",
+    run = function()
+      require"live_server.util".install()
+    end,
+    cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
+  },
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false
+  },
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -45,7 +55,7 @@ local plugins = {
     config = function()
       require("better_escape").setup()
     end,
-  },
+  }
 
   -- To make a plugin not be loaded
   -- {
@@ -53,13 +63,7 @@ local plugins = {
   --   enabled = false
   -- },
 
-  {
-  "aurum77/live-server.nvim",
-    run = function()
-      require"live_server.util".install()
-    end,
-    cmd = { "LiveServer", "LiveServerStart", "LiveServerStop" },
-  }
+  
 
 }
 
