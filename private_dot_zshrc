@@ -13,7 +13,7 @@ SAVEHIST=1000
 setopt beep
 bindkey -e
 # End of lines configured by zsh-newuser-install
-EDITOR=nvim
+export EDITOR=nvim
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/blbezcc/.zshrc'
 
@@ -85,6 +85,7 @@ alias "bls=exa -a --group-directories-first -s modified --icons"
 alias "ls=exa -a --group-directories-first -s name --icons"
 alias "sl=sl -eawd3"
 alias "rt=trash put"
+alias "chz=chezmoi"
 
 #pls = sudo, but with no arguments it's sudo !!
 function pls(){
