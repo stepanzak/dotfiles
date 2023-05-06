@@ -9,6 +9,3 @@ The chromium-flags.conf is an Arch Linux specific file containing flags that are
 
 ### dot_config/nvim/lua/custom/*
 Here is my [NeoVim](https://github.com/neovim/neovim) config. Note that this is not full NeoVim config, this is custom [NvChad](https://github.com/NvChad/NvChad) config. NvChad itself is a base NeoVim config.
-
-### dot_config/fontconfig/fonts.conf
-This sets the *Broot Icons Visual Studio Code* as fallback font for the *FuraMono Nerd Font*. This is for icons in [broot](https://github.com/Canop/broot).
