@@ -20,16 +20,48 @@ export EDITOR=nvim
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/blbezcc/.zshrc'
 
-autoload -Uz compinit
-compinit
 # End of lines added by compinstall
-_comp_options+=(globdots) #completion With hidden files I think
-
+# I stole this completion menu and vim cursor from Brodie Robertson.
+# https://github.com/BrodieRobertson/dotfiles/blob/master/.zshrc
+autoload -U compinit && compinit -u 
+ zstyle ':completion:*' menu select 
+ # Auto complete with case insenstivity 
+ zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' 
+  
+ zmodload zsh/complist 
+ compinit 
+ _comp_options+=(globdots) # Include hidden files.
 #enable native vi mode
 bindkey -v
 export KEYTIMEOUT=1
+
+# Use vim keys in tab complete menu: 
+ bindkey -M menuselect 'h' vi-backward-char 
+ bindkey -M menuselect 'j' vi-down-line-or-history 
+ bindkey -M menuselect 'k' vi-up-line-or-history 
+ bindkey -M menuselect 'l' vi-forward-char 
+ bindkey -M menuselect 'left' vi-backward-char 
+ bindkey -M menuselect 'down' vi-down-line-or-history 
+ bindkey -M menuselect 'up' vi-up-line-or-history 
+ bindkey -M menuselect 'right' vi-forward-char 
+ # Fix backspace bug when switching modes 
+ bindkey "^?" backward-delete-char
 #vim cursor
-#source ~/zsh/cursor_mode.zsh
+# Change cursor shape for different vi modes. 
+ function zle-keymap-select { 
+   if [[ ${KEYMAP} == vicmd ]] || 
+      [[ $1 = 'block' ]]; then 
+     echo -ne '\e[1 q' 
+   elif [[ ${KEYMAP} == main ]] || 
+        [[ ${KEYMAP} == viins ]] || 
+        [[ ${KEYMAP} = '' ]] || 
+        [[ $1 = 'beam' ]]; then 
+     echo -ne '\e[5 q' 
+   fi 
+ } 
+ zle -N zle-keymap-select
+
+ precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 #hit v in normal mode to edit command line
 autoload -Uz edit-command-line
@@ -44,36 +76,6 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 
 # initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
 antidote load
-
-#marlonrichert/zsh-autocomplete config:
-
-#first insert part of string common fir all comoletions (if any)
-#example: in foler with index.js and index.html, on Tab, it inserts "index." first. If you add style.css to that foler, it doesn't.
-zstyle ':autocomplete:*complete*:*' insert-unambiguous yes
-#same thing for searching in completion menu
-zstyle ':autocomplete:menu-search:*' insert-unambiguous yes
-
-#Make Tab go straight to the menu and cycle there
-bindkey '\t' menu-select "$terminfo[kcbt]" menu-select
-bindkey -M menuselect '\t' menu-complete "$terminfo[kcbt]" reverse-menu-complete
-
-
-#end of zsh-autocomplete config
-
-#bind arrow keys back to normaly. bcs of marlonrichert/zsh-autocomplete
-() {
-	local -a prefix=( '\e'{\[,O} )
-	local -a up=( ${^prefix}A ) down=( ${^prefix}B )
-	local key=
-	for key in $up[@]; do
-		bindkey "$key" up-line-or-history
-	done
-	for key in $down[@]; do
-		bindkey "$key" down-line-or-history
-	done
-}
-
-
 
 #directory stack settings and aliases
 setopt AUTO_PUSHD # Push the current directory visited on the stack.
