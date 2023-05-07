@@ -9,3 +9,11 @@ The chromium-flags.conf is an Arch Linux specific file containing flags that are
 
 ### dot_config/nvim/lua/custom/*
 Here is my [NeoVim](https://github.com/neovim/neovim) config. Note that this is not full NeoVim config, this is custom [NvChad](https://github.com/NvChad/NvChad) config. NvChad itself is a base NeoVim config.
+
+### dot_config/tmux/tmux.conf
+This is my [Tmux](https://github.com/tmux/tmux) config.
+If you want to use this config, please install [TPM](https://github.com/tmux-plugins/tpm) (Tmux Plugin Manager).
+You can install it with git using this command:
+```bash 
+ git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
+ ```
