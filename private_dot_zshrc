@@ -112,9 +112,6 @@ function pls(){
 	fi
 }
 
-#init nvm (node version manager)
-[ -e "/usr/share/nvm/init-nvm.sh" ] && source /usr/share/nvm/init-nvm.sh
-
 #init zoxide (better cd or something) if it exists
 [ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
