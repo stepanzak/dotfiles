@@ -101,23 +101,23 @@ verbs: [
     # }
 
     # A popular set of shortcuts for going up and down:
-    #
-    # {
-    #     key: ctrl-k
-    #     execution: ":line_up"
-    # }
-    # {
-    #     key: ctrl-j
-    #     execution: ":line_down"
-    # }
-    # {
-    #     key: ctrl-u
-    #     execution: ":page_up"
-    # }
-    # {
-    #     key: ctrl-d
-    #     execution: ":page_down"
-    # }
+    
+     {
+         key: alt-shift-k
+         execution: ":line_up"
+     }
+     {
+         key: alt-shift-j
+         execution: ":line_down"
+     }
+     {
+         key: ctrl-u
+         execution: ":page_up"
+     }
+     {
+         key: ctrl-d
+         execution: ":page_down"
+     }
 
     # If you develop using git, you might like to often switch
     # to the git status filter:
