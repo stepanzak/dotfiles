@@ -9,9 +9,10 @@ eDP1 Width 1920x1080 eDP1=886
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Street.jpg,file:$HOME/Videos/les.mp4,file:$HOME/Videos/zhrfdzg3qu891.mp4,file:$HOME/Videos/d19oikd1toh91.mp4,file:$HOME/Pictures/school-violence-bad-students-are-harassing-another-student-flat-design-style-minimal-illustration-vector-412222787.jpg,file:$HOME/Pictures/download.png,file:$HOME/Videos/red_sun.mp4,file:$HOME/Pictures/Bridge.jpg,file:$HOME/Pictures/Street.jpg
+Recent Files[$e]=Street.jpg,file:$HOME/Documents/svg0.svg,file:$HOME/Pictures/Bridge.jpg,file:$HOME/Pictures/Street.jpg
 Recent URLs[$e]=file:$HOME/Pictures/,file:$HOME/Videos/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,trash:/
 detailViewIconSize=16
+iconViewIconSize=64
 
 [KPropertiesDialog]
 1920x1080 screen: Height=591
@@ -34,13 +35,18 @@ thickness=60
 [PlasmaViews][Panel 174]
 floating=0
 panelOpacity=2
+panelVisibility=0
 
 [PlasmaViews][Panel 174][Defaults]
+maxLength=1920
 minLength=1920
+offset=0
 thickness=45
 
 [PlasmaViews][Panel 174][Horizontal1920]
+maxLength=1920
 minLength=1920
+offset=0
 
 [PlasmaViews][Panel 193][Defaults]
 thickness=48

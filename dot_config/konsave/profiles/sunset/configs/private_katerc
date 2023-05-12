@@ -122,7 +122,7 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Search History=BackgroundNormal=29,BackgroundNormal,#region:
+Search History=invite,BackgroundNormal=29,BackgroundNormal,#region:
 
 [MainWindow]
 1536x864 screen: Window-Maximized=true
@@ -140,3 +140,26 @@ showFullPathOnRoots=false
 showToolbar=true
 sortRole=0
 viewShade=62,89,123
+
+[lspclient]
+AllowedServerCommandLines=
+AutoHover=true
+AutoImport=true
+BlockedServerCommandLines=/usr/bin/vscode-json-languageserver --stdio
+CompletionDocumentation=true
+CompletionParens=true
+Diagnostics=true
+FormatOnSave=false
+HighlightGoto=true
+IncrementalSync=false
+InlayHints=false
+Messages=true
+ReferencesDeclaration=true
+SemanticHighlighting=true
+ServerConfiguration=
+SignatureHelp=true
+SymbolDetails=false
+SymbolExpand=true
+SymbolSort=false
+SymbolTree=true
+TypeFormatting=false

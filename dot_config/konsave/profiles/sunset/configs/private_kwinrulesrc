@@ -1,24 +1,15 @@
 [$Version]
 update_info=kwinrules.upd:replace-placement-string-to-enum,kwinrules.upd:use-virtual-desktop-ids
 
-[1]
-Description=Application settings for vivaldi-stable
-activity=00000000-0000-0000-0000-000000000000
-activityrule=3
+[00375393-b253-4bfe-bf91-056c8e6cdbb3]
+Description=Window settings for org.wezfurlong.wezterm
 clientmachine=localhost
-desktops=0ef4e133-bdf3-4659-9b3c-2b3451595e62
-desktopsrule=3
-wmclass=vivaldi-stable
-wmclassmatch=1
-
-[2]
-Description=Application settings for vscodium
-activity=00000000-0000-0000-0000-000000000000
-blockcompositing=true
-clientmachine=localhost
-desktops=2e92bc32-ce54-4f7d-8820-e19de1094a31
-desktopsrule=3
-wmclass=vscodium
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+types=1
+wmclass=org.wezfurlong.wezterm
 wmclassmatch=1
 
 [3]
@@ -42,10 +33,6 @@ desktops=2e92bc32-ce54-4f7d-8820-e19de1094a31
 desktopsrule=3
 wmclass=vscodium
 wmclassmatch=1
-
-[General]
-count=2
-rules=1,2
 
 [bf0dcbfb-d6fb-4837-9709-e1cb8e0828e9]
 Description=Window settings for neovide

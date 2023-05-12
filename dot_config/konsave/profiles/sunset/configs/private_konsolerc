@@ -12,10 +12,22 @@ ConfigVersion=1
 1536x864 screen: YPosition=66
 1920x1080 screen: Height=580
 1920x1080 screen: Width=911
+2 screens: Height=798
+2 screens: Width=1355
+2 screens: Window-Maximized=true
+2 screens: XPosition=0
+2 screens: YPosition=66
+HDMI1 eDP1=eDP1
 MenuBar=Disabled
 State=AAAA/wAAAAD9AAAAAQAAAAAAAAAAAAAAAPwCAAAAAvsAAAAcAFMAUwBIAE0AYQBuAGEAZwBlAHIARABvAGMAawAAAAAA/////wAAARUBAAAD+wAAACIAUQB1AGkAYwBrAEMAbwBtAG0AYQBuAGQAcwBEAG8AYwBrAAAAAAD/////AAABfAEAAAMAAAYAAAAC8AAAAAQAAAAEAAAACAAAAAj8AAAAAQAAAAIAAAACAAAAFgBtAGEAaQBuAFQAbwBvAGwAQgBhAHIBAAAAAP////8AAAAAAAAAAAAAABwAcwBlAHMAcwBpAG8AbgBUAG8AbwBsAGIAYQByAQAAAOj/////AAAAAAAAAAA=
 ToolBarsMovable=Disabled
 eDP1=eDP1
+
+[TabBar]
+ExpandTabWidth=true
+
+[ThumbnailsSettings]
+ThumbnailCtrl=true
 
 [UiSettings]
 ColorScheme=

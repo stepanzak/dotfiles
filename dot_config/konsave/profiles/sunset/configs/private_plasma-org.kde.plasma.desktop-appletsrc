@@ -45,14 +45,6 @@ plugin=org.kde.plasma.systemtray
 PreloadWeight=100
 SystrayContainmentId=180
 
-[Containments][174][Applets][209]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][174][Applets][210]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
 [Containments][174][Applets][212]
 immutability=1
 plugin=org.kde.plasma.pager
@@ -77,7 +69,7 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][174][Applets][216][Configuration][General]
-cursorPosition=12
+cursorPosition=179
 fontSize=10
 noteId=5c6ab97a-189c-4e73-9663-02cf8529b2
 
@@ -94,33 +86,7 @@ DialogWidth=960
 
 [Containments][174][Applets][238][Configuration][General]
 defaultFormat=rgb
-history=#262c3a,#e7bf7e,#1d1d27,#242935,#1d1d27,#242935,#1d1d27,#1d2021,#1d1d27
-
-[Containments][174][Applets][244]
-immutability=1
-plugin=org.kde.plasma.digitalclock
-
-[Containments][174][Applets][244][Configuration]
-PreloadWeight=100
-popupHeight=600
-popupWidth=528
-
-[Containments][174][Applets][244][Configuration][Appearance]
-autoFontAndSize=false
-boldText=true
-customDateFormat=d. M. yyyy
-dateDisplayFormat=BelowTime
-dateFormat=custom
-fontFamily=Noto Sans Thai Looped Black
-fontSize=14
-fontStyleName=Regular
-fontWeight=87
-showDate=true
-use24hFormat=2
-
-[Containments][174][Applets][244][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
+history=#cc9221,#13100c,#949494,#262a37,#d79921,#1d2021,#262c3a,#e7bf7e,#1d1d27
 
 [Containments][174][Applets][245]
 immutability=1
@@ -153,9 +119,16 @@ wheelSkipMinimized=false
 immutability=1
 plugin=P-Connor.PlasmaDrawer
 
+[Containments][174][Applets][256][Configuration]
+PreloadWeight=100
+
 [Containments][174][Applets][256][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
+
+[Containments][174][Applets][256][Configuration][General]
+customButtonImage=archlinux-symbolic
+useCustomButtonImage=true
 
 [Containments][174][Applets][256][Shortcuts]
 global=Meta+S
@@ -165,22 +138,60 @@ immutability=1
 plugin=org.kde.plasma.translator
 
 [Containments][174][Applets][259][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][174][Applets][259][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
 [Containments][174][Applets][259][Configuration][General]
-destinationIndex=18
-sourceIndex=22
+destinationIndex=31
+sourceIndex=18
+
+[Containments][174][Applets][266]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][174][Applets][267]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][174][Applets][272]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][174][Applets][272][Configuration]
+PreloadWeight=100
+popupHeight=600
+popupWidth=528
+
+[Containments][174][Applets][272][Configuration][Appearance]
+autoFontAndSize=false
+boldText=true
+customDateFormat=d. M. yyyy
+dateDisplayFormat=BelowTime
+dateFormat=custom
+fontFamily=Noto Sans Thai Looped Black
+fontSize=14
+fontStyleName=Regular
+fontWeight=87
+showDate=true
+use24hFormat=2
+
+[Containments][174][Applets][272][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][174][Applets][272][Configuration][General]
+v71Migration=true
+v72Migration=true
 
 [Containments][174][ConfigDialog]
 DialogHeight=90
 DialogWidth=1920
 
 [Containments][174][General]
-AppletOrder=256;238;216;259;245;209;212;255;210;179;244
+AppletOrder=256;238;216;259;245;266;212;255;267;179;272
 
 [Containments][180]
 activityId=
@@ -244,6 +255,9 @@ PreloadWeight=100
 immutability=1
 plugin=org.kde.plasma.printmanager
 
+[Containments][180][Applets][187][Configuration]
+PreloadWeight=55
+
 [Containments][180][Applets][188]
 immutability=1
 plugin=org.kde.plasma.keyboardlayout
@@ -302,7 +316,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][180][Applets][224][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 
 [Containments][180][Applets][225]
 immutability=1
@@ -314,14 +328,29 @@ PreloadWeight=65
 [Containments][180][Applets][232][Configuration]
 PreloadWeight=42
 
+[Containments][180][Applets][261][Configuration]
+PreloadWeight=42
+
+[Containments][180][Applets][268]
+immutability=1
+plugin=org.kde.kalendar.contact
+
+[Containments][180][Applets][268][Configuration]
+PreloadWeight=60
+
+[Containments][180][Applets][268][Configuration][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
 [Containments][180][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
 [Containments][180][General]
-extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault
+extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault,org.kde.kalendar.contact
+hiddenItems=org.kde.kalendar.contact
 iconSpacing=1
-knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault
+knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault,org.kde.kalendar.contact
 scaleIconsToFit=true
 shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard
 
@@ -351,22 +380,29 @@ ToolBoxButtonX=309
 ToolBoxButtonY=45
 
 [Containments][258][Wallpaper][org.kde.image][General]
-Image=/home/stepka/Pictures/gruvbox_pixel.png
+Image=/home/stepka/Pictures/no_place_like_tilde.png
 SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
 
-[Containments][260]
+[Containments][273]
 activityId=37a632d5-032d-4ec9-8098-ceb66764a648
 formfactor=0
 immutability=1
 lastScreen=1
 location=0
-plugin=org.kde.plasma.folder
+plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
+
+[Containments][273][ConfigDialog]
+DialogHeight=720
+DialogWidth=960
+
+[Containments][273][Wallpaper][org.kde.image][General]
+Image=/home/stepka/Pictures/no_place_like_tilde.png
 
 [Containments174Appletsts][177][Configuration][General]
 iconSpacing=0
 maxStripes=1
 
 [ScreenMapping]
-itemsOnDisabledScreens=1,37a632d5-032d-4ec9-8098-ceb66764a648,1,desktop:/steam.desktop,0,b33d507d-1488-420a-b2bb-66a6499f5c10,1,desktop:/vivaldi-jgeocpdicgmkeemopbanhokmhcgcflmi-Default.desktop
+itemsOnDisabledScreens=0,b33d507d-1488-420a-b2bb-66a6499f5c10,1,desktop:/vivaldi-jgeocpdicgmkeemopbanhokmhcgcflmi-Default.desktop,1,37a632d5-032d-4ec9-8098-ceb66764a648,4,desktop:/vivaldi-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop,desktop:/steam.desktop,desktop:/vivaldi-mieeeicebdcmkffkjflneedodiidgpfp-Default.desktop,desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop
 screenMapping=desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop,0,9f16c1ed-d6d1-4920-8f15-097081e353af
