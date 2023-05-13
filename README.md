@@ -4,7 +4,7 @@ Many of the programs are Linux specific. File locations are also Linux specific.
 
 ## Additional info on individual dotfiles:
 ### wallpapers:
-no-place-like-tilde.svg requires [Fira Code](https://github.com/tonsky/FiraCode) font to be installed. no-place-like-tilde_plain.svg doesn't.
+no-place-like-tilde.svg requires [Fira Code](https://github.com/tonsky/FiraCode) font to be installed. no-place-like-tilde_no-font.svg doesn't.
 
 ### chromium-flags.conf:
 The chromium-flags.conf is an Arch Linux specific file containing flags that are passed to Chromium on every launch. Flags in my chromium-flags.conf are id and secret found in Chromium's source code. These flags allow signing to Chromium with a Google account, which was recently removed and is impossible without these flags.
