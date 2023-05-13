@@ -2,7 +2,7 @@ chezmoi:template:missing-key=invalid # on termux, .chezmoi.osRelease is an empty
 settings.json
 README.md
 vscodium-extensions.txt
-wallpapers/*
+wallpapers
 
 {{- if ne .chezmoi.osRelease.idLike "arch" }}
 .config/chromium-flags.conf # only manage chromium-flags.conf on Arch linux or Arch-based systems (it's arch-specific)
