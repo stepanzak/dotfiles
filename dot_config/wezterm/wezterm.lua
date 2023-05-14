@@ -1,6 +1,8 @@
 local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 
+config.default_prog = { 'tmux' }
+
 config.color_scheme = "GruvboxDarkHard"
 config.colors = {
   foreground = '#d79921'
