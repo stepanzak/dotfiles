@@ -40,8 +40,8 @@ setopt LIST_PACKED
 # For example @ after symlinks
 setopt LIST_TYPES
 
- _comp_options+=(globdots) # Include hidden files.
 compinit 
+ _comp_options+=(globdots) # Include hidden files.
 #enable native vi mode
 bindkey -v
 export KEYTIMEOUT=1
