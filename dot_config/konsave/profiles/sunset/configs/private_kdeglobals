@@ -39,7 +39,7 @@ ForegroundVisited=2,224,132
 
 [Colors:Complementary]
 BackgroundAlternate=29,32,33
-BackgroundNormal=60,56,54
+BackgroundNormal=40,40,40
 DecorationFocus=232,190,125
 DecorationHover=232,190,125
 ForegroundActive=0,193,228
@@ -67,7 +67,7 @@ ForegroundVisited=124,183,255
 
 [Colors:Header][Inactive]
 BackgroundAlternate=24,24,41
-BackgroundNormal=60,56,54
+BackgroundNormal=40,40,40
 DecorationFocus=232,190,125
 DecorationHover=232,190,125
 ForegroundActive=0,193,228
@@ -94,7 +94,7 @@ ForegroundPositive=23,69,0
 ForegroundVisited=126,9,199
 
 [Colors:Tooltip]
-BackgroundAlternate=60,56,54
+BackgroundAlternate=40,40,40
 BackgroundNormal=102,92,84
 DecorationFocus=232,190,125
 DecorationHover=232,190,125
@@ -142,11 +142,10 @@ History Items[$e]=file:$HOME/projectman/projectman-backend,file:$HOME/levny3Dtis
 [General]
 AccentColor=0,0,0,0
 BrowserApplication=vivaldi-stable.desktop
-ColorScheme=StoneCustom
-ColorSchemeHash=35f9efa0dad6ed4ec1abed187f1d23ddbef77c81
+ColorSchemeHash=8b45e2c9389f87ebc2dd9167cc1f7a3c6fe75624
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=FuraMono Nerd Font,10,-1,5,50,0,0,0,0,0
+fixed=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
 
 [Icons]
 Theme=gruvbox-plus-icon-pack
@@ -175,7 +174,7 @@ Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
 Speedbar Width=138
-View Style=DetailTree
+View Style=Simple
 
 [KScreen]
 ScaleFactor=1.25

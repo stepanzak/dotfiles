@@ -3,6 +3,9 @@ this repo contains my personal dotfiles, managed using [chezmoi](https://github.
 Many of the programs are Linux specific. File locations are also Linux specific. I don't use Windows, so I don't have Windows paths configured.
 
 ## Additional info on individual dotfiles:
+### wallpapers:
+no-place-like-tilde.svg requires [Fira Code](https://github.com/tonsky/FiraCode) font to be installed. no-place-like-tilde_no-font.svg doesn't.
+
 ### chromium-flags.conf:
 The chromium-flags.conf is an Arch Linux specific file containing flags that are passed to Chromium on every launch. Flags in my chromium-flags.conf are id and secret found in Chromium's source code. These flags allow signing to Chromium with a Google account, which was recently removed and is impossible without these flags.
 [more info](https://stackoverflow.com/questions/67459316/enabling-chromium-to-sync-with-google-account)

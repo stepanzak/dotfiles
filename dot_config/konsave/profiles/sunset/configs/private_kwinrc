@@ -53,7 +53,6 @@ NightTemperature=3800
 blurEnabled=true
 contrastEnabled=false
 desktopchangeosdEnabled=true
-diminactiveEnabled=true
 forceblurEnabled=false
 invertEnabled=true
 kwin4_effect_dimscreenEnabled=true
@@ -81,7 +80,6 @@ count=0
 
 [TabBox]
 LayoutName=big_icons
-ShowDesktopMode=1
 
 [Tiling]
 padding=4
@@ -93,6 +91,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.615625},{"layoutDirect
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6dbfdb1c-0d23-5013-9b2c-a432872102bb]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][913b1ff1-c96c-5797-a5ef-73dc4437f02e]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]

@@ -26,7 +26,7 @@ display=Display\tMeta+P,Display\tMeta+P,Switch Display
 
 [khotkeys]
 _k_friendly_name=Custom Shortcuts Service
-{81fd30b0-d18a-4ee8-9cad-8ffdddf54493}=Meta+Return,none,konsole
+{81fd30b0-d18a-4ee8-9cad-8ffdddf54493}=none,none,konsole
 {d03619b6-9b3c-48cc-9d9c-a2aadb485550}=none,none,Search
 
 [kmix]
@@ -142,7 +142,7 @@ Window Lower=none,,Lower Window
 Window Maximize=Meta+PgUp,Meta+PgUp,Maximize Window
 Window Maximize Horizontal=none,,Maximize Window Horizontally
 Window Maximize Vertical=none,,Maximize Window Vertically
-Window Minimize=Meta+Shift+PgDown,Meta+PgDown,Minimize Window
+Window Minimize=none,Meta+PgDown,Minimize Window
 Window Move=none,,Move Window
 Window Move Center=none,,Move Window to the Center
 Window No Border=Meta+F5,,Toggle Window Titlebar and Frame
@@ -170,7 +170,7 @@ Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
 Window Resize=none,,Resize Window
-Window Shade=Meta+PgDown,,Shade Window
+Window Shade=none,,Shade Window
 Window Shrink Horizontal=none,,Shrink Window Horizontally
 Window Shrink Vertical=none,,Shrink Window Vertically
 Window to Desktop 1=none,,Window to Desktop 1
@@ -229,6 +229,12 @@ _launch=Meta+E,Meta+E,Dolphin
 _k_friendly_name=KCalc
 _launch=Launch (1),Launch (1),KCalc
 
+[org.kde.konsole.desktop]
+NewTab=none,none,Open a New Tab
+NewWindow=none,none,Open a New Window
+_k_friendly_name=Konsole
+_launch=Ctrl+Alt+T,Ctrl+Alt+T,Konsole
+
 [org.kde.krunner.desktop]
 RunClipboard=Alt+Shift+F2,Alt+Shift+F2,Run command on clipboard contents
 _k_friendly_name=KRunner
@@ -247,6 +253,10 @@ RectangularRegionScreenShot=Meta+Shift+Print,Meta+Shift+Print,Capture Rectangula
 WindowUnderCursorScreenShot=Meta+Ctrl+Print,Meta+Ctrl+Print,Capture Window Under Cursor
 _k_friendly_name=Spectacle
 _launch=Print,Print,Launch Spectacle
+
+[org.wezfurlong.wezterm.desktop]
+_k_friendly_name=WezTerm
+_launch=Meta+Return,none,WezTerm
 
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
@@ -280,9 +290,10 @@ activate widget 175=none,none,Activate Application Launcher Widget
 activate widget 208=none,none,Activate Minimize All Windows Widget
 activate widget 234=none,none,Activate Media Flow Widget
 activate widget 242=none,none,Activate Tiled Screen Widget
-activate widget 244=none,none,Activate Digital Clock Widget
 activate widget 253=none,none,Activate Translator Widget
 activate widget 256=Meta+S,none,Activate Plasma Drawer Widget
+activate widget 268=none,none,Activate Contacts Widget
+activate widget 272=none,none,Activate Digital Clock Widget
 activate widget 3=Alt+F1,none,Activate Application Launcher Widget
 activate widget 75=none,none,Activate Application Launcher Widget
 activate widget 95=none,none,Activate Application Launcher Widget
@@ -312,3 +323,9 @@ kcm-lookandfeel=none,none,Global Theme
 kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
+
+[vivaldi-stable.desktop]
+_k_friendly_name=Vivaldi
+_launch=Meta+B,none,Vivaldi
+new-private-window=none,none,New Private Window
+new-window=none,none,New Window
