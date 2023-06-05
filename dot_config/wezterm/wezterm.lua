@@ -13,12 +13,16 @@ local config = wezterm.config_builder()
 -- You can switch sessions or create new and all that stuff, but when tmux program exits
 -- (if you detach from tmux or when you kill the session you are in), the wezterm window closes.
 config.default_prog = { 'tmux' }
-
--- My "Sunset" color scheme (Gruvbox but with gold as a main color)
-config.color_scheme = "GruvboxDarkHard"
-config.colors = {
-  foreground = '#d79921'
-}
+config.color_scheme = 'Sakura'
+if wezterm.gui.get_appearance():find 'Light' then
+  config.color_scheme = 'Gruvbox (Gogh)'
+else
+  -- My "Sunset" color scheme (Gruvbox but with gold as a main color)
+  config.color_scheme = "GruvboxDarkHard"
+  config.colors = {
+    foreground = '#d79921'
+  }
+end
 
 -- Broot font for icons in Broot TUI
 config.font = wezterm.font_with_fallback({ "FiraCode Nerd Font", "Broot Icons Visual Studio Code" })
