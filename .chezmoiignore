@@ -6,5 +6,6 @@ wallpapers
 
 {{- if ne .chezmoi.osRelease.idLike "arch" }}
 .config/chromium-flags.conf # only manage chromium-flags.conf on Arch linux or Arch-based systems (it's arch-specific)
+.config/vivaldi-stable.conf # same as the one above
 {{- end }}
 arch-packages.txt
