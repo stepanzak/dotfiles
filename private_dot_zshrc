@@ -126,7 +126,7 @@ function pls(){
 #commented out because of zsh completions bug, see issue #57
 #[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
 
-# To customize prompt, run `p9k configure` or edit ~/.p10k.zsh.
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # pnpm
