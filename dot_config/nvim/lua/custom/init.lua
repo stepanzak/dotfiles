@@ -9,6 +9,3 @@ autocmd("VimResized", {
   pattern = "*",
   command = "tabdo wincmd =",
 })
-
--- require("luasnip").filetype_extend("vue", {"html"})
--- require("luasnip/loaders/from_vscode").lazy_load()

@@ -10,6 +10,7 @@ M.treesitter = {
     "c",
     "markdown",
     "markdown_inline",
+    "vue",
   },
   indent = {
     enable = true,
