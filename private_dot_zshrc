@@ -103,6 +103,7 @@ alias "ls=exa -a --group-directories-first -s name --icons"
 alias "sl=sl -eawd3"
 alias "rt=trash put"
 alias "chz=chezmoi"
+alias "rd=ripdrag"
 
 #pls = sudo, but with no arguments it's sudo !!
 function pls(){
