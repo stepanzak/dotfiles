@@ -5,28 +5,22 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=1017d1ba1ab156000168370469100000009620004
-clientId2=1017d1ba1ab156000168389717800000011100006
-clientId3=1017d1ba1ab156000168389717800000011100007
-clientId4=1017d1ba1ab156000168390178900000011100022
-count=4
-discardCommand4[$e]=rm,$HOME/.config/session/dolphin_1017d1ba1ab156000168390178900000011100022_1683901790_309512
+clientId1=1017d1ba1ab156000169114245500000010530004
+clientId2=1017d1ba1ab156000169114245500000010530006
+clientId3=1017d1ba1ab156000169114245600000010530007
+count=3
 program1=/usr/lib/DiscoverNotifier
 program2=/usr/bin/kalendarac
 program3=/usr/bin/firewall-applet
-program4=/usr/bin/dolphin
-restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000168370469100000009620004_1683904763_858038
-restartCommand2=/usr/bin/kalendarac,-session,1017d1ba1ab156000168389717800000011100006_1683904763_857293
-restartCommand3=/usr/bin/firewall-applet,-session,1017d1ba1ab156000168389717800000011100007_1683904763_857728,-name,firewall-applet
-restartCommand4=/usr/bin/dolphin,-session,1017d1ba1ab156000168390178900000011100022_1683901790_309512
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000169114245500000010530004_1691144289_250940
+restartCommand2=/usr/bin/kalendarac,-session,1017d1ba1ab156000169114245500000010530006_1691144289_250642
+restartCommand3=/usr/bin/firewall-applet,-session,1017d1ba1ab156000169114245600000010530007_1691144289_256621,-name,firewall-applet
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0
-restartStyleHint4=0
 userId1=stepka
 userId2=stepka
 userId3=stepka
-userId4=stepka
 
 [SubSession: 25c19c6d-82d9-4b52-8845-91560d9ff92f]
 count=0

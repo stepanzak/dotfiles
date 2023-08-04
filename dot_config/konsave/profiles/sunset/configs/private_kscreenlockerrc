@@ -10,3 +10,6 @@ WallpaperDelay=1
 Image=/home/stepka/.local/share/wallpapers/Stone/
 PreviewImage=/home/stepka/.local/share/wallpapers/Stone/
 SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Greeter][Wallpaper][org.kde.plasma.citygrow][General]
+start_branches=5

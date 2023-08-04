@@ -1,5 +1,8 @@
+[Theme]
+name=Stone
+
 [Theme-plasmathemeexplorer]
 name=Stone
 
 [Wallpapers]
-usersWallpapers=/home/stepka/Pictures/gruvbox_pixel.png,/home/stepka/Pictures/no_place_like_tilde.png
+usersWallpapers=/home/stepka/Pictures/gruvbox_pixel.png,/home/stepka/Pictures/no_place_like_tilde.png,/home/stepka/Pictures/wallpaper.svg

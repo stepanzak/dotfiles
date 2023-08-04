@@ -18,14 +18,19 @@ Number=4
 Rows=2
 
 [Effect-blur]
+BlurStrength=4
 NoiseStrength=14
 
 [Effect-kwin4_effect_translucency]
-MoveResize=96
+MoveResize=90
 
 [Effect-thumbnailaside]
 MaxWidth=400
 Opacity=70
+
+[Effect-trackmouse]
+Control=false
+Shift=true
 
 [Effect-windowview]
 BorderActivateAll=9
@@ -62,14 +67,17 @@ kwin4_effect_fadingpopupsEnabled=false
 kwin4_effect_morphingpopupsEnabled=false
 kwin4_effect_morphingpopups_xfadefixEnabled=false
 kwin4_effect_scaleEnabled=false
+kwin4_effect_translucencyEnabled=true
 kwin4_effect_windowapertureEnabled=false
+mouseclickEnabled=true
 sheetEnabled=true
 synchronizeskipswitcherEnabled=true
 thumbnailasideEnabled=true
+trackmouseEnabled=true
 wobblywindowsEnabled=true
 
 [Script-desktopchangeosd]
-PopupHideDelay=300
+PopupHideDelay=200
 
 [Script-forceblur]
 patterns=yakuake\nurxvt\nkeepassxc\nkonsole
@@ -101,7 +109,7 @@ CenterSnapZone=20
 Placement=Smart
 
 [Xwayland]
-Scale=1.25
+Scale=1
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MNSFB
