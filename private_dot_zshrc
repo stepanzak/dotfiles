@@ -80,6 +80,17 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
+#in normal mode, alt+h,j,k,l acts like arrows
+bindkey -M main "^[k" up-line-or-history
+bindkey -M main "^[j" down-line-or-history
+bindkey -M main "^[l" vi-forward-char
+bindkey -M main "^[h" vi-backward-char
+
+#Set alt + i to skip one word and alt + m to skip to the end of line
+#these motions are used in zsh-autocomplete plugin.
+bindkey -M main "^[i" vi-forward-word
+bindkey -M main "^[m" vi-end-of-line
+
 #init thefuck if it exists
 [ -x "$(command -v thefuck)" ] && eval $(TF_SHELL=zsh thefuck --alias)
 
@@ -105,7 +116,7 @@ alias "rt=trash put"
 alias "chz=chezmoi"
 alias "rd=ripdrag"
 
-#pls = sudo, but with no arguments it's sudo !!
+#pls = sudo, but with no arguments it's "sudo !!"
 function pls(){
 	if [ "$#" -eq 0 ]; then
         	sudo $(fc -ln -1)
