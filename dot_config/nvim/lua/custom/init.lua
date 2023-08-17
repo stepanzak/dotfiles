@@ -4,6 +4,8 @@ local opt = vim.opt
 
 opt.foldmethod = "marker"
 
+opt.relativenumber = true
+
 -- Auto resize panes when resizing nvim window
 autocmd("VimResized", {
   pattern = "*",
