@@ -1,6 +1,6 @@
 [user]
 	name = Štěpán Žák
-	email = stepka279.zak@gmail.com
+	email = stepanzak@proton.me
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
@@ -18,3 +18,7 @@
 	tool = nvimdiff
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	st = status -sb
+	last = log -1 HEAD --stat
+[help]
+	autocorrect = 30
