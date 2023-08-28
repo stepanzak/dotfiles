@@ -138,8 +138,10 @@ function pls(){
 #commented out because of zsh completions bug, see issue #57
 #[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# pipx:
+autoload -U bashcompinit
+bashcompinit
+eval "$(register-python-argcomplete pipx)"
 
 # pnpm
 export PNPM_HOME="/home/stepka/.local/share/pnpm"
@@ -148,3 +150,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
