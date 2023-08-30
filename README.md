@@ -20,3 +20,10 @@ You can install it with git using this command:
 ```bash 
  git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm 
  ```
+
+### dot_config/bat/*
+This is a [bat](https://github.com/sharkdp/bat) custom *sunset* theme and config file telling bat to use that theme.
+After applying this dotfiles, you have to run ```bash
+bat cache --build
+```
+Then, bat will recognize the theme.
