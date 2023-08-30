@@ -23,7 +23,7 @@ You can install it with git using this command:
 
 ### dot_config/bat/*
 This is a [bat](https://github.com/sharkdp/bat) custom *sunset* theme and config file telling bat to use that theme.
-After applying this dotfiles, you have to run
+After applying these dotfiles, you have to run
 ```bash
 bat cache --build
 ```
