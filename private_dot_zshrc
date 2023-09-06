@@ -141,7 +141,7 @@ function pls(){
 # pipx:
 autoload -U bashcompinit
 bashcompinit
-eval "$(register-python-argcomplete pipx)"
+[ -x "$(command -v pipx)" ] && eval "$(register-python-argcomplete pipx)"
 
 # pnpm
 export PNPM_HOME="/home/stepka/.local/share/pnpm"
