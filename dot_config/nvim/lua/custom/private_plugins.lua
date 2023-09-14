@@ -48,11 +48,11 @@ local plugins = {
 	{
 		"nvim-treesitter/nvim-treesitter",
 		opts = overrides.treesitter,
-    dependencies = {
-      {
-        "nvim-treesitter/nvim-treesitter-textobjects"
-      }
-    }
+		dependencies = {
+			{
+				"nvim-treesitter/nvim-treesitter-textobjects",
+			},
+		},
 	},
 
 	{
@@ -98,7 +98,16 @@ local plugins = {
 			})
 		end,
 	},
-
+	{
+		"folke/trouble.nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+    cmd = { "Trouble", "TroubleToggle", "TroubleClose", "TroubleRefresh" }
+	},
 	-- this allows luasnip to load html snippets in vue files:
 	{
 		"hrsh7th/nvim-cmp",
