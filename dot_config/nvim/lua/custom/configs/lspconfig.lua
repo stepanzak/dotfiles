@@ -22,5 +22,9 @@ lspconfig.volar.setup {
   },
 }
 
---
--- lspconfig.pyright.setup { blabla}
+
+lspconfig.pyright.setup {
+  on_attach = on_attach,
+  capabilities = capabilities,
+  filetypes = {"python"},
+}

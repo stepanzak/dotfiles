@@ -18,6 +18,10 @@ local sources = {
   -- cpp
   b.formatting.clang_format,
 
+  -- python
+  b.formatting.black,
+  b.diagnostics.mypy,
+  b.diagnostics.ruff,
 }
 
 null_ls.setup {

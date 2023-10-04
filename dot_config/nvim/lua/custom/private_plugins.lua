@@ -73,7 +73,7 @@ local plugins = {
 		"andweeb/presence.nvim",
 		lazy = false,
 		config = function()
-			require("presence").setup({
+			require("presence").setup({ -- {{{
 				-- General options
 				neovim_image_text = "The Holy Text Editor that's better than Emacs", -- Text displayed when hovered over the Neovim image
 				blacklist = {}, -- A list of strings or Lua patterns that disable Rich Presence if the current file name, path, or workspace matches
@@ -85,7 +85,7 @@ local plugins = {
 				plugin_manager_text = "Installing some shiny plugins", -- Format string rendered when managing plugins (either string or function(plugin_manager_name: string): string)
 				reading_text = "Reading through %s", -- Format string rendered when a read-only or unmodifiable file is loaded in the buffer (either string or function(filename: string): string)
 				workspace_text = "Trying to work on %s", -- Format string rendered when in a git repository (either string or function(project_name: string|nil, filename: string): string)
-			})
+			}) -- }}}
 		end,
 	},
 	{
@@ -106,7 +106,44 @@ local plugins = {
 			-- or leave it empty to use the default settings
 			-- refer to the configuration section below
 		},
-    cmd = { "Trouble", "TroubleToggle", "TroubleClose", "TroubleRefresh" }
+		cmd = { "Trouble", "TroubleToggle", "TroubleClose", "TroubleRefresh" },
+	},
+	{
+		"mfussenegger/nvim-dap",
+		config = function(_, opts)
+			require("core.utils").load_mappings("dap")
+		end,
+	},
+	{
+		"mfussenegger/nvim-dap-python",
+		ft = "python",
+		dependencies = {
+			"mfussenegger/nvim-dap",
+			"rcarriga/nvim-dap-ui",
+		},
+		config = function(_, opts)
+			local path = "~/.local/share/nvim/mason/packages/debugpy/venv/bin/python"
+			require("dap-python").setup(path)
+			require("core.utils").load_mappings("dap_python")
+		end,
+	},
+	{
+		"rcarriga/nvim-dap-ui",
+		dependencies = "mfussenegger/nvim-dap",
+		config = function()
+			local dap = require("dap")
+			local dapui = require("dapui")
+			dapui.setup()
+			dap.listeners.after.event_initialized["dapui_config"] = function()
+				dapui.open()
+			end
+			dap.listeners.before.event_terminated["dapui_config"] = function()
+				dapui.close()
+			end
+			dap.listeners.before.event_exited["dapui_config"] = function()
+				dapui.close()
+			end
+		end,
 	},
 	-- this allows luasnip to load html snippets in vue files:
 	{

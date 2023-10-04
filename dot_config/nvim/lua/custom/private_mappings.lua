@@ -17,6 +17,23 @@ M.general = {
   },
 }
 
+M.dap = {
+  plugin = true,
+  n = {
+    ["<leader>db"] = {"<cmd> DapToggleBreakpoint <CR>"}
+  }
+}
+
+M.dap_python = {
+  plugin = true,
+  n = {
+    ["<F5>"] = {
+      function()
+        require('dap').continue()
+      end
+    }
+  }
+}
 -- more keybinds!
 
 return M

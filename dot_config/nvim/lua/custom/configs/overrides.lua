@@ -31,7 +31,15 @@ M.mason = {
     "html-lsp",
     "typescript-language-server",
     "deno",
-    "prettier"
+    "prettier",
+
+    --python stuff
+    "black",
+    "debugpy",
+    "mypy",
+    "ruff",
+    "pyright",
+
   },
 }
 
