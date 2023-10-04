@@ -17,6 +17,7 @@ bindkey -e
 # End of lines configured by zsh-newuser-install
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
+export DIFFTOOL="nvim -d"
 # The following lines were added by compinstall
 zstyle :compinstall filename '/home/blbezcc/.zshrc'
 
