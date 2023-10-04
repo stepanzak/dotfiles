@@ -115,7 +115,9 @@ alias "ls=eza -a --group-directories-first -s name --icons"
 alias "sl=sl -eawd3"
 alias "rt=trash put"
 alias "chz=chezmoi"
-alias "rd=ripdrag"
+
+#tldrf (tldr find) - search tldr cache with fzf
+alias "tldrf=tldr \$(tldr --list | fzf-tmux -p --reverse)"
 
 #pls = sudo, but with no arguments it's "sudo !!"
 function pls(){
