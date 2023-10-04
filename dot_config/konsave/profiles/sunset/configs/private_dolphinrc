@@ -1,11 +1,14 @@
 MenuBar=Disabled
 
 [$Version]
-update_info=dolphin_detailsmodesettings.upd:rename-leading-padding
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
 
 [ExtractDialog]
 1536x864 screen: Height=560
 1536x864 screen: Width=1024
+2 screens: Height=560
+2 screens: Width=1024
+DirHistory[$e]=$HOME/Pictures/
 
 [General]
 Version=202
@@ -14,10 +17,13 @@ ViewPropsTimestamp=2023,1,31,10,59,19.188
 [KFileDialog Settings]
 Places Icons Auto-resize=false
 Places Icons Static Size=22
+Recent Files[$e]=file:$HOME,file:$HOME
+Recent URLs[$e]=file:$HOME/Pictures/
+iconViewIconSize=64
 
 [KPropertiesDialog]
-1536x864 screen: Height=486
-1536x864 screen: Width=470
+1536x864 screen: Height=616
+1536x864 screen: Width=479
 eDP1 Height 1536x864 eDP1=616
 eDP1 Width 1536x864 eDP1=439
 

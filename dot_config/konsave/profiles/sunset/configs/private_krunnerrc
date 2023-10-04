@@ -5,13 +5,25 @@ FreeFloating=true
 migrated=true
 
 [Plugins]
-baloosearchEnabled=true
-bookmarksEnabled=false
-browserhistoryEnabled=false
-browsertabsEnabled=false
+baloosearchEnabled=false
+bookmarksEnabled=true
+browserhistoryEnabled=true
+browsertabsEnabled=true
 org.kde.activities2Enabled=false
 shellEnabled=false
 windowsEnabled=false
+
+[Runners][Translator]
+baiduAPIKey=
+baiduAPPID=
+baiduEnable=false
+bingEnable=false
+googleEnable=true
+primaryLanguage=en
+secondaryLanguage=cs
+youdaoAPPID=
+youdaoAPPSec=
+youdaoEnable=false
 
 [Runners][krunner_kill]
 sorting=1

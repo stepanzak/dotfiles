@@ -9,19 +9,19 @@ eDP1 Width 1920x1080 eDP1=886
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Street.jpg,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/start.svgz,file:///usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/endeavour_flavours.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-ROCKET-FLAT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-MOON.png
-Recent URLs[$e]=file:$HOME/.local/share/plasma/desktoptheme/,file:///usr/share/endeavouros/,file:$HOME/Pictures/,file:$HOME/Videos/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,trash:/,file:///usr/share/endeavouros/backgrounds/,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/
+Recent Files[$e]=Street.jpg,file:$HOME/scripts/open-social-media-apps.sh,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/start.svgz,file:///usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/endeavour_flavours.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-ROCKET-FLAT.png
+Recent URLs[$e]=file:$HOME/.local/share/plasma/desktoptheme/,file:///usr/share/endeavouros/,file:$HOME/Pictures/,file:$HOME/Videos/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,trash:/,file:///usr/share/endeavouros/backgrounds/,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/,file:$HOME/scripts/
 detailViewIconSize=16
 iconViewIconSize=64
 
 [KPropertiesDialog]
 1920x1080 screen: Height=591
-1920x1080 screen: Width=510
+1920x1080 screen: Width=480
 eDP1 Height 1920x1080 eDP1=591
 eDP1 Width 1920x1080 eDP1=497
 
 [PlasmaTransientsConfig]
-PreloadWeight=2
+PreloadWeight=0
 
 [PlasmaViews][Panel 114][Defaults]
 thickness=60
@@ -76,6 +76,9 @@ panelOpacity=1
 
 [PlasmaViews][Panel 228][Defaults]
 thickness=68
+
+[PlasmaViews][Panel 284][Defaults]
+thickness=36
 
 [PlasmaViews][Panel 48]
 alignment=132

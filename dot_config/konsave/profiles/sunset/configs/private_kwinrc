@@ -9,7 +9,7 @@ LatencyPolicy=Medium
 Id_1=0ef4e133-bdf3-4659-9b3c-2b3451595e62
 Id_2=5b0d9f20-e652-4625-ba2e-b37939fbdacb
 Id_3=bb0ec3a2-1b69-4106-909a-c887aa1a373a
-Id_4=d7ebc2b4-881c-4f18-83e1-9484c24c00fd
+Id_4=6d4967e4-9496-4c6f-8ee9-7326904d2048
 Name_1=top-left
 Name_2=top-right
 Name_3=bottom-left
@@ -52,7 +52,7 @@ CommandTitlebarWheel=Previous/Next Desktop
 Active=true
 LatitudeAuto=50.5862
 LongitudeAuto=15.1489
-NightTemperature=3800
+NightTemperature=4000
 
 [Plugins]
 blurEnabled=true
@@ -60,10 +60,12 @@ contrastEnabled=false
 desktopchangeosdEnabled=true
 forceblurEnabled=false
 invertEnabled=true
+karouselEnabled=false
 kwin4_effect_dimscreenEnabled=true
 kwin4_effect_eyeonscreenEnabled=true
 kwin4_effect_fadeEnabled=true
 kwin4_effect_fadingpopupsEnabled=false
+kwin4_effect_geometry_changeEnabled=true
 kwin4_effect_morphingpopupsEnabled=false
 kwin4_effect_morphingpopups_xfadefixEnabled=false
 kwin4_effect_scaleEnabled=false
@@ -87,15 +89,18 @@ active=-1
 count=0
 
 [TabBox]
-LayoutName=big_icons
+LayoutName=ClassicKde
 
 [Tiling]
 padding=4
 
 [Tiling][0d3998b5-12fb-5e5d-9844-298a9a2f96a3]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.615625},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.384375}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5557291666666658},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.44427083333333417}]}
 
 [Tiling][4b8efe48-405e-5547-a072-c6018892d32a]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][6dbfdb1c-0d23-5013-9b2c-a432872102bb]

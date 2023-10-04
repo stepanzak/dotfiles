@@ -5,16 +5,16 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=1017d1ba1ab156000169114245500000010530004
-clientId2=1017d1ba1ab156000169114245500000010530006
-clientId3=1017d1ba1ab156000169114245600000010530007
+clientId1=1017d1ba1ab156000169626946200000009980004
+clientId2=1017d1ba1ab156000169634185400000010800006
+clientId3=1017d1ba1ab156000169634185400000010800007
 count=3
 program1=/usr/lib/DiscoverNotifier
-program2=/usr/bin/kalendarac
-program3=/usr/bin/firewall-applet
-restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000169114245500000010530004_1691144289_250940
-restartCommand2=/usr/bin/kalendarac,-session,1017d1ba1ab156000169114245500000010530006_1691144289_250642
-restartCommand3=/usr/bin/firewall-applet,-session,1017d1ba1ab156000169114245600000010530007_1691144289_256621,-name,firewall-applet
+program2=/usr/bin/firewall-applet
+program3=/usr/bin/kalendarac
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000169626946200000009980004_1696367341_413209
+restartCommand2=/usr/bin/firewall-applet,-session,1017d1ba1ab156000169634185400000010800006_1696367341_409070,-name,firewall-applet
+restartCommand3=/usr/bin/kalendarac,-session,1017d1ba1ab156000169634185400000010800007_1696367341_410445
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0

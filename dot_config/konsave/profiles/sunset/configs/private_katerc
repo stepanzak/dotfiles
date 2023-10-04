@@ -54,7 +54,7 @@ Fallback Encoding=ISO 8859-15
 [KTextEditor Renderer]
 Animate Bracket Matching=false
 Auto Color Theme Selection=true
-Color Theme=Breeze Light
+Color Theme=gruvbox Dark
 Font=Hack,10,-1,7,50,0,0,0,0,0
 Line Height Multiplier=1
 Show Indentation Lines=false
