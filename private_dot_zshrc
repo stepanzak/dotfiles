@@ -1,5 +1,5 @@
 # If not running interactively, don't do anything 
- [[ $- != *i* ]] && return
+[[ $- != *i* ]] && return
 
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
@@ -8,151 +8,13 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-export PATH="$PATH:$HOME/.cargo/bin"
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.histfile
-HISTSIZE=1000
-SAVEHIST=1000
-bindkey -e
-# End of lines configured by zsh-newuser-install
-export EDITOR=nvim
-export DIFFPROG="nvim -d"
-export DIFFTOOL="nvim -d"
-# The following lines were added by compinstall
-zstyle :compinstall filename '/home/blbezcc/.zshrc'
 
-# End of lines added by compinstall
-# I stole this completion menu and vim cursor from Brodie Robertson.
-# https://github.com/BrodieRobertson/dotfiles/blob/master/.zshrc
-autoload -Uz compinit 
- zstyle ':completion:*' menu select 
- # Auto complete with case insenstivity 
- zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*' 
-  
-zmodload zsh/complist 
+# Load seperated config files
+for conf in "$HOME/.config/zsh/config.d/"*.zsh; do
+  source "${conf}"
+done
+unset conf
 
-#If a completion is performed with the cursor within a word, and a full completion is inserted, the cursor is moved to the end of the word.
-#That is, the cursor is moved to the end of the word if either a single match is inserted or menu completion is performed.
-setopt ALWAYS_TO_END
-
-# Try to make the completion list smaller (occupying less lines) by printing the matches in columns with different widths.
-setopt LIST_PACKED
-
-# When listing files that are possible completions, show the type of each file with a trailing identifying mark.
-# For example @ after symlinks
-setopt LIST_TYPES
-
-compinit 
- _comp_options+=(globdots) # Include hidden files.
-#enable native vi mode
-bindkey -v
-export KEYTIMEOUT=1
-
-# Use vim keys in tab complete menu: 
- bindkey -M menuselect 'h' vi-backward-char 
- bindkey -M menuselect 'j' vi-down-line-or-history 
- bindkey -M menuselect 'k' vi-up-line-or-history 
- bindkey -M menuselect 'l' vi-forward-char 
- bindkey -M menuselect 'left' vi-backward-char 
- bindkey -M menuselect 'down' vi-down-line-or-history 
- bindkey -M menuselect 'up' vi-up-line-or-history 
- bindkey -M menuselect 'right' vi-forward-char 
- # Fix backspace bug when switching modes 
- bindkey "^?" backward-delete-char
-#vim cursor
-# Change cursor shape for different vi modes. 
- # function zle-keymap-select { 
- #   if [[ ${KEYMAP} == vicmd ]] || 
- #      [[ $1 = 'block' ]]; then 
- #     echo -ne '\e[1 q' 
- #   elif [[ ${KEYMAP} == main ]] || 
- #        [[ ${KEYMAP} == viins ]] || 
- #        [[ ${KEYMAP} = '' ]] || 
- #        [[ $1 = 'beam' ]]; then 
- #     echo -ne '\e[5 q' 
- #   fi 
- # } 
- # zle -N zle-keymap-select
-
- # precmd() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
-
-#hit v in normal mode to edit command line
-autoload -Uz edit-command-line
-zle -N edit-command-line
-bindkey -M vicmd v edit-command-line
-
-#in normal mode, alt+h,j,k,l acts like arrows
-bindkey -M main "^[k" up-line-or-history
-bindkey -M main "^[j" down-line-or-history
-bindkey -M main "^[l" vi-forward-char
-bindkey -M main "^[h" vi-backward-char
-
-#Set alt + i to skip one word and alt + m to skip to the end of line
-#these motions are used in zsh-autocomplete plugin.
-bindkey -M main "^[i" vi-forward-word
-bindkey -M main "^[m" vi-end-of-line
-
-#init thefuck if it exists
-[ -x "$(command -v thefuck)" ] && eval $(TF_SHELL=zsh thefuck --alias)
-
-# source antidote (plugin manager)
-source ${ZDOTDIR:-~}/.antidote/antidote.zsh
-
-# initialize plugins statically with ${ZDOTDIR:-~}/.zsh_plugins.txt
-antidote load
-
-#directory stack settings and aliases
-setopt AUTO_PUSHD # Push the current directory visited on the stack.
-setopt PUSHD_IGNORE_DUPS # Do not store duplicates in the stack.
-setopt PUSHD_SILENT # Do not print the directory stack after pushd or popd.
-#directory stack aliases - commands 1, 2, 3 etc
-alias d='dirs -v'
-for index ({1..9}) alias "$index"="cd +${index}"; unset index
-
-#general aliases
-alias "bls=eza -a --group-directories-first -s modified --icons"
-alias "ls=eza -a --group-directories-first -s name --icons"
-alias "sl=sl -eawd3"
-alias "rt=trash put"
-alias "chz=chezmoi"
-
-#tldrf (tldr find) - search tldr cache with fzf
-alias "tldrf=tldr \$(tldr --list | fzf-tmux -p --reverse)"
-
-#pls = sudo, but with no arguments it's "sudo !!"
-function pls(){
-	if [ "$#" -eq 0 ]; then
-        	sudo $(fc -ln -1)
-	else
-		sudo $@
-	fi
-}
-
-#init zoxide (better cd or something) if it exists
-[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
-
-#source broot (br command) if it exists
-[ -e ~/.config/broot/launcher/bash/br ] && source ~/.config/broot/launcher/bash/br
-
-#init atuin (better shell history or something) if it exist
-[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh --disable-up-arrow)"
-
-#init trashy (trash CLI but rust) if it exist
-#commented out because of zsh completions bug, see issue #57
-#[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
-
-# pipx:
-autoload -U bashcompinit
-bashcompinit
-[ -x "$(command -v pipx)" ] && eval "$(register-python-argcomplete pipx)"
-
-# pnpm
-export PNPM_HOME="/home/stepka/.local/share/pnpm"
-case ":$PATH:" in
-  *":$PNPM_HOME:"*) ;;
-  *) export PATH="$PNPM_HOME:$PATH" ;;
-esac
-# pnpm end
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
