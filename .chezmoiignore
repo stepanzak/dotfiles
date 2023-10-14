@@ -1,9 +1,13 @@
 chezmoi:template:missing-key=invalid # on termux, .chezmoi.osRelease is an empty map. This line prevents chezmoi from throwing errors and set any non-existent value to "<no value>"
 README.md
 wallpapers
+arch-packages.txt
 
 {{- if ne .chezmoi.osRelease.idLike "arch" }}
 .config/chromium-flags.conf # only manage chromium-flags.conf on Arch linux or Arch-based systems (it's arch-specific)
 .config/vivaldi-stable.conf # same as the one above
 {{- end }}
-arch-packages.txt
+
+{{- if ne .chezmoi.os "android" }} #Android (Termux)
+.config/zsh/config.d/00-termux-android.zsh
+{{- end }}
