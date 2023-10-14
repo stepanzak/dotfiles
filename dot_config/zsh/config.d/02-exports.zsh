@@ -4,3 +4,20 @@ export PATH="$PATH:$HOME/.cargo/bin"
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export DIFFTOOL="nvim -d"
+
+#export various envs that allow me to move files and folders out of my $HOME
+#provided by xdg-ninja
+export ANDROID_HOME="$XDG_DATA_HOME"/android
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GOPATH="$XDG_DATA_HOME"/go
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+export GTK2_RC_FILES="$XDG_CONFIG_HOME"/gtk-2.0/gtkrc
+export TERMINFO="$XDG_DATA_HOME"/terminfo
+export TERMINFO_DIRS="$XDG_DATA_HOME"/terminfo:/usr/share/terminfo
+export NODE_REPL_HISTORY="$XDG_DATA_HOME"/node_repl_history
+export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
+export STACK_ROOT="$XDG_DATA_HOME"/stack
+export WINEPREFIX="$XDG_DATA_HOME"/wine
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
