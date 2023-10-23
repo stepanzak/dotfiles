@@ -1,6 +1,22 @@
 # This file exports environment variables
 
-export PATH="$PATH:$HOME/.cargo/bin"
+# Set default values for XDG variables if not already set
+if [ -z "$XDG_DATA_HOME" ]; then
+    XDG_DATA_HOME="$HOME/.local/share"
+fi
+
+if [ -z "$XDG_CACHE_HOME" ]; then
+    XDG_CACHE_HOME="$HOME/.cache"
+fi
+
+if [ -z "$XDG_CONFIG_HOME" ]; then
+    XDG_CONFIG_HOME="$HOME/.config"
+fi
+
+if [ -z "$XDG_STATE_HOME" ]; then
+    XDG_STATE_HOME="$HOME/.local/state"
+fi
+
 export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export DIFFTOOL="nvim -d"
@@ -21,3 +37,5 @@ export PARALLEL_HOME="$XDG_CONFIG_HOME"/parallel
 export STACK_ROOT="$XDG_DATA_HOME"/stack
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
+
+export PATH="$PATH:$CARGO_HOME/bin"
