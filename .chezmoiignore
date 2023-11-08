@@ -1,6 +1,7 @@
 chezmoi:template:missing-key=invalid # on termux, .chezmoi.osRelease is an empty map. This line prevents chezmoi from throwing errors and set any non-existent value to "<no value>"
 README.md
 wallpapers
+logseq-public-docs
 arch-packages.txt
 
 {{- if ne .chezmoi.osRelease.idLike "arch" }}
