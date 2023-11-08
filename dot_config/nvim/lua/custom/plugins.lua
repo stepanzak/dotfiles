@@ -162,7 +162,19 @@ local plugins = {
 				end,
 			},
 		},
+		{
+			"gsuuon/tshjkl.nvim",
+			opts = {
+        keymaps = {
+          toggle = '<leader>ts'
+        }
+      },
+      keys = {
+        { '<leader>ts', desc = "Tree-sitter hjkl mode" }
+      }
+		},
 	},
+
 	-- To make a plugin not be loaded
 	-- {
 	--   "NvChad/nvim-colorizer.lua",
