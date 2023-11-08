@@ -99,6 +99,7 @@ nvm
 obs-studio
 onefetch
 overdue
+pacman-cleanup-hook
 pacman-log-orphans-hook
 partitionmanager
 pastel
@@ -159,7 +160,7 @@ signal-desktop
 simulide
 sl
 spicetify-cli
-spicetify-custom-apps-and-extensions-git
+spicetify-marketplace-bin
 spice-vdagent
 spotify
 spotube-bin
@@ -185,6 +186,7 @@ ttf-fira-code
 ttf-jetbrains-mono
 ttf-jetbrains-mono-nerd
 ttf-ms-win11-auto
+ttf-twemoji
 ultimate-tic-tac-toe
 universal-android-debloater-bin
 update-grub
