@@ -1082,6 +1082,10 @@ LastUsedCustomAccentColor[$d]
 XftHintStyle[$d]
 XftSubPixel[$d]
 fixed[$d]
+font[$d]
+menuFont[$d]
+smallestReadableFont[$d]
+toolBarFont[$d]
 
 [Gestures]
 Disabled=false
@@ -1139,6 +1143,7 @@ Shortcut=
 [WM]
 activeBackground[$d]
 activeBlend[$d]
+activeFont[$d]
 activeForeground[$d]
 inactiveBackground[$d]
 inactiveBlend[$d]

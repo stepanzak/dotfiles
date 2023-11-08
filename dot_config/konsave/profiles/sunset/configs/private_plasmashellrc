@@ -9,8 +9,8 @@ eDP1 Width 1920x1080 eDP1=886
 Number of Actions=0
 
 [KFileDialog Settings]
-Recent Files[$e]=Street.jpg,file:$HOME/scripts/open-social-media-apps.sh,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/start.svgz,file:///usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/endeavour_flavours.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-3-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/CASSINI-2-MAIN-LOGO-LIGHT.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-abstract.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-3.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/ARM-CASSINI-2.png,file:///usr/share/endeavouros/backgrounds/eos_wallpapers_community/APOLLO-ROCKET-FLAT.png
-Recent URLs[$e]=file:$HOME/.local/share/plasma/desktoptheme/,file:///usr/share/endeavouros/,file:$HOME/Pictures/,file:$HOME/Videos/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,trash:/,file:///usr/share/endeavouros/backgrounds/,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/,file:$HOME/scripts/
+Recent Files[$e]=Street.jpg,file:$HOME/.local/share/chezmoi/wallpapers/no-place-like-tilde_no-font.svg,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/start.svgz,file:///usr/share/endeavouros/backgrounds/endeavouros-wallpaper.png
+Recent URLs[$e]=file:$HOME/.local/share/chezmoi/wallpapers/,file:///usr/share/endeavouros/,file:$HOME/Pictures/,file:$HOME/Videos/,file:$HOME/,file:$HOME/Documents/,file:$HOME/Downloads/,trash:/,file:///usr/share/endeavouros/backgrounds/,file:$HOME/.local/share/plasma/desktoptheme/Stone/icons/
 detailViewIconSize=16
 iconViewIconSize=64
 
@@ -19,9 +19,6 @@ iconViewIconSize=64
 1920x1080 screen: Width=480
 eDP1 Height 1920x1080 eDP1=591
 eDP1 Width 1920x1080 eDP1=497
-
-[PlasmaTransientsConfig]
-PreloadWeight=0
 
 [PlasmaViews][Panel 114][Defaults]
 thickness=60
@@ -103,4 +100,4 @@ thickness=60
 0=HDMI1
 
 [Updates]
-performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/mediaframe_migrate_useBackground_setting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/folderview_fix_recursive_screenmapping.js

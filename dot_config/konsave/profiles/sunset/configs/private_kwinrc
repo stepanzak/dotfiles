@@ -89,7 +89,7 @@ active=-1
 count=0
 
 [TabBox]
-LayoutName=ClassicKde
+LayoutName=MediumRoundedDark
 
 [Tiling]
 padding=4

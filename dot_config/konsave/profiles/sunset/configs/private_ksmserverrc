@@ -5,22 +5,34 @@ update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_valu
 count=0
 
 [Session: saved at previous logout]
-clientId1=1017d1ba1ab156000169626946200000009980004
-clientId2=1017d1ba1ab156000169634185400000010800006
-clientId3=1017d1ba1ab156000169634185400000010800007
-count=3
+clientId1=1017d1ba1ab156000169921029500000008110004
+clientId2=1017d1ba1ab156000169921029600000008110006
+clientId3=1017d1ba1ab156000169921029600000008110007
+clientId4=1017d1ba1ab156000169895325700000008020008
+clientId5=1017d1ba1ab156000169921058700000008110010
+count=5
+discardCommand4[$e]=rm,$HOME/.config/session/konsole_1017d1ba1ab156000169895325700000008020008_1699211014_325278
+discardCommand5[$e]=rm,$HOME/.config/session/systemsettings_1017d1ba1ab156000169921058700000008110010_1699211014_298590
 program1=/usr/lib/DiscoverNotifier
 program2=/usr/bin/firewall-applet
 program3=/usr/bin/kalendarac
-restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000169626946200000009980004_1696367341_413209
-restartCommand2=/usr/bin/firewall-applet,-session,1017d1ba1ab156000169634185400000010800006_1696367341_409070,-name,firewall-applet
-restartCommand3=/usr/bin/kalendarac,-session,1017d1ba1ab156000169634185400000010800007_1696367341_410445
+program4=/usr/bin/konsole
+program5=/usr/bin/systemsettings
+restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000169921029500000008110004_1699211014_294718
+restartCommand2=/usr/bin/firewall-applet,-session,1017d1ba1ab156000169921029600000008110006_1699211014_296208,-name,firewall-applet
+restartCommand3=/usr/bin/kalendarac,-session,1017d1ba1ab156000169921029600000008110007_1699211014_296214
+restartCommand4=/usr/bin/konsole,-session,1017d1ba1ab156000169895325700000008020008_1699211014_325278
+restartCommand5=/usr/bin/systemsettings,-session,1017d1ba1ab156000169921058700000008110010_1699211014_298590
 restartStyleHint1=0
 restartStyleHint2=0
 restartStyleHint3=0
+restartStyleHint4=0
+restartStyleHint5=0
 userId1=stepka
 userId2=stepka
 userId3=stepka
+userId4=stepka
+userId5=stepka
 
 [SubSession: 25c19c6d-82d9-4b52-8845-91560d9ff92f]
 count=0

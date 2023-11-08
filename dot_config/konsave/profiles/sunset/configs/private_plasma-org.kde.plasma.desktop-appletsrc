@@ -29,7 +29,7 @@ remove=true
 RightButton;NoModifier=org.kde.contextmenu
 
 [AppletGlobals][org.kde.plasma.comic]
-lastUpdate=2023,10,4,18,58,5.516
+lastUpdate=2023,11,5,19,51,34.296
 updateInterval=3
 
 [Containments][174]
@@ -73,7 +73,6 @@ DialogHeight=720
 DialogWidth=960
 
 [Containments][174][Applets][216][Configuration][General]
-cursorPosition=3
 fontSize=10
 noteId=5c6ab97a-189c-4e73-9663-02cf8529b2
 
@@ -133,7 +132,6 @@ DialogWidth=960
 [Containments][174][Applets][256][Configuration][General]
 backgroundOpacity=80
 customButtonImage=archlinux-symbolic
-useCustomButtonImage=true
 
 [Containments][174][Applets][256][Shortcuts]
 global=Meta+S
@@ -226,10 +224,10 @@ comic=xkcd
 lastStripVisited_garfield=true
 lastStripVisited_xkcd=true
 lastStrip_garfield=
-lastStrip_xkcd=
+lastStrip_xkcd=2850
 maxComicLimit=29
 maxStripNum_garfield=0
-maxStripNum_xkcd=2830
+maxStripNum_xkcd=2848
 middleClick=true
 savingDir=/home/stepka/Pictures
 scaleToContent_garfield=false
@@ -241,14 +239,14 @@ showComicUrl=false
 showErrorPicture=true
 storedPosition_garfield=
 storedPosition_xkcd=
-tabIdentifier=garfield,xkcd
+tabIdentifier=xkcd
 
 [Containments][174][Applets][283][Configuration][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
 [Containments][174][ConfigDialog]
-DialogHeight=90
+DialogHeight=99
 DialogWidth=1920
 
 [Containments][174][General]
@@ -261,8 +259,8 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
-popupHeight=576
-popupWidth=576
+popupHeight=672
+popupWidth=672
 wallpaperplugin=org.kde.image
 
 [Containments][180][Applets][181]
@@ -406,15 +404,19 @@ DialogWidth=960
 [Containments][180][Applets][277][Configuration]
 PreloadWeight=42
 
+[Containments][180][Applets][288]
+immutability=1
+plugin=luisbocanegra.do-not-unplug-yet
+
 [Containments][180][ConfigDialog]
 DialogHeight=720
 DialogWidth=960
 
 [Containments][180][General]
-extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault
+extraItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault,luisbocanegra.do-not-unplug-yet
 hiddenItems=org.kde.kalendar.contact
 iconSpacing=1
-knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault,org.kde.merkuro.contact
+knownItems=org.kde.plasma.devicenotifier,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.kdeconnect,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.keyboardindicator,org.kde.kscreen,org.kde.plasma.vault,org.kde.merkuro.contact,luisbocanegra.do-not-unplug-yet
 scaleIconsToFit=true
 shownItems=org.kde.plasma.notifications,org.kde.plasma.volume,org.kde.plasma.battery,org.kde.plasma.bluetooth,org.kde.kdeconnect,org.kde.plasma.networkmanagement,org.kde.plasma.keyboardlayout,org.kde.plasma.clipboard,QtWAW
 
@@ -423,26 +425,10 @@ ToolBoxButtonState=topcenter
 ToolBoxButtonX=444
 ToolBoxButtonY=45
 
-[Containments][273]
-activityId=37a632d5-032d-4ec9-8098-ceb66764a648
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.desktopcontainment
-wallpaperplugin=org.kde.image
-
-[Containments][273][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
-
-[Containments][273][Wallpaper][org.kde.image][General]
-Image=/home/stepka/Pictures/wallpaper.svg
-
-[Containments][275]
-ItemGeometries-1920x1080=Applet-278:800,480,192,176,0;Applet-281:976,704,144,160,180;
-ItemGeometriesHorizontal=Applet-278:800,480,192,176,0;Applet-281:976,704,144,160,180;
-activityId=37a632d5-032d-4ec9-8098-ceb66764a648
+[Containments][285]
+ItemGeometries-1920x1080=Applet-286:800,496,160,160,0;Applet-287:960,704,144,144,180;
+ItemGeometriesHorizontal=Applet-286:800,496,160,160,0;Applet-287:960,704,144,144,180;
+activityId=e11161c6-d593-419a-8c3e-7315d0ce6f61
 formfactor=0
 immutability=1
 lastScreen=0
@@ -450,45 +436,41 @@ location=0
 plugin=org.kde.desktopcontainment
 wallpaperplugin=org.kde.image
 
-[Containments][275][Applets][278]
+[Containments][285][Applets][286]
 immutability=1
 plugin=org.kde.plasma.catwalk
 
-[Containments][275][Applets][278][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
+[Containments][285][Applets][286][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
-[Containments][275][Applets][278][Configuration][General]
-idle=5
+[Containments][285][Applets][286][Configuration][General]
+idle=10
 type=1
 
-[Containments][275][Applets][281]
+[Containments][285][Applets][287]
 immutability=1
 plugin=org.kde.plasma.catwalk
 
-[Containments][275][Applets][281][Configuration][ConfigDialog]
-DialogHeight=720
-DialogWidth=960
+[Containments][285][Applets][287][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
-[Containments][275][Applets][281][Configuration][General]
-idle=5
+[Containments][285][Applets][287][Configuration][General]
+idle=10
 type=1
 
-[Containments][275][ConfigDialog]
-DialogHeight=720
-DialogWidth=840
+[Containments][285][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
 
-[Containments][275][General]
+[Containments][285][General]
 ToolBoxButtonState=topcenter
-ToolBoxButtonX=309
+ToolBoxButtonX=378
 ToolBoxButtonY=45
 
-[Containments][275][Wallpaper][a2n.blur][General]
-Image=/home/stepka/Pictures/wallpaper.svg
-SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
-
-[Containments][275][Wallpaper][org.kde.image][General]
-Image=/home/stepka/Pictures/wallpaper.svg
+[Containments][285][Wallpaper][org.kde.image][General]
+Image=/home/stepka/.local/share/chezmoi/wallpapers/no-place-like-tilde_no-font.svg
 SlidePaths=/home/stepka/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments174Appletsts][177][Configuration][General]
@@ -496,5 +478,5 @@ iconSpacing=0
 maxStripes=1
 
 [ScreenMapping]
-itemsOnDisabledScreens=1,37a632d5-032d-4ec9-8098-ceb66764a648,4,desktop:/vivaldi-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop,desktop:/steam.desktop,desktop:/vivaldi-mieeeicebdcmkffkjflneedodiidgpfp-Default.desktop,desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop,0,b33d507d-1488-420a-b2bb-66a6499f5c10,1,desktop:/vivaldi-jgeocpdicgmkeemopbanhokmhcgcflmi-Default.desktop
+itemsOnDisabledScreens=1,37a632d5-032d-4ec9-8098-ceb66764a648,4,desktop:/vivaldi-mieeeicebdcmkffkjflneedodiidgpfp-Default.desktop,desktop:/steam.desktop,desktop:/vivaldi-mjoklplbddabcmpepnokjaffbmgbkkgg-Default.desktop,desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop
 screenMapping=desktop:/vivaldi-agimnkijcaahngcdmfeangaknmldooml-Default.desktop,0,9f16c1ed-d6d1-4920-8f15-097081e353af

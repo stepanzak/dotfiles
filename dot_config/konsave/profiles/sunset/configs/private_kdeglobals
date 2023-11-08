@@ -144,12 +144,17 @@ AccentColor=0,0,0,0
 BrowserApplication=vivaldi-stable.desktop
 ColorScheme=Sunset
 ColorSchemeHash=8b45e2c9389f87ebc2dd9167cc1f7a3c6fe75624
+XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=FiraCode Nerd Font,10,-1,5,50,0,0,0,0,0
+fixed=FiraCode Nerd Font,11,-1,5,50,0,0,0,0,0
+font=Noto Sans,11,-1,5,50,0,0,0,0,0
+menuFont=Noto Sans,11,-1,5,50,0,0,0,0,0
+smallestReadableFont=Noto Sans,9,-1,5,50,0,0,0,0,0
+toolBarFont=Noto Sans,11,-1,5,50,0,0,0,0,0
 
 [Icons]
-Theme=gruvbox-plus-icon-pack
+Theme=Gruvbox-Plus-Dark
 
 [KDE]
 LookAndFeelPackage=Stone
@@ -187,6 +192,7 @@ Dialog Size=600,480
 [WM]
 activeBackground=29,32,33
 activeBlend=40,40,40
+activeFont=Noto Sans,11,-1,5,50,0,0,0,0,0
 activeForeground=215,153,33
 inactiveBackground=40,40,40
 inactiveBlend=40,40,40
