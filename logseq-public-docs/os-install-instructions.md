@@ -1,6 +1,11 @@
 # What do I do when I reinstall my os
 - [[Nov 2nd, 2023]]
--
+- ## Disclaimer:
+	- This file was created just for my personal use.
+	  There probably isn't any reason why you should follow it step-by-step.
+	  It's also not great and I plan to improve it. (But I planed many things and I've done none of them)
+	  Feel free to take inspiration from this file.
+	  Idk where to put license or if I should do it, do anything you want with this file :)
 - ### Install os:
 	- boot live iso of EndeavourOS
 	- Install the KDE version **with printing support**
