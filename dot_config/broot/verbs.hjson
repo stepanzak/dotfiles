@@ -10,7 +10,7 @@ verbs: [
     {
         invocation: remove
         shortcut: rm
-        execution: "trash put {file}"
+        execution: "trashy put {file}"
         leave_broot: false
     }
 
@@ -85,13 +85,13 @@ verbs: [
 
     # This verb lets you launch a terminal on ctrl-T
     # (on exit you'll be back in broot)
-    {
-        invocation: terminal
-        key: ctrl-t
-        execution: "$SHELL"
-        set_working_dir: true
-        leave_broot: false
-    }
+    #{
+    #    invocation: terminal
+    #    key: ctrl-t
+    #    execution: "$SHELL"
+    #    set_working_dir: true
+    #    leave_broot: false
+    #}
 
     # Here's an example of a shortcut bringing you to your home directory
     # {
@@ -100,24 +100,62 @@ verbs: [
     #     execution: ":focus ~"
     # }
 
-    # A popular set of shortcuts for going up and down:
-    
-     {
-         key: alt-shift-k
-         execution: ":line_up"
-     }
-     {
-         key: alt-shift-j
-         execution: ":line_down"
-     }
-     {
-         key: ctrl-u
-         execution: ":page_up"
-     }
-     {
-         key: ctrl-d
-         execution: ":page_down"
-     }
+    #shortcut bringing you to your home directory
+  {
+      invocation: home
+      shortcut: ~
+      key: home
+      execution: ":focus ~"
+  }
+
+  # A popular set of shortcuts for going up and down:
+  
+  {
+      key: alt-k
+      execution: ":line_up"
+  }
+  {
+      key: alt-j
+      execution: ":line_down"
+  }
+  {
+      key: ctrl-alt-l
+      execution: ":panel_right"
+  }
+  {
+    key: ctrl-alt-h
+    execution: ":panel_left"
+  }
+  {
+    key: alt-l
+    execution: ":open_stay"
+  }
+  {
+    key: alt-h
+    execution: ":back"
+  }
+  {
+      invocation: "top"
+      key: alt-shift-k
+      internal: ":select_first"
+  }
+  {
+      invocation: "bottom"
+      key: alt-shift-j
+      internal: ":select_last"
+  }
+  {
+      key: alt-u
+      execution: ":page_up"
+  }
+  {
+      key: alt-d
+      execution: ":page_down"
+  }
+  {
+      key: alt-.
+      execution: ":toggle_hidden"
+  }
 
     # If you develop using git, you might like to often switch
     # to the git status filter:

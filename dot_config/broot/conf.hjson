@@ -1,49 +1,3 @@
-###############################################################
-# This configuration file lets you
-# - define new commands
-# - change the shortcut or triggering keys of built-in verbs
-# - change the colors
-# - set default values for flags
-# - set special behaviors on specific paths
-# - and more...
-#
-# Configuration documentation is available at
-#     https://dystroy.org/broot
-#
-# This file's format is Hjson ( https://hjson.github.io/ ). Some
-# properties are commented out. To enable them, remove the `#`.
-#
-###############################################################
-
-###############################################################
-# Default flags
-# You can set up flags you want broot to start with by
-# default, for example `default_flags="ihp"` if you usually want
-# to see hidden and gitignored files and the permissions (then
-# if you don't want the hidden files you can launch `br -H`)
-# A popular flag is the `g` one which displays git related info.
-#
-# default_flags:
-
-###############################################################
-# Date/Time format
-# If you want to change the format for date/time, uncomment the
-# following line and change it according to
-# https://docs.rs/chrono/0.4.11/chrono/format/strftime/index.html
-#
-# date_time_format: %Y/%m/%d %R
-
-###############################################################
-# uncomment to activate modal mode
-#
-# (you really should read https://dystroy.org/broot/modal/
-# before as it may not suit everybody even among vim users)
-#
-# modal: true
-
-###############################################################
-# Whether to mark the selected line with a triangle
-#
 {
 ###############################################################
 # This configuration file lets you
@@ -91,7 +45,7 @@
 ###############################################################
 # Whether to mark the selected line with a triangle
 #
-  "show_selection_mark": true,
+ "show_selection_mark": true,
 
 ###############################################################
 # Column order
@@ -145,7 +99,7 @@
 # to cancel (for example when you just opened broot), uncomment
 # this parameter
 # 
-# quit_on_last_cancel: true
+ quit_on_last_cancel: true
 
 ###############################################################
 # Search modes
@@ -300,7 +254,7 @@
 #
 # Change this if you sometimes want to have more than 2 panels
 # open
-  "max_panels_count": 3,
+  "max_panels_count": 2,
 
 ###############################################################
 # Imports
