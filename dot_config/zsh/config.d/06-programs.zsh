@@ -16,8 +16,7 @@ antidote load
 [ -x "$(command -v atuin)" ] && eval "$(atuin init zsh --disable-up-arrow)"
 
 #init trashy (trash CLI but rust) if it exist
-#commented out because of zsh completions bug, see issue #57
-#[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
+[ -x "$(command -v trash)" ] && eval "$(trash completions zsh)"
 
 # pipx:
 autoload -U bashcompinit
