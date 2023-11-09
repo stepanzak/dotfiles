@@ -137,7 +137,13 @@
 			- `atuin key`
 		- enter the words printed by `atuin key` to the *Please enter encryption key* prompt
 		- `atuin sync`
-		-
+	- Configure Broot:
+		- run `broot` command
+		- you will be prompted to install a shell function
+		- say yes
+		- edit your zshrc (`nvim ~/.config/zsh/.zshrc`)
+			- remove the line sourcing broot at the bottom
+		- OR just run `chezmoi apply -v` and agree to overwrite .zshrc
 - ## Neovim config
 	- I use [NvChad](https://github.com/NvChad/NvChad) as my base config. Install it:
 		- you first need to remove the nvim config folder:
