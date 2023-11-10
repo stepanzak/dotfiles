@@ -165,14 +165,28 @@ local plugins = {
 		{
 			"gsuuon/tshjkl.nvim",
 			opts = {
-        keymaps = {
-          toggle = '<leader>ts'
-        }
-      },
-      keys = {
-        { '<leader>ts', desc = "Tree-sitter hjkl mode" }
-      }
+				keymaps = {
+					toggle = "<leader>ts",
+				},
+			},
+			keys = {
+				{ "<leader>ts", desc = "Tree-sitter hjkl mode" },
+			},
 		},
+	},
+	{
+		"stevearc/oil.nvim",
+		opts = {
+			default_file_explorer = false,
+			view_options = { show_hidden = true },
+			float = { padding = 4, max_width = 100, max_height = 80 },
+		},
+		init = function()
+			vim.keymap.set("n", "-", require("oil").open_float, { desc = "Open parent directory" })
+		end,
+		config = function(this)
+			require("oil").setup(this.opts)
+		end,
 	},
 
 	-- To make a plugin not be loaded
