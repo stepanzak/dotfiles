@@ -231,3 +231,4 @@
 	- if you can't see emojis, download emoji font like twemoji with paru
 - ## Log in to various apps:
 	- Lunar client
+	- Ms Teams
