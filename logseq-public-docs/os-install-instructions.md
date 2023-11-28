@@ -11,12 +11,19 @@
 	- Install the KDE version **with printing support**
 	- boot into it
 -
-- `sudo nano /etc/security/pam_env.conf`, add the following lines at the end of the file:
-  ``XDG_DATA_HOME	DEFAULT=@{HOME}/.local/share
-  XDG_CONFIG_HOME	DEFAULT=@{HOME}/.config
-  XDG_STATE_HOME	DEFAULT=@{HOME}/.local/state
-  XDG_CACHE_HOME	DEFAULT=@{HOME}/.cache
-  ZDOTDIR      DEFAULT=@{HOME}/.config/zsh``
+- if not using EndeavourOS, ensure that your distro supports /etc/profile.d **AND** it supports it with ZSH.
+  EndeavourOS should do that outside the box
+	- if it doesn't support profile.d with ZSH, but otherwise it does (Like DietPi)
+		- create or edit the file `/etc/zsh/zprofile`
+		- it should contain this line:
+		  `emulate sh -c 'source /etc/profile'`
+		  (it's like that on EndeavourOS)
+- create a new file `/etc/profile.d/environment-variables.sh`, add the following lines to the file:
+  ``export XDG_DATA_HOME=$HOME/.local/share
+  export XDG_CONFIG_HOME=$HOME/.config
+  export XDG_STATE_HOME=$HOME/.local/state
+  export XDG_CACHE_HOME=$HOME/.cache
+  export ZDOTDIR=$HOME/.config/zsh``
 - rank Arch and EndeavourOS mirrors
 - install `paru` using yay
 - remove yay
@@ -144,6 +151,9 @@
 		- edit your zshrc (`nvim ~/.config/zsh/.zshrc`)
 			- remove the line sourcing broot at the bottom
 		- OR just run `chezmoi apply -v` and agree to overwrite .zshrc
+	- Set up cloudflared tunnel ssh:
+		- run `cloudflared access ssh-config` and add the text to the file it tells you to add.
+		- replace [your hostname] with ssh.stepanzak.cc
 - ## Neovim config
 	- I use [NvChad](https://github.com/NvChad/NvChad) as my base config. Install it:
 		- you first need to remove the nvim config folder:
@@ -161,6 +171,7 @@
 			- again `space + x` to close the installation prompt
 			- `Ctrl + w` then`q` to close the split with the *Already updated!* message
 		- press `:` again, type *MasonInstallAll*
+		- run `:LiveServerInstall` to install live server
 - ## Grub theme:
 	- Default EndeavourOS GRUB theme is really ugly IMO
 	- Open the *Grub customizer* app to change it
