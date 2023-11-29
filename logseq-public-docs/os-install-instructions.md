@@ -10,15 +10,7 @@
 	- boot live iso of EndeavourOS
 	- Install the KDE version **with printing support**
 	- boot into it
--
-- if not using EndeavourOS, ensure that your distro supports /etc/profile.d **AND** it supports it with ZSH.
-  EndeavourOS should do that outside the box
-	- if it doesn't support profile.d with ZSH, but otherwise it does (Like DietPi)
-		- create or edit the file `/etc/zsh/zprofile`
-		- it should contain this line:
-		  `emulate sh -c 'source /etc/profile'`
-		  (it's like that on EndeavourOS)
-- create a new file `/etc/profile.d/environment-variables.sh`, add the following lines to the file:
+- edit the file `/etc/zsh/zshenv`, add the following lines to the file:
   ``export XDG_DATA_HOME=$HOME/.local/share
   export XDG_CONFIG_HOME=$HOME/.config
   export XDG_STATE_HOME=$HOME/.local/state
