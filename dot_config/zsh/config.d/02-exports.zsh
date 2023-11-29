@@ -25,7 +25,6 @@ export DIFFTOOL="nvim -d"
 #provided by xdg-ninja
 export ANDROID_HOME="$XDG_DATA_HOME"/android
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
-export DOCKER_CONFIG="$XDG_CONFIG_HOME"/docker
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 export GOPATH="$XDG_DATA_HOME"/go
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
@@ -38,4 +37,4 @@ export STACK_ROOT="$XDG_DATA_HOME"/stack
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
-export PATH="$PATH:$CARGO_HOME/bin"
+export PATH="$PATH:$CARGO_HOME/bin:$HOME/bin:$HOME/.local/bin"
