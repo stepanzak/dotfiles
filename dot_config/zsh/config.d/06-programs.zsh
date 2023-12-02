@@ -7,13 +7,13 @@ source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
 
 #init zoxide (better cd or something) if it exists
-[ -x "$(command -v zoxide)" ] && eval $(zoxide init zsh)
+[ -x "$(command -v zoxide)" ] && eval "$(zoxide init zsh)"
 
 #source broot (br command) if it exists
 [ -e ~/.config/broot/launcher/bash/br ] && source ~/.config/broot/launcher/bash/br
 
 #init atuin (better shell history or something) if it exist
-[ -x "$(command -v atuin)" ] && eval $(atuin init zsh --disable-up-arrow)
+[ -x "$(command -v atuin)" ] && eval "$(atuin init zsh --disable-up-arrow)"
 
 #init trashy (trash CLI but rust) if it exist
 [ -x "$(command -v trash)" ] && eval $(trash completions zsh)
@@ -21,7 +21,7 @@ antidote load
 # pipx:
 autoload -U bashcompinit
 bashcompinit
-[ -x "$(command -v pipx)" ] && eval $(register-python-argcomplete pipx)
+[ -x "$(command -v pipx)" ] && eval "$(register-python-argcomplete pipx)"
 
 # pnpm
 export PNPM_HOME="/home/stepka/.local/share/pnpm"
