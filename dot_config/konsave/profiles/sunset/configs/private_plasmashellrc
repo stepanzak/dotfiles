@@ -20,6 +20,9 @@ iconViewIconSize=64
 eDP1 Height 1920x1080 eDP1=591
 eDP1 Width 1920x1080 eDP1=497
 
+[PlasmaTransientsConfig]
+PreloadWeight=18
+
 [PlasmaViews][Panel 114][Defaults]
 thickness=60
 

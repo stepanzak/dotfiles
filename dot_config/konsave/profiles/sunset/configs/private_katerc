@@ -125,7 +125,6 @@ Word Completion Remove Tail=true
 Search History=invite,BackgroundNormal=29,BackgroundNormal,#region:
 
 [MainWindow]
-1536x864 screen: Window-Maximized=true
 eDP1 HDMI1 Window-Maximized 1536x864 eDP1=true
 eDP1 Height 1536x864 eDP1=802
 eDP1 Width 1536x864 eDP1=768

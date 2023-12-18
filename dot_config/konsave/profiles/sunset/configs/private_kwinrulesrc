@@ -13,6 +13,20 @@ wmclass=org.wezfurlong.wezterm
 wmclassmatch=1
 
 [1]
+Description=Application settings for firefox
+above=true
+clientmachine=localhost
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+title=ripdrag
+types=1
+wmclass=navigator firefox
+wmclasscomplete=true
+wmclassmatch=1
+
+[2]
 Description=Window settings for ripdrag
 above=true
 aboverule=3
@@ -57,8 +71,8 @@ wmclass=ripdrag
 wmclassmatch=1
 
 [General]
-count=1
-rules=1
+count=2
+rules=1,2
 
 [bf0dcbfb-d6fb-4837-9709-e1cb8e0828e9]
 Description=Window settings for neovide
@@ -75,4 +89,16 @@ Description=Settings for KRunner
 blockcompositing=true
 blockcompositingrule=2
 wmclass=KRunner
+wmclassmatch=1
+
+[e0599035-eb2c-425f-90ed-3c4b4006c1e4]
+Description=Application settings for firefox
+clientmachine=localhost
+maximizehoriz=true
+maximizehorizrule=3
+maximizevert=true
+maximizevertrule=3
+types=1
+wmclass=navigator firefox
+wmclasscomplete=true
 wmclassmatch=1

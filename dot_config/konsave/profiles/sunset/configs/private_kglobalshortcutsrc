@@ -14,6 +14,13 @@ _k_friendly_name=Keyboard Layout Switcher
 _k_friendly_name=MSG Apps
 _launch=none,none,Launch MSG Apps
 
+[firefox.desktop]
+_k_friendly_name=Firefox Web Browser
+_launch=Meta+B,none,Firefox Web Browser
+new-private-window=none,none,New Private Window
+new-window=none,none,New Window
+profile-manager-window=none,none,Open the Profile Manager
+
 [kaccess]
 Toggle Screen Reader On and Off=Meta+Alt+S,Meta+Alt+S,Toggle Screen Reader On and Off
 _k_friendly_name=Accessibility
@@ -289,7 +296,7 @@ karousel-window-move-to-column-9=Meta+Shift+9,none,Karousel: Move window to colu
 karousel-window-move-up=Meta+Shift+W,none,Karousel: Move window up
 karousel-window-toggle-floating=none,none,Karousel: Toggle floating
 view_actual_size=Meta+0,Meta+0,Zoom to Actual Size
-view_zoom_in=Meta++\tMeta+=,Meta++,Zoom In
+view_zoom_in=Meta++\tMeta+=,Meta++\tMeta+=,Zoom In
 view_zoom_out=Meta+-,Meta+-,Zoom Out
 
 [mediacontrol]
@@ -407,9 +414,3 @@ kcm-lookandfeel=none,none,Global Theme
 kcm-users=none,none,Users
 powerdevilprofilesconfig=none,none,Energy Saving
 screenlocker=none,none,Screen Locking
-
-[vivaldi-stable.desktop]
-_k_friendly_name=Vivaldi
-_launch=Meta+B,none,Vivaldi
-new-private-window=none,none,New Private Window
-new-window=none,none,New Window
