@@ -180,12 +180,6 @@
 			  
 			  ``cd ./amongus
 			  tar cf ../amogus.tar *`` - *correct!*
-- ## Vivaldi browser config
-	- Login to Vivaldi account
-		- sync all data (this might take a while)
-	- Add all the workspaces you want
-	- settings > themes > get more > [*Sunset (based on Gruvbox)*](https://themes.vivaldi.net/themes/NOb71q3z71g)
-	- go to startpage.com > click Stylus extension icon > find styles > *Startpage.com Gruvbox Sunset*
 - ## (Better) Discord setup:
 	- Log in to Discord
 	- run `betterdiscord-installer` from the command line
@@ -232,6 +226,3 @@
 - ## random misc things:
 	- `sudo systemctl enable docker`
 	- if you can't see emojis, download emoji font like twemoji with paru
-- ## Log in to various apps:
-	- Lunar client
-	- Ms Teams
