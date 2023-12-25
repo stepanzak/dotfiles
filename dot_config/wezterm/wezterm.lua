@@ -3,6 +3,7 @@
 -- use it, modify it, do whatever you want with it. No credit needed (but appreciated)
 
 local wezterm = require("wezterm")
+local mux = wezterm.mux
 local config = wezterm.config_builder()
 
 -- set tmux as default program. This means that when you open a wezterm window,
@@ -35,8 +36,10 @@ config.enable_tab_bar = false
 -- I have tried other ways, but all of them was ugly and with visible resizing on window launch
 -- Customize the values to fit your screen size exactly.
 -- If you know about any other way to do that, please create an issuse at github.com/stepanzak/dotfiles.
-config.initial_rows = 36
-config.initial_cols = 146
+-- config.initial_rows = 36
+-- config.initial_cols = 146
+-- UPDATE: setting window rule to maximize wezterm window both horizontally and vertically in KDE Plasma now works for me.
+-- It's not ideal though
 
 -- disable most of the keybindings because tmux can do that.
 -- in fact, I'm disabling all of them here and just allowing the few I want
@@ -44,10 +47,8 @@ config.disable_default_key_bindings = true
 
 local act = wezterm.action
 config.keys = {
-  { key = ")",        mods = "CTRL",  action = act.ResetFontSize },
   { key = "-",        mods = "CTRL",  action = act.DecreaseFontSize },
   { key = "=",        mods = "CTRL",  action = act.IncreaseFontSize },
-  { key = "N",        mods = "CTRL",  action = act.SpawnWindow },
   { key = "P",        mods = "CTRL",  action = act.ActivateCommandPalette },
   { key = "V",        mods = "CTRL",  action = act.PasteFrom("Clipboard") },
   { key = "Copy",     mods = "NONE",  action = act.CopyTo("Clipboard") },
