@@ -18,6 +18,9 @@ antidote load
 #init trashy (trash CLI but rust) if it exist
 [ -x "$(command -v trash)" ] && eval $(trash completions zsh)
 
+#init navi (one-liner cheatsheet) to be opened with Ctrl+G
+[ -x "$(command -v navi)" ] && eval "$(navi widget zsh)"
+
 # pipx:
 autoload -U bashcompinit
 bashcompinit
