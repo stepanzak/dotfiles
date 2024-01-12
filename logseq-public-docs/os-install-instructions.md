@@ -226,3 +226,12 @@
 - ## random misc things:
 	- `sudo systemctl enable docker`
 	- if you can't see emojis, download emoji font like twemoji with paru
+	- ### SDDM (login manager)
+		- `sudo nvim /etc/sddm.conf`
+		- add following lines:
+		  ```
+		  [General]
+		  Numlock=on
+		  ```
+		-
+-
