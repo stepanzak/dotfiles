@@ -21,6 +21,9 @@ antidote load
 #init navi (one-liner cheatsheet) to be opened with Ctrl+G
 [ -x "$(command -v navi)" ] && eval "$(navi widget zsh)"
 
+#xremap completions (xremap is a keyboard remap tool)
+[ -x "$(command -v xremap)" ] && eval "$(xremap --completions zsh)"
+
 # pipx:
 autoload -U bashcompinit
 bashcompinit
