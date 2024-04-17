@@ -59,6 +59,7 @@ Font=Hack,10,-1,7,50,0,0,0,0,0
 Line Height Multiplier=1
 Show Indentation Lines=false
 Show Whole Bracket Expression=false
+Text Font=Fira Code,11,-1,5,500,0,0,0,0,0,0,0,0,0,0,1,Medium
 Word Wrap Marker=false
 
 [KTextEditor View]
@@ -122,9 +123,10 @@ Word Completion Minimal Word Length=3
 Word Completion Remove Tail=true
 
 [KTextEditor::Search]
-Search History=invite,BackgroundNormal=29,BackgroundNormal,#region:
+Search History=7,1,invite,BackgroundNormal=29,BackgroundNormal,#region:
 
 [MainWindow]
+1920x1080 screen: Window-Maximized=true
 eDP1 HDMI1 Window-Maximized 1536x864 eDP1=true
 eDP1 Height 1536x864 eDP1=802
 eDP1 Width 1536x864 eDP1=768

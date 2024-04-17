@@ -4,6 +4,13 @@ update_info=delete_cursor_old_default_size.upd:DeleteCursorOldDefaultSize,kcminp
 [Keyboard]
 NumLock=0
 
+[Libinput][12538][4144][USB GAMING MOUSE ]
+PointerAccelerationProfile=2
+
+[Libinput][1739][0][Synaptics TM3053-003]
+PointerAcceleration=0.400
+TapToClick=true
+
 [Libinput][2][14][ETPS/2 Elantech Touchpad]
 TapToClick=true
 

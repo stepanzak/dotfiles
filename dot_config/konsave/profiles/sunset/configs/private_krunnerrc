@@ -7,11 +7,14 @@ migrated=true
 [Plugins]
 baloosearchEnabled=false
 bookmarksEnabled=true
-browserhistoryEnabled=true
-browsertabsEnabled=true
+browserhistoryEnabled=false
+browsertabsEnabled=false
 org.kde.activities2Enabled=false
-shellEnabled=false
+shellEnabled=true
 windowsEnabled=false
+
+[Plugins][Favorites]
+plugins=krunner_services
 
 [Runners][Translator]
 baiduAPIKey=

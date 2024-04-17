@@ -144,10 +144,9 @@ AccentColor=0,0,0,0
 BrowserApplication=vivaldi-stable.desktop
 ColorScheme=Sunset
 ColorSchemeHash=8b45e2c9389f87ebc2dd9167cc1f7a3c6fe75624
-XftAntialias=true
 XftHintStyle=hintslight
 XftSubPixel=rgb
-fixed=FiraCode Nerd Font,11,-1,5,50,0,0,0,0,0
+fixed=Fira Code,11,-1,5,57,0,0,0,0,0,Medium
 font=Noto Sans,11,-1,5,50,0,0,0,0,0
 menuFont=Noto Sans,11,-1,5,50,0,0,0,0,0
 smallestReadableFont=Noto Sans,9,-1,5,50,0,0,0,0,0
@@ -159,7 +158,6 @@ Theme=Gruvbox-Plus-Dark
 [KDE]
 LookAndFeelPackage=Stone
 ScrollbarLeftClickNavigatesByPage=false
-SingleClick=false
 widgetStyle=Breeze
 
 [KFileDialog Settings]
@@ -179,15 +177,14 @@ Sort by=Name
 Sort directories first=true
 Sort hidden files last=false
 Sort reversed=false
-Speedbar Width=138
+Speedbar Width=199
 View Style=Simple
 
 [KScreen]
-ScaleFactor=1.25
-ScreenScaleFactors=eDP1=1.25;DP1=1.25;HDMI1=1.25;HDMI2=1.25;VIRTUAL1=1.25;
+ScreenScaleFactors=eDP-1=1;DP-1=1;HDMI-1=1;DP-2=1;HDMI-2=1;
 
 [KShortcutsDialog Settings]
-Dialog Size=600,480
+Dialog Size=1920,1005
 
 [WM]
 activeBackground=29,32,33

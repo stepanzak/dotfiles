@@ -21,6 +21,11 @@ Rows=2
 BlurStrength=4
 NoiseStrength=14
 
+[Effect-cube]
+CubeFaceDisplacement=102
+DistanceFactor=1.77
+SkyBox=/home/stepka/Pictures/free-skybox-anime-sky/sd-sky-230315a/textures/00177-2094237533.png
+
 [Effect-kwin4_effect_translucency]
 MoveResize=90
 
@@ -42,7 +47,7 @@ Stiffness=8
 WobblynessLevel=1
 
 [ModifierOnlyShortcuts]
-Meta=org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,ShowDesktopGrid
+Meta=org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Grid View
 
 [MouseBindings]
 CommandAllWheel=Previous/Next Desktop
@@ -52,12 +57,12 @@ CommandTitlebarWheel=Previous/Next Desktop
 Active=true
 LatitudeAuto=50.5862
 LongitudeAuto=15.1489
-NightTemperature=4000
+NightTemperature=2800
 
 [Plugins]
 blurEnabled=true
 contrastEnabled=false
-desktopchangeosdEnabled=true
+cubeEnabled=true
 forceblurEnabled=false
 invertEnabled=true
 karouselEnabled=false
@@ -89,15 +94,27 @@ active=-1
 count=0
 
 [TabBox]
+LayoutName=thumbnail_grid
+
+[TabBoxAlternative]
 LayoutName=MediumRoundedDark
 
 [Tiling]
 padding=4
 
 [Tiling][0d3998b5-12fb-5e5d-9844-298a9a2f96a3]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5557291666666658},{"layoutDirection":"vertical","tiles":[{"height":0.5},{"height":0.5}],"width":0.44427083333333417}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5979166666666662},{"width":0.4020833333333338}]}
+
+[Tiling][213a9620-187e-58a6-b80b-85d8fb95dfce]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5901041666666664},{"width":0.40989583333333357}]}
+
+[Tiling][44bea82b-2de0-5111-957d-06ed811de8d0]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][4b8efe48-405e-5547-a072-c6018892d32a]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][5b38753d-9e69-5c8f-983b-f3dd9745f37d]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][5b7a5ba4-43cc-5910-8e98-f358f9d54b43]
@@ -107,6 +124,9 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][913b1ff1-c96c-5797-a5ef-73dc4437f02e]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][9cca8bf5-c1b1-5287-a739-36ff12a17df3]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Windows]

@@ -1,31 +1,30 @@
 [$Version]
 update_info=ksmserver_update_loginMode_value.upd:ksmserver_update_loginMode_value_default_enum
 
+[General]
+loginMode=restoreSavedSession
+
 [LegacySession: saved at previous logout]
 count=0
 
+[LegacySession: saved by user]
+count=0
+
 [Session: saved at previous logout]
-clientId1=1017d1ba1ab156000170288931700000010130005
-clientId2=1017d1ba1ab156000170288931800000010130006
-clientId3=1017d1ba1ab156000170288931800000010130007
-clientId4=1017d1ba1ab156000170288931900000010130008
-count=4
-program1=/usr/lib/DiscoverNotifier
-program2=/usr/bin/firewall-applet
-program3=/usr/bin/syncthingtray-qt6
-program4=/usr/bin/kalendarac
-restartCommand1=/usr/lib/DiscoverNotifier,-session,1017d1ba1ab156000170288931700000010130005_1702889750_43788
-restartCommand2=/usr/bin/firewall-applet,-session,1017d1ba1ab156000170288931800000010130006_1702889750_44319,-name,firewall-applet
-restartCommand3=/usr/bin/syncthingtray-qt6,-session,1017d1ba1ab156000170288931800000010130007_1702889750_44439
-restartCommand4=/usr/bin/kalendarac,-session,1017d1ba1ab156000170288931900000010130008_1702889750_43958
+clientId1=1017d1ba1ab156000170992567100000011260003
+count=1
+program1=firefox
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,1017d1ba1ab156000170992567100000011260003
 restartStyleHint1=0
-restartStyleHint2=0
-restartStyleHint3=0
-restartStyleHint4=0
 userId1=stepka
-userId2=stepka
-userId3=stepka
-userId4=stepka
+
+[Session: saved by user]
+clientId1=1017d1ba1ab156000170577398100000009560008
+count=1
+program1=firefox
+restartCommand1=/usr/lib/firefox/firefox,--sm-client-id,1017d1ba1ab156000170577398100000009560008
+restartStyleHint1=0
+userId1=stepka
 
 [SubSession: 25c19c6d-82d9-4b52-8845-91560d9ff92f]
 count=0

@@ -24,6 +24,8 @@ iconViewIconSize=64
 [KPropertiesDialog]
 1536x864 screen: Height=576
 1536x864 screen: Width=493
+1920x1080 screen: Height=554
+1920x1080 screen: Width=500
 eDP1 Height 1536x864 eDP1=616
 eDP1 Width 1536x864 eDP1=439
 
