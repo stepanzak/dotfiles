@@ -1,0 +1,36 @@
+# Yazi plugins: (yazi doesn't have any plugin manager)
+
+[".config/yazi/plugins/glow.yazi"]
+    type = "git-repo"
+    url = "https://github.com/Reledia/glow.yazi.git"
+    refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/miller.yazi"]
+    type = "git-repo"
+    url = "https://github.com/Reledia/miller.yazi.git"
+    refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/bookmarks.yazi"]
+    type = "git-repo"
+    url = "https://github.com/dedukun/bookmarks.yazi.git"
+    refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/keyjump.yazi"]
+    type = "git-repo"
+    url = "https://github.com/DreamMaoMao/keyjump.yazi.git"
+    refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/fg.yazi"]
+    type = "git-repo"
+    url = "https://github.com/DreamMaoMao/fg.yazi.git"
+    refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/exifaudio.yazi"]
+    type = "git-repo"
+    url = "https://github.com/Sonico98/exifaudio.yazi.git"
+    refreshPeriod = "24h"
