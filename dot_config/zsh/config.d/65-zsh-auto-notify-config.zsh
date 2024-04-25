@@ -6,4 +6,4 @@
 export AUTO_NOTIFY_EXPIRE_TIME=2000
 
 # Add docker to list of ignored commands
-AUTO_NOTIFY_IGNORE+=("btop" "yazi" "bat" "tmux" "zellij" "br" "tldr" "tldrf" "glow")
+AUTO_NOTIFY_IGNORE+=("btop yazi bat tmux zellij br tldr tldrf glow")
