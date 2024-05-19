@@ -32,20 +32,6 @@ return {
     opts = { use_diagnostic_signs = true },
   },
 
-  -- since `vim.tbl_deep_extend`, can only merge tables and not lists, the code above
-  -- would overwrite `ensure_installed` with the new value.
-  -- If you'd rather extend the default config, use the code below instead:
-  {
-    "nvim-treesitter/nvim-treesitter",
-    opts = function(_, opts)
-      -- add tsx and treesitter
-      vim.list_extend(opts.ensure_installed, {
-        "tsx",
-        "typescript",
-      })
-    end,
-  },
-
   -- the opts function can also be used to change the default opts:
   -- {
   --   "nvim-lualine/lualine.nvim",
@@ -54,21 +40,6 @@ return {
   --     table.insert(opts.sections.lualine_x, "😄")
   --   end,
   -- },
-
-  -- add any tools you want to have installed below
-  {
-    "williamboman/mason.nvim",
-    opts = {
-      ensure_installed = {
-        "stylua",
-        "shellcheck",
-        "shfmt",
-        "taplo",
-        "debugpy",
-        "harper-ls",
-      },
-    },
-  },
 
   -- Use <tab> for completion and snippets (supertab)
   -- first: disable default <tab> and <s-tab> behavior in LuaSnip
