@@ -40,6 +40,7 @@ return {
         "tsx",
         "typescript",
         "css",
+        "kdl",
       })
     end,
   },
