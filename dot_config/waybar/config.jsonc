@@ -6,15 +6,18 @@
   // "width": 1280, // Waybar width
   "spacing": 0, // Gaps between modules (4px)
   // Choose the order of the modules
-  // "modules-left": [
-  // "sway/workspaces",
-  // "sway/mode",
-  // "sway/scratchpad",
-  // "custom/media"
-  // ],
-  // "modules-center": [
-  // "sway/window"
-  // ],
+  "modules-left": [
+    "power-profiles-daemon",
+    "cpu",
+    "memory",
+    "temperature",
+    "battery",
+    "battery#bat1",
+  ],
+  "modules-center": [
+    "clock#date",
+    "clock"
+  ],
   "modules-right": [
     "tray",
     // "mpd",
@@ -23,17 +26,10 @@
     // "wireplumber",
     "network",
     "bluetooth",
-    "power-profiles-daemon",
-    "cpu",
-    "memory",
-    "temperature",
     "backlight",
     // "keyboard-state",
     // "sway/language",
-    "battery",
-    "battery#bat1",
-    "custom/notification",
-    "clock"
+    "custom/notification"
   ],
   "bluetooth": {
     "on-click-right": "overskride"
@@ -82,8 +78,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": " ",
+      "deactivated": " "
     }
   },
   "tray": {
@@ -93,7 +89,10 @@
   "clock": {
     // "timezone": "America/New_York",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-    "format-alt": "{:%Y-%m-%d}"
+    "format": "{:%H:%M}"
+  },
+  "clock#date": {
+    "format": "{:%d. %m. %Y}"
   },
   "cpu": {
     "format": "{usage}% ",
@@ -109,9 +108,9 @@
     // "format-critical": "{temperatureC}°C {icon}",
     "format": "{temperatureC}°C {icon}",
     "format-icons": [
-      "",
+      "",
       "",
-      ""
+      ""
     ]
   },
   "backlight": {
@@ -242,7 +241,7 @@
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
       "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": "",
+      "dnd-none": " ",
       "inhibited-notification": "<span foreground='red'><sup></sup></span>",
       "inhibited-none": "",
       "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
