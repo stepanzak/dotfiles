@@ -420,6 +420,8 @@ binds {
     XF86AudioMicMute     allow-when-locked=true { spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SOURCE@" "toggle"; }
 
     Mod+Q { close-window; }
+    
+    Mod+Shift+E { spawn "wlogout"; }
 
     Mod+Left  { focus-column-left; }
     Mod+Down  { focus-window-down; }
@@ -567,7 +569,7 @@ binds {
     // The quit action will show a confirmation dialog to avoid accidental exits.
     // If you want to skip the confirmation dialog, set the flag like so:
     // Mod+Shift+E { quit skip-confirmation=true; }
-    Mod+Shift+E { quit; }
+    // Mod+Shift+E { quit; }
 
     Mod+Shift+P { power-off-monitors; }
 
