@@ -1,0 +1,100 @@
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+
+@define-color dark0_hard #1d2021;
+@define-color dark0 #282828;
+@define-color dark0_soft #32302f;
+@define-color dark1 #3c3836;
+@define-color dark2 #504945;
+@define-color dark3 #665c54;
+@define-color dark4 #7c6f64;
+@define-color dark4_256 #7c6f64;
+@define-color gray_245 #928374;
+@define-color gray_244 #928374;
+@define-color light0_hard #f9f5d7;
+@define-color light0 #fbf1c7;
+@define-color light0_soft #f2e5bc;
+@define-color light1 #ebdbb2;
+@define-color light2 #d5c4a1;
+@define-color light3 #bdae93;
+@define-color light4 #a89984;
+@define-color light4_256 #a89984;
+@define-color bright_red #fb4934;
+@define-color bright_green #b8bb26;
+@define-color bright_yellow #fabd2f;
+@define-color bright_blue #83a598;
+@define-color bright_purple #d3869b;
+@define-color bright_aqua #8ec07c;
+@define-color bright_orange #fe8019;
+@define-color neutral_red #cc241d;
+@define-color neutral_green #98971a;
+@define-color neutral_yellow #d79921;
+@define-color neutral_blue #458588;
+@define-color neutral_purple #b16286;
+@define-color neutral_aqua #689d6a;
+@define-color neutral_orange #d65d0e;
+@define-color faded_red #9d0006;
+@define-color faded_green #79740e;
+@define-color faded_yellow #b57614;
+@define-color faded_blue #076678;
+@define-color faded_purple #8f3f71;
+@define-color faded_aqua #427b58;
+@define-color faded_orange #af3a03;
+
+* {
+  background-image: none;
+  box-shadow: none;
+  font-family: FiraCode;
+}
+
+window {
+  background-color: rgba(50, 50, 50, 0.7);
+}
+
+button {
+  border-radius: 40px;
+  border: 15px solid black;
+  box-shadow: 10px 10px black;
+  color: white;
+  background-color: @dark0;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+
+  margin: 40px;
+}
+
+button:active,
+button:hover {
+  background-color: @neutral_red;
+}
+
+#lock {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
+  color: black;
+  background-color: @neutral_yellow;
+}
+
+#logout {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/logout.png"), url("/usr/local/share/wlogout/icons/logout.png"));
+  background-color: @neutral_red;
+}
+
+#suspend {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/suspend.png"), url("/usr/local/share/wlogout/icons/suspend.png"));
+  background-color: @neutral_blue;
+}
+
+#hibernate {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/hibernate.png"), url("/usr/local/share/wlogout/icons/hibernate.png"));
+  background-color: @neutral_purple;
+}
+
+#shutdown {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/shutdown.png"), url("/usr/local/share/wlogout/icons/shutdown.png"));
+  background-color: @neutral_green;
+}
+
+#reboot {
+  background-image: image(url("/home/stepka/.config/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
+  background-color: @neutral_orange;
+}
