@@ -1,4 +1,39 @@
 /* WARNING: HARDCODED /HOME PATHS AHEAD */
+/**/
+/**/
+/*                                                      */
+/*                          ██                          */
+/*                        ██░░██                        */
+/*                      ██░░░░░░██                      */
+/*                    ██░░░░░░░░░░██                    */
+/*                    ██░░░░░░░░░░██                    */
+/*                  ██░░░░░░░░░░░░░░██                  */
+/*                ██░░░░░░██████░░░░░░██                */
+/*                ██░░░░░░██████░░░░░░██                */
+/*              ██░░░░░░░░██████░░░░░░░░██              */
+/*              ██░░░░░░░░██████░░░░░░░░██              */
+/*            ██░░░░░░░░░░██████░░░░░░░░░░██            */
+/*          ██░░░░░░░░░░░░██████░░░░░░░░░░░░██          */
+/*          ██░░░░░░░░░░░░██████░░░░░░░░░░░░██          */
+/*        ██░░░░░░░░░░░░░░██████░░░░░░░░░░░░░░██        */
+/*        ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██        */
+/*      ██░░░░░░░░░░░░░░░░██████░░░░░░░░░░░░░░░░██      */
+/*      ██░░░░░░░░░░░░░░░░██████░░░░░░░░░░░░░░░░██      */
+/*    ██░░░░░░░░░░░░░░░░░░██████░░░░░░░░░░░░░░░░░░██    */
+/*    ██░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░██    */
+/*      ██████████████████████████████████████████      */
+/**/
+/**/
+/**/
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+/* WARNING: HARDCODED /HOME PATHS AHEAD */
+
+
 
 @define-color dark0_hard #1d2021;
 @define-color dark0 #282828;
@@ -54,7 +89,7 @@ button {
   border-radius: 40px;
   border: 15px solid black;
   box-shadow: 10px 10px black;
-  color: white;
+  color: black;
   background-color: @dark0;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,14 +98,8 @@ button {
   margin: 40px;
 }
 
-button:active,
-button:hover {
-  background-color: @neutral_red;
-}
-
 #lock {
   background-image: image(url("/home/stepka/.config/wlogout/icons/lock.png"), url("/usr/local/share/wlogout/icons/lock.png"));
-  color: black;
   background-color: @neutral_yellow;
 }
 
@@ -97,4 +126,8 @@ button:hover {
 #reboot {
   background-image: image(url("/home/stepka/.config/wlogout/icons/reboot.png"), url("/usr/local/share/wlogout/icons/reboot.png"));
   background-color: @neutral_orange;
+}
+
+button:hover {
+  background-color: @neutral_red;
 }
