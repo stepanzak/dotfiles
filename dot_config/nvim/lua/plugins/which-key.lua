@@ -2,8 +2,8 @@ return {
   {
     "folke/which-key.nvim",
     opts = {
-      defaults = {
-        ["<leader>m"] = { name = "+multicursors" },
+      spec = {
+        { "<leader>m", group = "multicursors", icon = { icon = "󰇀", color = "blue" } },
       },
     },
   },
