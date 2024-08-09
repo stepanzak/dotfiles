@@ -8,7 +8,7 @@ input {
             // For more information, see xkeyboard-config(7).
 
              layout "us,cz(qwerty)"
-             options "grp:win_space_toggle,caps:swapescape"
+             options "grp:win_space_toggle,caps:swapescape,numpad:mac"
         }
 
         // You can set the keyboard repeat parameters. The defaults match wlroots and sway.
@@ -114,7 +114,7 @@ layout {
     // You can change how the focus ring looks.
     focus-ring {
         // Uncomment this line to disable the focus ring.
-        // off
+        off
 
         // How many logical pixels the ring extends out from the windows.
         width 6
@@ -152,11 +152,12 @@ layout {
     border {
         // The settings are the same as for the focus ring.
         // If you enable the border, you probably want to disable the focus ring.
-        off
+        // off
 
-        width 4
-        active-color "#ffc87f"
-        inactive-color "#505050"
+        width 6
+        inactive-color "#928374"
+        active-color "#fabd2f"
+
 
         // active-gradient from="#ffbb66" to="#ffc880" angle=45 relative-to="workspace-view"
         // inactive-gradient from="#505050" to="#808080" angle=45 relative-to="workspace-view"
@@ -379,13 +380,18 @@ animations {
 
 // Here's a useful example. Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
-window-rule {
+// window-rule {
     // This regular expression is intentionally made as specific as possible,
     // since this is the default config, and we want no false positives.
     // You can get away with just app-id="wezterm" if you want.
     // The regular expression can match anywhere in the string.
-    match app-id=r#"^org\.wezfurlong\.wezterm$"#
-    default-column-width {}
+//     match app-id=r#"^org\.wezfurlong\.wezterm$"#
+//     default-column-width {}
+// }
+
+window-rule {
+    geometry-corner-radius 10
+    clip-to-geometry true
 }
 
 binds {
