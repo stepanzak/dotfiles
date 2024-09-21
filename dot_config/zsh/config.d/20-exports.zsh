@@ -22,7 +22,7 @@ export DIFFPROG="nvim -d"
 export DIFFTOOL="nvim -d"
 
 # Set bat as a pager for man
-export MANROFFOPT="-c" man man
+export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
 
 #export various envs that allow me to move files and folders out of my $HOME
