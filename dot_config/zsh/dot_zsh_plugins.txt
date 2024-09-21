@@ -1,4 +1,3 @@
-romkatv/powerlevel10k
 hlissner/zsh-autopair
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions

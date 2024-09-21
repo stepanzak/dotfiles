@@ -1,0 +1,229 @@
+"$schema" = "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json"
+
+version = 2
+final_space = true
+console_title_template = '{{ .Shell }} - {{ .Folder }}'
+shell_integration = true
+enable_cursor_positioning = true
+disable_notice = true
+
+[palette]
+  dark0_hard = "#1d2021"
+  dark0 = "#282828"
+  dark0_soft = "#32302f"
+  dark1 = "#3c3836"
+  dark2 = "#504945"
+  dark3 = "#665c54"
+  dark4 = "#7c6f64"
+  dark4_256 = "#7c6f64"
+
+  gray_245 = "#928374"
+  gray_244 = "#928374"
+
+  light0_hard = "#f9f5d7"
+  light0 = "#fbf1c7"
+  light0_soft = "#f2e5bc"
+  light1 = "#ebdbb2"
+  light2 = "#d5c4a1"
+  light3 = "#bdae93"
+  light4 = "#a89984"
+  light4_256 = "#a89984"
+
+  bright_red = "#fb4934"
+  bright_green = "#b8bb26"
+  bright_yellow = "#fabd2f"
+  bright_blue = "#83a598"
+  bright_purple = "#d3869b"
+  bright_aqua = "#8ec07c"
+  bright_orange = "#fe8019"
+
+  neutral_red = "#cc241d"
+  neutral_green = "#98971a"
+  neutral_yellow = "#d79921"
+  neutral_blue = "#458588"
+  neutral_purple = "#b16286"
+  neutral_aqua = "#689d6a"
+  neutral_orange = "#d65d0e"
+
+  faded_red = "#9d0006"
+  faded_green = "#79740e"
+  faded_yellow = "#b57614"
+  faded_blue = "#076678"
+  faded_purple = "#8f3f71"
+  faded_aqua = "#427b58"
+  faded_orange = "#af3a03"
+
+  background_dark = "p:dark0"
+  foreground_dark = "p:neutral_yellow"
+
+  background_light = "p:neutral_yellow"
+  foreground_light = "p:dark0"
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'os'
+    style = 'diamond'
+    template = ' {{ if .WSL }}WSL at {{ end }}{{.Icon}} '
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+  [[blocks.segments]]
+    type = 'path'
+    style = 'powerline'
+    powerline_symbol = ''
+    template = ' {{ .Path }} '
+    background = "p:background_dark"
+    foreground = "p:foreground_dark"
+
+    [blocks.segments.properties]
+      folder_icon = '...'
+      folder_separator_icon = '/'
+      home_icon = '~'
+      max_depth = 3.0
+      style = 'agnoster_short'
+
+  [[blocks.segments]]
+    type = 'git'
+    style = 'accordion'
+    powerline_symbol = ''
+    template = ' {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }}  {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }}  {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }}  {{ .StashCount }}{{ end }} '
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      branch_max_length = 25.0
+      fetch_stash_count = true
+      fetch_status = true
+      fetch_upstream_icon = true
+
+  [[blocks.segments]]
+    type = 'executiontime'
+    style = 'accordion'
+    powerline_symbol = ''
+    background = "p:background_dark"
+    foreground = "p:foreground_dark"
+
+  [[blocks.segments]]
+    type = 'status'
+    style = 'diamond'
+    foreground_templates = [
+      '{{ if gt .Code 0 }}p:light0{{ end }}',
+      'p:foreground_light',
+    ]
+    background_templates = [
+      '{{ if gt .Code 0 }}p:neutral_red{{ end }}',
+      'p:background_light',
+    ]
+    trailing_diamond = ''
+    template = '{{ if gt .Code 0 }}<b>  {{.Code}}</b>{{else}}  {{ end }}'
+
+    [blocks.segments.properties]
+      always_enabled = true
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'right'
+
+  [[blocks.segments]]
+    type = 'python'
+    style = 'diamond'
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }}'
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+  [[blocks.segments]]
+    type = 'go'
+    style = 'diamond'
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}'
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+  [[blocks.segments]]
+    type = 'node'
+    style = 'diamond'
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}'
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+  [[blocks.segments]]
+    type = 'ruby'
+    style = 'diamond'
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}'
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+  [[blocks.segments]]
+    type = 'java'
+    style = 'diamond'
+    leading_diamond = ' '
+    trailing_diamond = ''
+    template = '{{ if .Error }}{{ .Error }}{{ else }}{{ .Full }}{{ end }}'
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+    [blocks.segments.properties]
+      fetch_version = false
+
+
+[[blocks]]
+  type = 'prompt'
+  alignment = 'left'
+  newline = true
+
+  [[blocks.segments]]
+    type = 'session'
+    style = 'diamond'
+    trailing_diamond = ''
+    template = ' {{ .UserName }} '
+    background = "p:background_light"
+    foreground = "p:foreground_light"
+
+[secondary_prompt]
+  background = "transparent"
+  foreground = "p:neutral_orange"
+  template = "<r> </r>  "
+
+[transient_prompt]
+  background = "transparent"
+  foreground_templates = [
+    "{{if gt .Code 0}}red{{end}}",
+    "{{if eq .Code 0}}p:neutral_yellow{{end}}",
+  ]
+  template = '<r>  </r> '
+
+[[tooltips]]
+  type = "command"
+  tips = ["chz", "chezmoi"]
+  style = "diamond"
+  foreground = "p:foreground_light"
+  background = "p:background_light"
+  leading_diamond = ""
+  trailing_diamond = ""
+  template = "{{ .Output }}"
+
+  [tooltips.properties]
+    command = "chezmoi status | wc -l"
