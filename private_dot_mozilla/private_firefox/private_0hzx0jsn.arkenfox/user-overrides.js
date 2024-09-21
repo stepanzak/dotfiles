@@ -20,8 +20,8 @@ user_pref("browser.newtabpage.enabled", true);
 // History & Session
 // delete history after one week
 user_pref("browser.history_expire_days", 7);
-// restore pinned tabs
-user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", true);
+// Don't restore pinned tabs
+user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
 
 user_pref("privacy.clearOnShutdown.history", false);
 user_pref("privacy.clearOnShutdown.sessions", false);
