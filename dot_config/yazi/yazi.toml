@@ -1,0 +1,40 @@
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/yazi.json"
+
+##########################
+# IMPORTANT:
+# This config uses plugins currently defined in .chezmoiexternal file
+# This is because Yazi currently lacks declarative plugin manager
+
+[manager]
+show_hidden = true
+ratio = [3, 8, 6]
+
+[preview]
+wrap = "yes"
+
+[opener]
+junction = [{ run = "flatpak run re.sonny.Junction $@", orphan = true, desc = "Junction" }]
+
+[open]
+append_rules = [
+	{ name = "*/", use = [ "edit", "junction", "open", "reveal" ] },
+	{ name = "*", use = [ "open", "junction", "reveal" ] },
+]
+
+[plugin]
+prepend_previewers = [
+  { name = "*.md", run = "glow" },
+  { mime = "text/csv", run = "miller" },
+  { mime = "audio/*", run = "exifaudio" },
+  { mime = "application/epub+zip", run = "epub-preview" },
+
+  # Archive previewer
+  { mime = "application/*zip",            run = "ouch" },
+	{ mime = "application/x-tar",           run = "ouch" },
+	{ mime = "application/x-bzip2",         run = "ouch" },
+	{ mime = "application/x-7z-compressed", run = "ouch" },
+	{ mime = "application/x-rar",           run = "ouch" },
+	{ mime = "application/x-xz",            run = "ouch" },
+]

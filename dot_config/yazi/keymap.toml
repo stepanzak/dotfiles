@@ -1,0 +1,69 @@
+# Here are the default keybinds btw:
+# https://github.com/sxyazi/yazi/blob/latest/yazi-config/preset/keymap.toml
+
+# A TOML linter such as https://taplo.tamasfe.dev/ can use this schema to validate your config.
+# If you encounter any issues, please make an issue at https://github.com/yazi-rs/schemas.
+"$schema" = "https://yazi-rs.github.io/schemas/keymap.json"
+
+[manager]
+
+  [[manager.prepend_keymap]]
+  # Open the file/folder in ripdrag
+  on = [ "b", "d" ]
+  desc = "Drag from ripdrag"
+  run = '''
+shell 'ripdrag "$@" -x 2>/dev/null &' --confirm
+''' 
+
+  [[manager.prepend_keymap]]
+  on = [ "b", "j" ]
+  desc = "open in Junction"
+  run = '''
+shell 'flatpak run re.sonny.Junction "$@"' --confirm --orphan
+'''
+  [[manager.prepend_keymap]]
+	# Filter
+	on = [ "f" ]
+  run = "filter --smart"
+  desc = "Filter the files"
+
+
+  [[manager.prepend_keymap]]
+  on = [ "S" ]
+  run = "search rg"
+  desc = "Search files by content using ripgrep"
+
+  [[manager.prepend_keymap]]
+  on = ["b", "c"]
+  run = "plugin ouch --args=zip"
+  desc = "Compress with ouch"
+
+  [[manager.prepend_keymap]]
+  on   = [ "b", "a" ]
+  run  = "plugin archivemount --args=mount"
+  desc = "Mount selected archive"
+
+  [[manager.prepend_keymap]]
+  on   = [ "b", "u" ]
+  run  = "plugin archivemount --args=unmount"
+  desc = "Unmount and save changes to original archive"
+
+  [[manager.prepend_keymap]]
+  on   = [ "b", "o" ]
+  run  = "plugin open-with-cmd --args=block"
+  desc = "Open with command in the terminal"
+
+  [[manager.prepend_keymap]]
+  on   = [ "b", "O" ]
+  run  = "plugin open-with-cmd"
+  desc = "Open with command"
+
+  [[manager.prepend_keymap]]
+  on = ["b", "s"]
+  run = "plugin what-size"
+  desc = "get Size of selection/CWD"
+
+  [[manager.prepend_keymap]]
+  on = ["b", "g"]
+  run = "shell 'lazygit' --confirm --block"
+  desc = "open lazyGit in current folder"

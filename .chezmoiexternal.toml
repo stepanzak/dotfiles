@@ -21,3 +21,51 @@ refreshPeriod = "24h"
 type = "git-repo"
 url = "https://github.com/Sonico98/exifaudio.yazi.git"
 refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/yatline.yazi"]
+type = "git-repo"
+url = "https://github.com/imsi32/yatline.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/yatline-gruvbox.yazi"]
+type = "git-repo"
+url = "https://github.com/imsi32/yatline-gruvbox.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/yatline-githead.yazi"]
+type = "git-repo"
+url = "https://github.com/imsi32/yatline-githead.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/ouch.yazi"]
+type = "git-repo"
+url = "https://github.com/ndtoan96/ouch.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/archivemount.yazi"]
+type = "git-repo"
+url = "https://github.com/AnirudhG07/archivemount.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/epub-preview.yazi"]
+type = "git-repo"
+url = "https://github.com/kirasok/epub-preview.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/open-with-cmd.yazi"]
+type = "git-repo"
+url = "https://github.com/Ape/open-with-cmd.yazi"
+refreshPeriod = "24h"
+
+
+[".config/yazi/plugins/what-size.yazi"]
+type = "git-repo"
+url = "https://github.com/pirafrank/what-size.yazi"
+refreshPeriod = "24h"
