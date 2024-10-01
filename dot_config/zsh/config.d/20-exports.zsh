@@ -41,4 +41,4 @@ export STACK_ROOT="$XDG_DATA_HOME"/stack
 export WINEPREFIX="$XDG_DATA_HOME"/wine
 export HISTFILE="$XDG_STATE_HOME"/zsh/history
 
-export PATH="$PATH:$CARGO_HOME/bin:$HOME/bin:$HOME/.local/bin"
+export PATH="$PATH:$CARGO_HOME/bin:$HOME/bin:$HOME/.local/bin:$HOME/.yarn/bin"
