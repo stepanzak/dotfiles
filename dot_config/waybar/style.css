@@ -66,14 +66,14 @@ window#waybar.solo {
 }
 */
 
-window#waybar.ter mite {
-  background-color: #3F3F3F;
-}
-
-window#waybar.chromium {
-  background-color: #000000;
-  border: none;
-}
+/* window#waybar.ter mite { */
+/*   background-color: #3F3F3F; */
+/* } */
+/**/
+/* window#waybar.chromium { */
+/*   background-color: #000000; */
+/*   border: none; */
+/* } */
 
 button {
   /* Use box-shadow instead of border so the text isn't offset */
@@ -87,25 +87,6 @@ button {
 button:hover {
   background: inherit;
   box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button {
-  padding: 0 5px;
-  background-color: transparent;
-  color: #ffffff;
-}
-
-#workspaces button:hover {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-#workspaces button.focused {
-  background-color: #64727D;
-  box-shadow: inset 0 -3px #ffffff;
-}
-
-#workspaces button.urgent {
-  background-color: #eb4d4b;
 }
 
 #mode {
@@ -132,6 +113,10 @@ button:hover {
 #keyboard-state,
 #bluetooth,
 #custom-notification,
+#language,
+#workspaces,
+#privacy,
+#privacy-item,
 #mpd {
   padding: 0 10px;
   margin: 4px 5px 6px 5px;
@@ -145,21 +130,6 @@ button:hover {
   background-color: @neutral_green;
   color: black;
   padding: 0 20px;
-}
-
-#window,
-#workspaces {
-  margin: 0 4px;
-}
-
-/* If workspaces is the leftmost module, omit left margin */
-.modules-left>widget:first-child>#workspaces {
-  margin-left: 0;
-}
-
-/* If workspaces is the rightmost module, omit right margin */
-.modules-right>widget:last-child>#workspaces {
-  margin-right: 0;
 }
 
 #clock {
@@ -306,8 +276,8 @@ label:focus {
 }
 
 #idle_inhibitor {
-  background-color: @dark0;
-  color: white;
+  background-color: @neutral_yellow;
+  color: black;
 }
 
 #idle_inhibitor.activated {
@@ -332,16 +302,8 @@ label:focus {
   background-color: #51a37a;
 }
 
-#language {
-  background: #00b093;
-  color: #740864;
-  padding: 0 5px;
-  margin: 0 5px;
-  min-width: 16px;
-}
-
 #keyboard-state {
-  background: @bright_aqua;
+  background: @neutral_blue;
   color: #000000;
   padding: 0 0px;
   min-width: 16px;
@@ -352,7 +314,8 @@ label:focus {
 }
 
 #keyboard-state>label.locked {
-  background: rgba(0, 0, 0, 0.2);
+  background: @neutral_red;
+  border-radius: 6px;
 }
 
 #scratchpad {
@@ -365,21 +328,29 @@ label:focus {
 
 #privacy {
   padding: 0;
+  background-color: @neutral_green;
 }
 
 #privacy-item {
-  padding: 0 5px;
+  border-radius: 6px;
   color: white;
+  margin: 4px 6px;
+  background-color: @neutral_red;
 }
 
 #privacy-item.screenshare {
-  background-color: #cf5700;
+  /* background-color: @neutral_orange; */
 }
 
 #privacy-item.audio-in {
-  background-color: #1ca000;
+  /* background-color: @neutral_green; */
 }
 
 #privacy-item.audio-out {
-  background-color: #0069d4;
+  /* background-color: @neutral_blue; */
+}
+
+#language {
+  background-color: @neutral_blue;
+  font-size: 18px;
 }
