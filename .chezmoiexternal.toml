@@ -1,4 +1,4 @@
-# Yazi plugins: (yazi doesn't have any plugin manager)
+# Yazi plugins: (yazi doesn't have any plugin manager with declarative managment)
 
 [".config/yazi/plugins/glow.yazi"]
 type = "git-repo"
@@ -12,9 +12,9 @@ url = "https://github.com/Reledia/miller.yazi.git"
 refreshPeriod = "24h"
 
 
-[".config/yazi/plugins/bookmarks.yazi"]
+[".config/yazi/plugins/yamb.yazi"]
 type = "git-repo"
-url = "https://github.com/dedukun/bookmarks.yazi.git"
+url = "https://github.com/h-hg/yamb.yazi.git"
 refreshPeriod = "24h"
 
 [".config/yazi/plugins/exifaudio.yazi"]
