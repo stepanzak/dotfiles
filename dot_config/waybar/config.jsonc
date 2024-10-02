@@ -12,7 +12,7 @@
     "cpu",
     "memory",
     "temperature",
-    "battery",
+    "battery#bat0",
     "battery#bat1"
     // "niri/workspaces"
   ],
@@ -113,7 +113,8 @@
     "on-click-right": "brightnessctl s 100%",
     "on-click-middle": "brightnessctl s 0"
   },
-  "battery": {
+  "battery#bat0": {
+    "bat": "BAT0",
     "states": {
       // "good": 95,
       "warning": 30,
