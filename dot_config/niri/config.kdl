@@ -220,13 +220,14 @@ spawn-at-startup "foot"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "thunar" "--daemon"
 spawn-at-startup "swayosd-server"
+spawn-at-startup "systembus-notify"
 
 // You can override environment variables for processes spawned by niri.
 environment {
     // Set a variable like this:
     // QT_QPA_PLATFORM "wayland"
+    // Remove a variable by using null as the value
 
-    // Remove a variable by using null as the value:
     DISPLAY ":0"
 }
 
@@ -491,8 +492,8 @@ binds {
 
     // Mod+Page_Down      { focus-workspace-down; }
     // Mod+Page_Up        { focus-workspace-up; }
-    Mod+U              { focus-workspace-down; }
-    Mod+I              { focus-workspace-up; }
+    // Mod+U              { focus-workspace-down; }
+    // Mod+I              { focus-workspace-up; }
     // Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
     // Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
