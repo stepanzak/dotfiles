@@ -36,7 +36,7 @@
     "custom/notification"
   ],
   "bluetooth": {
-    "on-click-right": "overskride"
+    "on-click": "blueman-manager"
   },
   "keyboard-state": {
     // "device-path": "/dev/input/event4",
@@ -110,8 +110,9 @@
     // "reverse-mouse-scrolling": true,
     "on-scroll-up": "brightnessctl s 1%+",
     "on-scroll-down": "brightnessctl s 1%-",
-    "on-click-right": "brightnessctl s 100%",
-    "on-click-middle": "brightnessctl s 0"
+    "on-click": "brightnessctl s 100%",
+    "on-click-middle": "brightnessctl s 0",
+    "on-click-right": "brightnessctl s 1%"
   },
   "battery#bat0": {
     "bat": "BAT0",
