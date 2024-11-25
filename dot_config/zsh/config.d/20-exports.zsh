@@ -21,6 +21,11 @@ export EDITOR=nvim
 export DIFFPROG="nvim -d"
 export DIFFTOOL="nvim -d"
 
+# Use moar as a pager if installed
+if command -v moar >/dev/null 2>&1; then
+  export PAGER="moar"
+fi
+
 # Set bat as a pager for man
 export MANROFFOPT="-c"
 export MANPAGER="sh -c 'col -bx | bat -l man -p'"
