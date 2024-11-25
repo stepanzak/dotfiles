@@ -118,9 +118,9 @@
 }
 
 /* move buttons grid 20px up if there's the mpris player above it */
-.widget-mpris+.widget-buttons-grid {
-  margin-top: -20px;
-}
+/* .widget-mpris+.widget-buttons-grid { */
+/*   margin-top: -4px; */
+/* } */
 
 .widget-buttons-grid .text-button {
   background-color: @neutral_red;
