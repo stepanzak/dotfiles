@@ -413,6 +413,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+Return { spawn "foot"; }
     Alt+Space { spawn "fuzzel"; }
+    Mod+T { spawn "nwg-drawer" "-ovl"; }
     Super+Alt+L { spawn "swaylock"; }
 
     // You can also use a shell:
