@@ -1,3 +1,5 @@
+mattmc3/ez-compinit
+Aloxaf/fzf-tab
 hlissner/zsh-autopair
 zsh-users/zsh-autosuggestions
 zsh-users/zsh-completions

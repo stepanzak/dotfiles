@@ -4,17 +4,17 @@
 bindkey -v
 export KEYTIMEOUT=1
 
-# Use vim keys in tab complete menu: 
-bindkey -M menuselect 'h' vi-backward-char 
-bindkey -M menuselect 'j' vi-down-line-or-history 
-bindkey -M menuselect 'k' vi-up-line-or-history 
-bindkey -M menuselect 'l' vi-forward-char 
-bindkey -M menuselect 'left' vi-backward-char 
-bindkey -M menuselect 'down' vi-down-line-or-history 
-bindkey -M menuselect 'up' vi-up-line-or-history 
-bindkey -M menuselect 'right' vi-forward-char 
-# Fix backspace bug when switching modes 
-bindkey "^?" backward-delete-char
+# Use vim keys in tab complete menu:
+# bindkey -M menuselect 'h' vi-backward-char
+# bindkey -M menuselect 'j' vi-down-line-or-history
+# bindkey -M menuselect 'k' vi-up-line-or-history
+# bindkey -M menuselect 'l' vi-forward-char
+# bindkey -M menuselect 'left' vi-backward-char
+# bindkey -M menuselect 'down' vi-down-line-or-history
+# bindkey -M menuselect 'up' vi-up-line-or-history
+# bindkey -M menuselect 'right' vi-forward-char
+# Fix backspace bug when switching modes
+# bindkey "^?" backward-delete-char
 
 #hit v in normal mode to edit command line
 autoload -Uz edit-command-line

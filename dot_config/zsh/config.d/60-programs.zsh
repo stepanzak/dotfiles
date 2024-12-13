@@ -25,9 +25,10 @@ antidote load
 [ -x "$(command -v xremap)" ] && eval "$(xremap --completions zsh)"
 
 # pipx:
-autoload -U bashcompinit
-bashcompinit
 [ -x "$(command -v pipx)" ] && eval "$(register-python-argcomplete pipx)"
+
+# oh-my-posh
+[ -x "$(command -v oh-my-posh)" ] && [ ! -d "${fpath[1]}/_oh-my-posh" ] && oh-my-posh completion zsh > "${fpath[1]}/_oh-my-posh"
 
 # pnpm
 export PNPM_HOME="/home/stepka/.local/share/pnpm"
