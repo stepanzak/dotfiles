@@ -6,5 +6,3 @@ for conf in "$HOME/.config/zsh/config.d/"*.zsh; do
   source "${conf}"
 done
 unset conf
-
-eval "$(oh-my-posh init zsh --config '~/.config/zsh/gruvbox-velvet.omp.toml')"
