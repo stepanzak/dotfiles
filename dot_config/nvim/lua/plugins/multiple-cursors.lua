@@ -34,14 +34,6 @@ return {
       { "<C-M-l>", "<Cmd>MultipleCursorsLock<CR>", mode = { "n", "x" }, desc = "Lock multicursors" },
     },
     opts = {
-      pre_hook = function()
-        vim.g.minipairs_disable = true
-        require("cmp").setup({ enabled = false })
-      end,
-      post_hook = function()
-        vim.g.minipairs_disable = false
-        require("cmp").setup({ enabled = true })
-      end,
       custom_key_maps = {
         {
           "n",
