@@ -1,0 +1,584 @@
+#####################################################################
+# Default EndeavourOS packages present on my system as of 2024-08-08
+#####################################################################
+# BASE
+
+## Base system
+iptables-nft
+base
+base-devel
+endeavouros-mirrorlist
+endeavouros-keyring
+cryptsetup
+device-mapper
+diffutils
+dracut
+inetutils
+less
+linux
+linux-firmware
+linux-headers
+logrotate
+lsb-release
+man-db
+man-pages
+mdadm
+nano
+nano-syntax-highlighting
+perl
+s-nail
+sudo
+sysfsutils
+systemd-sysvcompat
+texinfo
+which
+vi
+
+## Filesystem
+btrfs-progs
+dosfstools
+e2fsprogs
+exfatprogs
+f2fs-tools
+jfsutils
+lvm2
+mtools
+nfs-utils
+nilfs-utils
+ntfs-3g
+reiserfsprogs
+xfsprogs
+
+## Boot
+efibootmgr
+efitools
+
+# HARDWARE
+
+## CPU
+intel-ucode
+mesa-utils
+
+## X system
+nvidia
+xf86-input-libinput
+xorg-server
+xorg-xdpyinfo
+xorg-xinit
+xorg-xinput
+xorg-xkill
+xorg-xrandr
+
+## Network hardware
+b43-fwcutter
+
+## General hardware
+lsscsi
+sg3_utils
+smartmontools
+usbutils
+
+## Audio hardware
+alsa-firmware
+alsa-plugins
+alsa-utils
+gst-libav
+gst-plugin-pipewire
+gst-plugins-bad
+gst-plugins-ugly
+libdvdcss
+pavucontrol
+pipewire-alsa
+pipewire-jack
+pipewire-pulse
+rtkit
+sof-firmware
+wireplumber
+
+# SOFTWARE
+
+## General system
+bash-completion
+dmidecode
+dmraid
+downgrade
+duf
+glances
+haveged
+hwdetect
+hwinfo
+inxi
+libgsf
+libopenraw
+mlocate
+ntp
+pacman-contrib
+pkgfile
+poppler-glib
+power-profiles-daemon
+rebuild-detector
+rsync
+unrar
+unzip
+wget
+xdg-user-dirs
+xdg-utils
+
+## Network
+bind
+dnsmasq
+ethtool
+modemmanager
+netctl
+networkmanager-openconnect
+networkmanager-openvpn
+nss-mdns
+usb_modeswitch
+whois
+wpa_supplicant
+xl2tpd
+
+## Bluetooth
+bluez
+bluez-utils
+
+## Firewall
+firewalld
+python-pyqt5
+python-capng
+
+#####################################################################
+# rest of my packages (those not included in the default EndeavourOS)
+#####################################################################
+accountsservice
+appstream-glib
+appstream-qt
+appstream-qt5
+archlinux-appstream-data
+ark
+atuin
+audacity
+axel
+bat
+bat-extras
+bitwarden
+blueman
+bluez-qt
+bluez-tools
+boost
+bpython
+brightnessctl
+broot
+btop
+cargo-tauri
+cargo-update
+chafa
+chezmoi
+clang
+cliphist
+cloudflared
+cmatrix
+compiler-rt
+converseen
+cowsay
+cppunit
+cups
+cups-browsed
+cups-filters
+cups-pdf
+cups-pk-helper
+darkman
+dhclient
+difftastic
+discord
+distrobox
+docker
+dog
+dotnet-sdk
+dotnet-sdk-7.0
+dust
+earlyoom
+electron
+entr
+eos-apps-info
+eos-hooks
+eos-log-tool
+eos-packagelist
+eos-rankmirrors
+eza
+fastfetch
+fd
+ffmpegthumbnailer
+ffmpegthumbs
+figlet
+firefox
+flatpak
+flatpak-builder
+foomatic-db
+foomatic-db-engine
+foomatic-db-gutenprint-ppds
+foomatic-db-nonfree
+foomatic-db-nonfree-ppds
+foomatic-db-ppds
+foot
+foot-terminfo
+fsarchiver
+fuzzel
+gamescope
+gendesk
+geoip
+ghostscript
+gimagereader-gtk
+gimp
+git-delta
+github-cli
+gitleaks
+glow
+gnome-backgrounds
+gnome-boxes
+gnome-calculator
+gnome-calendar
+gnome-characters
+gnome-clocks
+gnome-connections
+gnome-disk-utility
+gnome-epub-thumbnailer
+gnome-font-viewer
+gnome-logs
+gnome-maps
+gnome-menus
+gnome-music
+gnome-online-accounts
+gnome-remote-desktop
+gnome-software
+gnome-system-monitor
+gnome-text-editor
+gnome-user-docs
+gnome-user-share
+gnome-weather
+go-yq
+greetd-tuigreet
+grilo-plugins
+gsfonts
+gum
+gutenprint
+gvfs-afc
+gvfs-dnssd
+gvfs-goa
+gvfs-google
+gvfs-gphoto2
+gvfs-mtp
+gvfs-nfs
+gvfs-onedrive
+gvfs-smb
+gvfs-wsdd
+hdparm
+helvum
+hplip
+hunspell-en_us
+hyprcursor
+imv
+inkscape
+jdk21-openjdk
+kdegraphics-thumbnailers
+kdenlive
+kdialog
+kernel-install-for-dracut
+kimageformats5
+kinit
+kio-admin
+kio-fuse
+kio-gdrive
+krita
+kwalletmanager
+lazygit
+lib32-gst-plugins-base-libs
+lib32-gtk3
+lib32-libxslt
+lib32-ocl-icd
+lib32-v4l-utils
+lib32-vkd3d
+lib32-vulkan-intel
+libreoffice-fresh
+libreoffice-fresh-cs
+libvirt
+libvirt-glib
+libvirt-python
+libwnck3
+linux-zen
+loupe
+lshw
+lsix
+luarocks
+malcontent
+mangohud
+marble
+meld
+miller
+monolith
+mosh
+nautilus
+navi
+network-manager-applet
+network-manager-sstp
+networkmanager-l2tp
+networkmanager-pptp
+networkmanager-strongswan
+networkmanager-vpnc
+ninja
+niri
+nm-connection-editor
+noto-fonts-cjk
+noto-fonts-extra
+npm
+nvidia-hook
+nvidia-prime
+nwg-look
+onefetch
+openssh
+orca
+ouch
+paru
+pastel
+perl-image-exiftool
+picocom
+pinta
+plasma-wayland-protocols
+polkit-kde-agent
+procs
+pulseaudio-qt
+python
+python-pipx
+python-pynvim
+python-reportlab
+qbittorrent
+qstardict
+qt5-doc
+qt5-sensors
+qt5-serialport
+qt5-tools
+qt5-webengine
+qt6-3d
+qt6-charts
+qt6-connectivity
+qt6-datavis3d
+qt6-doc
+qt6-examples
+qt6-httpserver
+qt6-languageserver
+qt6-location
+qt6-lottie
+qt6-multimedia
+qt6-networkauth
+qt6-positioning
+qt6-quick3d
+qt6-quick3dphysics
+qt6-quicktimeline
+qt6-remoteobjects
+qt6-scxml
+qt6-sensors
+qt6-serialbus
+qt6-serialport
+qt6-shadertools
+qt6-speech
+qt6-tools
+qt6-virtualkeyboard
+qt6-webchannel
+qt6-webengine
+qt6-websockets
+qt6-webview
+reflector
+ripgrep
+rygel
+samba
+sane-airscan
+satty
+schroedinger
+scrcpy
+shattered-pixel-dungeon
+signal-desktop
+simple-scan
+sl
+snapshot
+spice-vdagent
+splix
+sshfs
+stardict
+steam
+steam-native-runtime
+swaybg
+swayidle
+swaync
+syncthing
+system-config-printer
+systembus-notify
+systemctl-tui
+tailscale
+tealdeer
+telegram-desktop
+termdown
+tesseract-data-ces
+thunar
+thunar-archive-plugin
+thunar-media-tags-plugin
+thunar-volman
+tig
+tigervnc
+timeshift
+tmux
+toilet
+torbrowser-launcher
+totem
+tracker3-miners
+translate-shell
+ttf-fira-code
+ttf-firacode-nerd
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
+ttf-opensans
+ttysvr
+unarchiver
+upower
+uwufetch
+veracrypt
+virt-install
+vkd3d
+vlc
+vulkan-intel
+vulkan-mesa-layers
+welcome
+weston
+wezterm
+wf-recorder
+wifite
+wiki-tui
+wine-gecko
+wine-mono
+wine-staging
+winetricks
+wireguard-tools
+wl-clipboard
+wlr-randr
+wtype
+xclip
+xdg-desktop-portal-gnome
+xdg-desktop-portal-gtk
+xdg-user-dirs-gtk
+xf86-video-intel
+yazi
+yelp
+yt-dlp
+zellij
+zig
+zoxide
+zsh
+
+adwsteamgtk [aur]
+adwsteamgtk [aur]
+archivemount [aur]
+arkenfox-user.js-git [aur]
+arrpc [aur]
+asciiquarium-git [aur]
+audio-share-bin [aur]
+bauh [aur]
+bemoji [aur]
+betterdiscord-installer [aur]
+bluetuith [aur]
+brave-bin [aur]
+brother-dcpt720dw [aur]
+cage-git [aur]
+carbonyl-bin [aur]
+catt-qt [aur]
+cbonsai [aur]
+cheat [aur]
+cosmic-randr-git [aur]
+cpu-x [aur]
+dcnnt [aur]
+deepqt [aur]
+drawio-desktop [aur]
+dxvk-bin [aur]
+eg [aur]
+envycontrol [aur]
+etcher-bin [aur]
+etcher-cli-bin [aur]
+figma-linux-bin [aur]
+flaresolverr [aur]
+fx_cast-bin [aur]
+git-fire-git [aur]
+gparted-git [aur]
+greetd-regreet-git [aur]
+hererocks [aur]
+heroic-games-launcher-bin [aur]
+hunspell-cs [aur]
+insomnia-bin [aur]
+jackett-bin [aur]
+jamesdsp [aur]
+konsave [aur]
+logseq-desktop-bin [aur]
+lunar-client [aur]
+marble-restricted-maps [aur]
+mindustry-bin [aur]
+moar [aur]
+mongodb-bin [aur]
+mongodb-compass [aur]
+neovim-git [aur]
+nodejs-nativefier [aur]
+nodejs-nodemon [aur]
+nvm [aur]
+nwg-clipman [aur]
+nwg-drawer [aur]
+oh-my-posh [aur]
+onlyoffice-bin [aur]
+overdue [aur]
+pacman-cleanup-hook [aur]
+pacman-log-orphans-hook [aur]
+pellets [aur]
+pipes-rs [aur]
+prismlauncher-qt5-bin [aur]
+protonplus [aur]
+protontricks [aur]
+protonup-qt-bin [aur]
+python-fabric-git [aur]
+python-pyclip [aur]
+qt5ct-kde [aur]
+qt6ct-kde [aur]
+refract-bin [aur]
+ripdrag-git [aur]
+rustdesk-bin [aur]
+sddm-conf-git [aur]
+sddm-git [aur]
+shiny-mirrors [aur]
+spotify [aur]
+spotube-bin [aur]
+stardict-en-cz [aur]
+suckit-bin [aur]
+superfile [aur]
+swaylock-git [aur]
+swayosd-git [aur]
+tauri-devel-meta [aur]
+termusic [aur]
+thonny [aur]
+topgrade [aur]
+trashy-git [aur]
+ttf-ms-win11-auto [aur]
+ttf-twemoji [aur]
+unciv-bin [aur]
+ungoogled-chromium-xdg-bin [aur]
+universal-android-debloater-bin [aur]
+valent-git [aur]
+vdhcoapp-bin [aur]
+ventoy-bin [aur]
+vesktop-bin [aur]
+video-trimmer [aur]
+vscodium-bin-marketplace [aur]
+waybar-git [aur]
+wdisplays [aur]
+where-is-my-sddm-theme-git [aur]
+wlogout [aur]
+xboxdrv [aur]
+xcursor-box-cursor [aur]
+xdg-ninja-git [aur]
+xone-dkms [aur]
+xremap-wlroots-bin [aur]
+xwayland-satellite [aur]
+yetris [aur]
