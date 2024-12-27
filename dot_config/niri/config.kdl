@@ -221,6 +221,9 @@ spawn-at-startup "xwayland-satellite"
 spawn-at-startup "thunar" "--daemon"
 spawn-at-startup "swayosd-server"
 spawn-at-startup "systembus-notify"
+spawn-at-startup "flatpak" "run" "io.github.martchus.syncthingtray" "--wait"
+spawn-at-startup "vesktop" "--start-minimized"
+spawn-at-startup "walker" "--gapplication-service"
 
 // You can override environment variables for processes spawned by niri.
 environment {
