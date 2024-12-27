@@ -1,0 +1,1 @@
+flatpak run $(flatpak list --app --columns=name,description,application | grep -Fw -f <(flatpak list --app --columns=name,description | awk -F'\t' '{print $1 "......" $2}' | walker --dmenu | awk -F'\\.\\.\\.\\.\\.\\.' '{print $1 "\t" $2}') | awk -F'\t' '{print $3}')
