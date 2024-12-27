@@ -228,10 +228,11 @@ spawn-at-startup "walker" "--gapplication-service"
 // You can override environment variables for processes spawned by niri.
 environment {
     // Set a variable like this:
-    // QT_QPA_PLATFORM "wayland"
     // Remove a variable by using null as the value
 
     DISPLAY ":0"
+    QT_QPA_PLATFORM "wayland"
+    QT_QPA_PLATFORMTHEME "qt5ct"
 }
 
 cursor {
