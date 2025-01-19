@@ -18,8 +18,8 @@ user_pref("browser.startup.page", 3);
 user_pref("browser.newtabpage.enabled", true);
 
 // History & Session
-// delete history after one week
-user_pref("browser.history_expire_days", 7);
+// delete history after one year
+user_pref("browser.history_expire_days", 365);
 // Don't restore pinned tabs
 user_pref("browser.sessionstore.restore_pinned_tabs_on_demand", false);
 
@@ -47,3 +47,5 @@ user_pref("widget.use-xdg-desktop-portal.mime-handler", 1);
 user_pref("widget.use-xdg-desktop-portal.file-picker", 1);
 
 user_pref("webgl.disabled", false);
+
+user_pref("privacy.sanitize.sanitizeOnShutdown", false);
