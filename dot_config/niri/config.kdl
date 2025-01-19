@@ -215,7 +215,7 @@ spawn-at-startup "waybar"
 spawn-at-startup "nm-applet"
 spawn-at-startup "swaybg" "-m" "fill" "-i" "/home/stepka/Pictures/dock.png"
 spawn-at-startup "swayidle" "-w" "timeout" "300" "niri msg action power-off-monitors" "timeout" "400" "swaylock -f" "timeout" "1200" "systemctl suspend-then-hibernate" "before-sleep" "swaylock -f"
-spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
+// spawn-at-startup "wl-paste" "--watch" "cliphist" "store"
 spawn-at-startup "foot"
 spawn-at-startup "xwayland-satellite"
 spawn-at-startup "thunar" "--daemon"
@@ -224,6 +224,8 @@ spawn-at-startup "systembus-notify"
 spawn-at-startup "flatpak" "run" "io.github.martchus.syncthingtray" "--wait"
 spawn-at-startup "vesktop" "--start-minimized"
 spawn-at-startup "walker" "--gapplication-service"
+spawn-at-startup "swaync"
+spawn-at-startup "udiskie" "--tray"
 
 // You can override environment variables for processes spawned by niri.
 environment {
@@ -404,6 +406,20 @@ window-rule {
     // Sidebery is an extensions that adds vertical tabs to firefox
     match app-id="firefox" title="[Sidebery]"
     default-column-width { fixed 1335; }
+}
+
+window-rule {
+    match app-id="re.sonny.Junction"
+    open-floating true
+}
+
+// Open the Firefox picture-in-picture player as floating by default.
+window-rule {
+    // This app-id regular expression will work for both:
+    // - host Firefox (app-id is "firefox")
+    // - Flatpak Firefox (app-id is "org.mozilla.firefox")
+    match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+    open-floating true
 }
 
 binds {
