@@ -5,11 +5,14 @@ return {
     opts = {
       ---@type lspconfig.options
       servers = {
-        html = {},
+        html = {
+          filetypes = { "html", "templ", "htmldjango" },
+        },
         cssls = {},
         cssmodules_ls = {},
         css_variables = {},
         emmet_language_server = {},
+        djlsp = {},
       },
     },
   },
