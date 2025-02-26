@@ -22,3 +22,6 @@ function pls(){
 		sudo $@
 	fi
 }
+
+#ignore dollar sign at the start of command
+alias \$=''
