@@ -78,6 +78,8 @@ builtins:
         cmd: bash -c 'wl-paste | satty --filename - --copy-command=wl-copy'
       - name: restart walker service
         cmd: bash -c 'pkill walker; walker --gapplication-service'
+      - name: restart xwayland-sattelite
+        cmd: bash -c 'pkill -f xwayland-sattelite; niri msg action spawn -- xwayland-sattelite :0'
   dmenu:
     name: dmenu
     placeholder: Dmenu
