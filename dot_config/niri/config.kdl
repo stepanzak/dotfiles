@@ -413,6 +413,34 @@ window-rule {
     open-floating true
 }
 
+window-rule {
+    match app-id="it.mijorus.smile"
+    open-floating true
+}
+
+window-rule {
+    match app-id="com.github.finefindus.eyedropper"
+    open-floating true
+}
+
+window-rule {
+    match app-id="com.github.tenderowl.frog"
+    open-floating true
+}
+
+window-rule {
+    match app-id="io.gitlab.liferooter.TextPieces"
+    open-floating true
+}
+
+window-rule {
+    match app-id="org.gnome.clocks"
+    open-floating true
+    default-column-width { fixed 300; }
+    default-window-height { fixed 600; }
+    default-floating-position x=0 y=0 relative-to="top"
+}
+
 // Open the Firefox picture-in-picture player as floating by default.
 window-rule {
     // This app-id regular expression will work for both:
