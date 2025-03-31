@@ -27,8 +27,11 @@ antidote load
 # pipx:
 [ -x "$(command -v pipx)" ] && eval "$(register-python-argcomplete pipx)"
 
+# NestedTextTo
+if (( $+functions[compdef] )) && (( $+commands[nt2json] ))  compdef _gnu_generic nt2yaml nt2toml nt2json json2nt toml2nt yaml2nt
+
 # oh-my-posh
-[ -x "$(command -v oh-my-posh)" ] && [ ! -d "${fpath[1]}/_oh-my-posh" ] && oh-my-posh completion zsh > "${fpath[1]}/_oh-my-posh"
+# [ -x "$(command -v oh-my-posh)" ] && [ ! -d "${fpath[1]}/_oh-my-posh" ] && oh-my-posh completion zsh > "${fpath[1]}/_oh-my-posh"
 
 # pnpm
 export PNPM_HOME="/home/stepka/.local/share/pnpm"
