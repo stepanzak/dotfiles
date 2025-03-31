@@ -484,7 +484,8 @@ binds {
     Mod+V { spawn "walker" "-m" "clipboard"; }
 
     // Mod+E { spawn "bemoji" "-t"; }
-    Mod+E { spawn "walker" "-m" "emojis"; }
+    // Mod+E { spawn "walker" "-m" "emojis"; }
+    Mod+E { spawn "flatpak" "run" "it.mijorus.smile"; }
     // Example volume keys mappings for PipeWire & WirePlumber.
     // The allow-when-locked=true property makes them work even when the session is locked.
     XF86AudioRaiseVolume   allow-when-locked=true { spawn "swayosd-client" "--output-volume" "raise"; }
