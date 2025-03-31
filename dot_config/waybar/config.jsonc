@@ -13,7 +13,8 @@
     "memory",
     "temperature",
     "battery#bat0",
-    "battery#bat1"
+    "battery#bat1",
+    "group/quick-apps"
     // "niri/workspaces"
   ],
   "modules-center": [
@@ -32,7 +33,6 @@
     "network",
     "bluetooth",
     "backlight",
-    // "sway/language",
     "custom/notification"
   ],
   "bluetooth": {
@@ -57,8 +57,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": " ",
-      "deactivated": " "
+      "activated": "",
+      "deactivated": ""
     }
   },
   "tray": {
@@ -67,7 +67,9 @@
   },
   "clock": {
     // "timezone": "America/New_York",
-    "format": "{:%H:%M}"
+    "format": "{:%H:%M}",
+    "on-click": "flatpak run org.gnome.clocks",
+    "tooltip-format": "open Clocks"
   },
   "clock#date": {
     "format": "{:%d. %m. %Y}",
@@ -182,12 +184,12 @@
   "pulseaudio": {
     "reverse-scrolling": true,
     // "scroll-step": 1, // %, can be a float
-    "format": "{volume}% {icon}    {format_source}",
+    "format": "{volume}% {icon} {format_source}",
     "format-bluetooth": "{volume}% {icon} {format_source}",
     "format-bluetooth-muted": "{icon} {format_source}",
-    "format-muted": "{volume}% 󰝟    {format_source}",
+    "format-muted": "{volume}% 󰝟 {format_source}",
     "format-source": "{volume}% ",
-    "format-source-muted": " ",
+    "format-source-muted": "",
     "format-icons": {
       "headphone": "",
       "hands-free": "",
@@ -223,7 +225,7 @@
       "notification": "<span foreground='red'><sup></sup></span>",
       "none": "",
       "dnd-notification": "<span foreground='red'><sup></sup></span>",
-      "dnd-none": " ",
+      "dnd-none": "",
       "inhibited-notification": "<span foreground='red'><sup></sup></span>",
       "inhibited-none": "",
       "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
@@ -234,6 +236,78 @@
     "exec": "swaync-client -swb",
     "on-click": "swaync-client -t -sw",
     "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+  "group/quick-apps": {
+    "orientation": "inherit",
+    "drawer": {
+      "transition-duration": 250,
+      "children-class": "quick-app",
+      "transition-left-to-right": true
+    },
+    "modules": [
+      "custom/nwg-drawer", // First element is the "group leader" and won't ever be hidden
+      "custom/collector",
+      "custom/text-pieces",
+      "custom/dialect",
+      "custom/characters",
+      "custom/frog",
+      "custom/eyedropper"
+    ]
+  },
+  "custom/nwg-drawer": {
+    "tooltip": true,
+    "tooltip-format": "open nwg-drawer",
+    "format": "󰀻",
+    "on-click": "nwg-drawer -ovl",
+    "escape": true
+  },
+  "custom/collector": {
+    "tooltip": true,
+    "tooltip-format": "open Collector",
+    "format": "󰇀",
+    "on-click": "flatpak run it.mijorus.collector",
+    "on-click-middle": "flatpak kill it.mijorus.collector",
+    "escape": true
+  },
+  "custom/text-pieces": {
+    "tooltip": true,
+    "tooltip-format": "open Text Pieces",
+    "format": "",
+    "on-click": "flatpak run io.gitlab.liferooter.TextPieces",
+    "on-click-middle": "flatpak kill io.gitlab.liferooter.TextPieces",
+    "escape": true
+  },
+  "custom/dialect": {
+    "tooltip": true,
+    "tooltip-format": "open Dialect",
+    "format": "󰗊",
+    "on-click": "flatpak run app.drey.Dialect",
+    "on-click-middle": "flatpak kill app.drey.Dialect",
+    "escape": true
+  },
+  "custom/characters": {
+    "tooltip": true,
+    "tooltip-format": "open Characters",
+    "format": "󱔁",
+    "on-click": "flatpak run org.gnome.Characters",
+    "on-click-middle": "flatpak kill org.gnome.Characters",
+    "escape": true
+  },
+  "custom/frog": {
+    "tooltip": true,
+    "tooltip-format": "open Frog",
+    "format": "",
+    "on-click": "flatpak run com.github.tenderowl.frog",
+    "on-click-middle": "flatpak kill com.github.tenderowl.frog",
+    "escape": true
+  },
+  "custom/eyedropper": {
+    "tooltip": true,
+    "tooltip-format": "open Eyedropper",
+    "format": "󰈊",
+    "on-click": "flatpak run com.github.finefindus.eyedropper",
+    "on-click-middle": "flatpak kill com.github.finefindus.eyedropper",
     "escape": true
   },
   "niri/workspaces": {
@@ -250,7 +324,7 @@
     }
   },
   "niri/language": {
-    "format": "{short}",
+    "format": "{short}"
     // "format-en": "{}"
     // "format-cs": "Kde domov můj?"
   }

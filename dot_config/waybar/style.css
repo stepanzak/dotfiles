@@ -42,8 +42,9 @@
 
 * {
   /* `otf-font-awesome` is required to be installed for icons */
-  font-family: FontAwesome, Roboto, Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-family: FiraCode Nerd Font Propo, FontAwesome, Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
 }
 
 window#waybar {
@@ -113,6 +114,13 @@ button:hover {
 #keyboard-state,
 #bluetooth,
 #custom-notification,
+#quick-apps,
+#custom-collector,
+#custom-text-pieces,
+#custom-dialect,
+#custom-characters,
+#custom-frog,
+#custom-eyedropper,
 #language,
 #workspaces,
 #privacy,
@@ -130,6 +138,50 @@ button:hover {
   background-color: @neutral_green;
   color: black;
   padding: 0 20px;
+}
+
+#quick-apps {
+  background-color: @neutral_orange;
+  padding: 0 6px;
+}
+
+
+#custom-collector,
+#custom-dialect,
+#custom-text-pieces,
+#custom-characters,
+#custom-frog,
+#custom-eyedropper {
+  margin: 2px 3px 4px 3px;
+}
+
+#custom-nwg-drawer {
+  margin: 4px 5px 6px 5px;
+  color: black;
+}
+
+#custom-collector {
+  background-color: @neutral_yellow;
+}
+
+#custom-text-pieces {
+  background-color: @neutral_red;
+}
+
+#custom-dialect {
+  background-color: @neutral_green;
+}
+
+#custom-characters {
+  background-color: @neutral_purple;
+}
+
+#custom-frog {
+  background-color: @neutral_aqua;
+}
+
+#custom-eyedropper {
+  background-color: @bright_red;
 }
 
 #clock {
