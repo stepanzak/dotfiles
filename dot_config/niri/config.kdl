@@ -477,7 +477,7 @@ binds {
 
     Mod+A { spawn "bash" "-c" "~/scripts/toggle_caps_esc_swap.sh"; }
 
-    Mod+M { spawn "bash" "-c" "~/scripts/mute_brightness.sh"; }
+    Mod+M { power-off-monitors; }
     Mod+P { spawn "bash" "-c" "~/scripts/pause_app.sh"; }
 
     // Mod+V { spawn "bash" "-c" "cliphist list | fuzzel -w 100 --dmenu | cliphist decode | wl-copy"; }
