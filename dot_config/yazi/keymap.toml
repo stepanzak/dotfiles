@@ -74,6 +74,11 @@ run = "shell 'tmux new-window -a $EDITOR $0' --confirm --orphan"
 desc = "Open in $EDITOR in new tmux tab"
 
 [[manager.prepend_keymap]]
+on = ["b", "T"]
+run = "shell 'neovide $0' --confirm --orphan"
+desc = "Open in Neovide"
+
+[[manager.prepend_keymap]]
 on = ["b", "t"]
 run = "shell 'tmux new-window -a' --confirm --orphan"
 desc = "Open shell here in in new tmux tab"
