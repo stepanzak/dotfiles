@@ -77,3 +77,13 @@ desc = "Open in $EDITOR in new tmux tab"
 on = ["b", "t"]
 run = "shell 'tmux new-window -a' --confirm --orphan"
 desc = "Open shell here in in new tmux tab"
+
+[[manager.prepend_keymap]]
+on = ["z"]
+run = "plugin zoxide"
+desc = "Jump to directory using Zoxide"
+
+[[manager.prepend_keymap]]
+on = ["Z"]
+run = "plugin fzf"
+desc = "Select a file to reveal using FZF"
