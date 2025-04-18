@@ -8,7 +8,7 @@ for index ({1..9}) alias "$index"="cd +${index}"; unset index
 alias "bls=eza -a --group-directories-first -s modified --icons=always"
 alias "ls=eza -a --group-directories-first -s name --icons=always"
 alias "sl=sl -eawd3"
-alias "rt=trashy put"
+alias "rt=gtrash put"
 alias "chz=chezmoi"
 
 #tldrf (tldr find) - search tldr cache with fzf
