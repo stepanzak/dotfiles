@@ -25,7 +25,7 @@ disable = ["spicetify"]
 
 # Run `sudo -v` to cache credentials at the start of the run
 # This avoids a blocking password prompt in the middle of an unattended run
-#pre_sudo = false
+pre_sudo = true
 
 # Run inside tmux
 #run_in_tmux = true
@@ -95,7 +95,7 @@ disable = ["spicetify"]
 # Arch Package Manager to use. Allowed values: autodetect, aura, garuda_update, pacman, pamac, paru, pikaur, trizen, yay.
 #arch_package_manager = "pacman"
 # Arguments to pass yay (or paru) when updating packages
-#yay_arguments = "--nodevel"
+yay_arguments = "--sudoloop"
 # Arguments to pass dnf when updating packages
 #dnf_arguments = "--refresh"
 #aura_aur_arguments = "-kx"
