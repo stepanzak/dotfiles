@@ -1,3 +1,7 @@
+> [!WARNING]
+> This repository was moved to [Codeberg](https://codeberg.org/stepanzak/dotfiles) and will be archived here on GitHub.
+> I plan to use GitHub as little as I can. The reason is it being owned by Microsoft, which is not only based in a fascist country, but also directly supports genocide as a company.
+
 # My dotfiles
 
 this repo contains my personal dotfiles, managed using [chezmoi](https://github.com/twpayne/chezmoi).
